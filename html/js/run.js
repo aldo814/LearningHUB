@@ -100,8 +100,7 @@ $(document).ready(function () {
     $(document).on('click', '.file_close', function () {
         $(this).parents('.file').remove();
         $('#uploadFile').val("");
-        if ($('#upload_prev  .file').length) {}
-        else{
+        if ($('#upload_prev  .file').length) {} else {
             $('.file_wrap label').removeClass('active')
         }
 
@@ -133,8 +132,13 @@ $(document).ready(function () {
         $('#uploadFile').click();
     });
 
-
-
+    //자주하는 질문
+    $('.q_a .q').click(function () {
+        $(this).parent().toggleClass('active');
+        $(this).next().slideToggle();
+        $(this).parent().siblings().find('.a').slideUp()
+        $(this).parent().siblings().removeClass('active')
+    });
 
 
 });

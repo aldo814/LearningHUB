@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header id="header">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="러닝허브"></a>
+                </h1>
+                <div class="seach_area">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="교육과정을 검색하세요.">
+                        <button type="submit">검색</button>
+                    </div>
+                    <div class="search_history">
+                        <ul>
+                            <li>
+                                <a href="#" class="txt">최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어2</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어3</a><a href="#" class="del">삭제</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="all_del">전체 삭제</a>
+                    </div>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+            <div class="gnb_wrap">
+                <a href="#" class="all_menu">전체메뉴
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">마이크로러닝</a></li>
+                        <li><a href="#">역량진단</a></li>
+                        <li><a href="#">경력개발계획</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습지원센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+    <!--content-page-->
+    <div class="content-page">
+        <!--quick_menu-->
+
+        <div class="quick_menu">
+            <ul>
+                <li class="quick"><a href="#"><span></span>
+                        <p> QUICK</p>
+                    </a>
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">자주하는 질문</a></li>
+                        <li><a href="#">묻고 답하기</a></li>
+                    </ul>
+                </li>
+                <li class="recent"><a href="#"><span></span>
+                        <p>최근 본 과정</p>
+                    </a>
+                    <ul>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                    </ul>
+                    <ul class="recent_more">
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </ul>
+                </li>
+                <li class="top"><a href="#"><span></span>
+                        <p>TOP</p>
+                    </a></li>
+            </ul>
+        </div>
+        <!--//quick_menu-->
+        <div class="inner">
+            <ul class="bread_crumb">
+                <li>HOME</li>
+                <li>학습지원센터 </li>
+                <li>학습방법안내
+                </li>
+            </ul>
+            <div class="clear">
+                <div id="side">
+                    <h3 class="tit">학습지원센터</h3>
+                    <ul class="snb">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">학습공동체</a></li>
+                        <li><a href="#">자주하는질문</a></li>
+                        <li><a href="#">묻고답하기</a></li>
+                        <li><a href="#">원격지원</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li class="active"><a href="#">학습방법안내</a></li>
+                    </ul>
+                </div>
+                <div id="contents">
+                    <h3 class="page_tit">학습방법안내
+                    </h3>
+                    <div class="tab_container">
+                        <ul class="tab_style04 tabs tab_m">
+                            <li class="active"><a href="#" rel="tab1">수강신청방법</a></li>
+                            <li><a href="#" rel="tab2">수강방법</a></li>
+                            <li><a href="#" rel="tab3">교육진행</a></li>
+                            <li><a href="#" rel="tab4">고용보험환급제도 안내</a></li>
+                            <li><a href="#" rel="tab5">모사답안 처리안내</a></li>
+                        </ul>
+                        <!-- 수강신청방법-->
+                        <div class="tab_content" id="tab1">
+                            <div class="mg50">
+                                <h4 class="tit01">로그인</h4>
+                                <div class="gray_bg">
+                                    <ul class="list_style02">
+                                        <li class="mb10">사이트의 원활한 이용을 위해서는 로그인 정보가 필요합니다.</li>
+                                        <li>회원가입을 통해 발급받은 아이디와 비밀번호로 로그인하시기 바랍니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="mg50">
+                                <div class="bt_arrow">다음</div>
+                            </div>
+                            <div class="mg50">
+                                <h4 class="tit01">수강신청</h4>
+                                <div class="gray_bg">
+                                    <ul class="list_style02">
+                                        <li class="mb10">[수강신청] 메뉴에서 원하시는 과정을 선택합니다.</li>
+                                        <li class="mb10">과정명을 클릭하시면 과정정보와 미리보기를 확인하실 수 있습니다.</li>
+                                        <li>수강신청 버튼을 클릭하시면 수강신청을 하실 수 있습니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //수강신청방법-->
+                        
+                         <!-- 수강방법-->
+                        <div class="tab_content" id="tab2">
+                             <div class="mg50">
+                                <h4 class="tit01">신청과정 확인</h4>
+                                <div class="gray_bg">
+                                    <ul class="list_style02">
+                                        <li>[나의 강의실>수강신청현황] 메뉴에서 수강과정을 확인하실 수 있습니다. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mg50">
+                                <div class="bt_arrow">다음</div>
+                            </div>
+                            <div class="mg50">
+                                <h4 class="tit01">학습기간이 된 경우
+</h4>
+                                <div class="gray_bg">
+                                    <ul class="list_style02">
+                                        <li class="mb10">학습 기간인 경우 [나의 강의실>수강 중인 과정] 메뉴에서 확인하실 수 있습니다.</li>
+                                        <li class="mb10">개강일로부터 [나의 강의실>수강 중인 과정] 메뉴에서 수강하기 버튼을 통해 강의실에 입장하실 수 있습니다. </li>
+                                        <li>학습은 순차적으로 진행이 되며, 이전 차시의 학습을 완료하지 않은 경우 다음 차시의 학습을 시작하실 수가 없습니다.<br>
+<span class="blue">*1일 최대 학습량 : 8차시</span> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mg50">
+                                <div class="bt_arrow">다음</div>
+                            </div>
+                            <div class="mg50">
+                                <h4 class="tit01">과정종료 및 복습
+</h4>
+                                <div class="gray_bg">
+                                    <ul class="list_style02">
+                                        <li class="mb10">학습 기간이 종료되면 학습했던 과정이 [나의 강의실>학습이력현황] 메뉴로 이동이 되며, 최종 성적 처리 후 수료 여부를 
+확인하시게 됩니다. </li>
+                                        <li>학습이 종료된 과정은 [나의 강의실>학습이력현황] 메뉴에서 일정한 기간 동안 복습이 가능합니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //수강방법-->
+                        
+                         <!-- 교육진행-->
+                        <div class="tab_content" id="tab3">
+                            <div class="mg50">
+                                <h4 class="tit01">교육시행</h4>
+                                <div class="img_wrap mt70">
+                                    <img src="images/edu_progress.png" alt="교육진행">
+                                </div>
+                            </div>
+                            
+                            <div class="mg50">
+                                <h4 class="tit01">교육담당자 학습결과 보고
+</h4>
+                            <div class="gray_bg">
+                                <ul class="list_style02">
+                                    <li class="mb10">관리자 모드 제공</li>
+                                    <li class="mb10">교육진행 중 지속적인 피드백(학습 특이사항 보고)</li>
+                                    <li>교육결과 보고</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- //교육진행-->
+                        
+                         <!-- 고용보험환급제도 안내-->
+                        <div class="tab_content" id="tab4">
+                            
+                        </div>
+                        <!-- //고용보험환급제도 안내-->
+                        
+                         <!-- 모사답안 처리안내-->
+                        <div class="tab_content" id="tab5">
+                            <div class="mg50">
+                                <h4 class="tit01">교육비 모사답안의 정의 절차
+</h4>
+                                <div class="gray_bg">
+                                    <ul class="list_style02">
+                                        <li class="bold mb10">모사답안이란?</li>
+                                    </ul>
+                                    <p class="pl15 f14">모사답안이란?
+ 
+과제나 시험(주관식서술문항)을 학습자 자신의 시각이나 관점, 자신의 언어로 작성하지 않고, 동료 학습자의 과제나 시험 내용을 동일하게 옮겨 
+작성한 답안을 의미합니다.
+</p>
+                               
+                               <ul class="list_style02 mt30">
+                                        <li class="bold mb10">모사답안의 판단기준</li>
+                                    </ul>
+                                    <ul class="pl15 f14">
+                                        <li>- 제출된 답안 중, 동료 학습자와의 모사율이 80% 이상인 경우</li>
+                                        <li class="mt5">- 인터넷 자료, 출판물, 기타 자료 등을 80%이상 복사하여 학습자의 의견 없이 그대로 제출한 경우</li>
+                                        <li class="mt5">- 수강 과정의 학습 내용 및 교안, 참고도서를 80%이상 복사하여 학습자 의견없이 그대로 제출한 경우</li>
+                                        <li class="mt5">- 서체, 디자인 형식 등을 달리하여, 새로이 작성한 과제처럼 보이나 아래의 기준에 부합되는 경우</li>
+                                        <li class="mt5">* 동료 학습자의 과제와 비교 시 내용 뿐 아니라, 작성 순서까지 모두 동일한 경우</li>
+                                        <li class="mt5">* 동료 학습자의 과제, 요약본 등의 내용을 그대로 옮긴 후 순서 등을 일부 편집한 경우<br>
+<span class="blue">(단, 답안이 동일할 수 밖에 없는 수식, 정답형 과제 등의 과제유형은 판단기준에서 제외 함)</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mg50">
+                                <h4 class="tit01">모사답안 처리규정
+</h4>
+                                <div class="gray_bg">
+                                    <ul class="list_style02">
+                                        <li class="bold mb10">모사답안 처리기준</li>
+                                    </ul>
+                                    <p class="pl15 f14">모사답안으로 판명된 경우, <span class="blue">모사답안 제출자 및 제공자 모두 0점 처리하여 미수료 </span>처리됩니다.</p>
+                                    
+                                    <ul class="list_style02 mt30">
+                                        <li class="bold mb10">모사답안 처리목적</li>
+                                    </ul>
+                                    <ul class="pl15 f14">
+                                        <li>- 고용보험 환급액의 부정수급 방지</li>
+                                        <li>- 건전한 이러닝 학습문화 유지<br>
+(학습자간의 형평성 유지 및 자기주도 학습의 이러닝 문화를 저해하는 부정행위 방지)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mg50">
+                                <h4 class="tit01">모사답안의 처리절차
+</h4>
+                                <div class="gray_bg"></div>
+                            </div>
+                        </div>
+                        <!-- //모사답안 처리안내-->
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--//content-page-->
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/foot_logo.png" alt="러닝허브">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">환불규정</a></li>
+                </ul>
+                <div class="family_site">
+                    <select class="select_style01">
+                        <option>관련사이트</option>
+                    </select>
+                    <a href="#">이동</a>
+                </div>
+            </div>
+            <div class="bt">
+                <div class="txt">
+                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
+                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
+                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
+                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
+                </div>
+                <img src="images/foot_mark.png" alt="우수훈련기관">
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
+</body>
+
+</html>

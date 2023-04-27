@@ -151,11 +151,77 @@
                         </ul>
                     </div>
                     <!--//quick_menu-->
+
                     <h3 class="page_tit">인기 상승 콘텐츠</h3>
                     <div class="cont_tit">
                         <h3>추천 콘텐츠</h3>
-                        <a href="#" class="inter">관심분야 설정</a>
+                        <a href="javascript:openModal('modal1');" class="inter">관심분야 설정</a>
                     </div>
+
+
+                    <!--팝업-->
+                    <div class="shadow"></div>
+                    <div class="popUp modal1">
+                        <div class="popTop">
+                            <h3>관심분야 설정</h3>
+                            <a href="#" class="close" onclick="close_pop()">닫기</a>
+                        </div>
+                        <div class="popCont">
+                            <div class="pc_pd">
+                                <p class="tct">관심분야를 3개 이상 선택하세요.</p>
+
+                                <ul class="interest_list mt30">
+                                    <li>
+                                        <div class="formrow">
+                                            <input class="checkbox" type="checkbox" name="check1" id="check1">
+                                            <label class="checklabel" for="check1">공통</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="formrow">
+                                            <input class="checkbox" type="checkbox" name="check2" id="check2">
+                                            <label class="checklabel" for="check2">리더십</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="formrow">
+                                            <input class="checkbox" type="checkbox" name="check3" id="check3">
+                                            <label class="checklabel" for="check3">직무</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="formrow">
+                                            <input class="checkbox" type="checkbox" name="check4" id="check4">
+                                            <label class="checklabel" for="check4">외국어</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="formrow">
+                                            <input class="checkbox" type="checkbox" name="check5" id="check5">
+                                            <label class="checklabel" for="check5">자격</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="formrow">
+                                            <input class="checkbox" type="checkbox" name="check6" id="check6">
+                                            <label class="checklabel" for="check6">인문교양</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn_wrap tct">
+                                    <a href="#" class="btn_style01 btn_gray03" onclick="close_pop()">
+                                        닫기
+                                    </a>
+                                    <a href="#" class="btn_style01 btn_black02">
+                                        설정
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--//팝업-->
+
                     <div class="con_list col four_item">
                         <div class="item">
                             <a href="#">

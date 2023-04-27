@@ -8,13 +8,19 @@ body{font-size: 1.6rem}
 .f14{font-size: 1.4rem}
 .blue{color: #36ace3;}
 .gray{color: #72787f}
+.black{color: #1b1d1f}
 .orange{color: #f09338}
 .mb50{margin-bottom: 5rem}
 .mg15{margin: 1.5rem 0}
 .mg50{margin: 5rem 0}
+.mt5{margin-top: 0.5rem}
 .mt30{margin-top: 3rem}
+.mt70{margin-top: 7rem}
 .mb40{margin-bottom: 4rem}
+.mb10{margin-bottom: 1rem !important}
 .w100{width: 100%;}
+.pl15{padding-left: 15px}
+.f14{font-size: 1.4rem}
 .fl{float: left}
 .fr{float: right}
 .tct{text-align: center !important}
@@ -90,6 +96,7 @@ body{font-size: 1.6rem}
 @media all and (max-width:768px){
     html{font-size: 9px}
     .mb40{margin-bottom: 3rem}
+    .mt70{margin-top: 4rem}
 }
 
 @media all and (max-width:640px){
