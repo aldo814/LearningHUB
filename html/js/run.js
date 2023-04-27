@@ -1,4 +1,8 @@
 $(document).ready(function () {
+
+    $('a[href="#"]').click(function (event) {
+        event.preventDefault();
+    });
     /* header */
     $('#header .input_wrap input').focusin(function () {
         $('.search_history').show();
@@ -68,11 +72,83 @@ $(document).ready(function () {
         var activeTab = $(this).attr("rel");
         $("#" + activeTab).fadeIn();
     });
-    
+
+    $(".tab_style01 li a").click(function () {
+        $(this).parent().siblings("li").removeClass("active");
+        $(this).parent().addClass("active");
+    });
+
     // 스크롤바
     $(".scr").mCustomScrollbar({
-            theme:"minimal-dark"
-        })
+        theme: "minimal-dark"
+    });
+
+    // 학습후기
+    $('.review-filter li a').click(function () {
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active')
+    });
+
+    $('.view_area_cont .tab_style01 a').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 500)
+    })
+
+    //파일
+    $(document).on('click', '.file_close', function () {
+        $(this).parents('.file').remove();
+        $('#uploadFile').val("");
+        if ($('#upload_prev  .file').length) {}
+        else{
+            $('.file_wrap label').removeClass('active')
+        }
+
+    })
+
+    $('#uploadFile').on('change', function () {
+        $(this).next('label').addClass('active')
+        var filename = this.value;
+        var lastIndex = filename.lastIndexOf("\\");
+        if (lastIndex >= 0) {
+            filename = filename.substring(lastIndex + 1);
+        }
+
+        var totalBytes = (this.files[0].size / 1024);
+        if (totalBytes < 1000000) {
+            var _size = (Math.floor(totalBytes * 1000) / 100) + 'KB';
+        }
+        var files = $('#uploadFile')[0].files;
+        for (var i = 0; i < files.length; i++) {
+            $("#upload_prev").append('<div class="file">' + '<div class="filenameupload">' + '<span class="name">' + files[i].name + '</span>' + '<span class="size">(' + totalBytes.toLocaleString() + 'K' + ')</span>' +
+
+                '</div>' + '<a href="javascript:void()" class="file_close" >X</a></div>');
+        }
+
+    });
+
+
+    $('#selectFiles').click(function () {
+        $('#uploadFile').click();
+    });
+
+
+
 
 
 });
+
+// 팝업
+function openModal(modalname) {
+    document.get
+    $("." + modalname).show();
+    $(".shadow").show();
+    $('body').addClass('not_scroll');
+}
+
+function close_pop(flag) {
+    $('.popUp').hide();
+    $(".shadow").hide();
+    $('body').removeClass('not_scroll');
+};

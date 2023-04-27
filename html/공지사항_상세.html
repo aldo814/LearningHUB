@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/run.js"></script>
 </head>
@@ -66,7 +68,8 @@
     <!--//header-->
     <!--content-page-->
     <div class="content-page">
-       
+        <!--quick_menu-->
+
         <div class="quick_menu">
             <ul>
                 <li class="quick"><a href="#"><span></span>
@@ -88,39 +91,39 @@
                     </ul>
                     <ul class="recent_more">
                         <div class="item">
-                           <a href="#">
-                            <div class="img imgFill">
-                                <img src="images/list_sp01.png" alt="">
-                            </div>
-                            <div class="txt">
-                                <p class="division">[이러닝]</p>
-                                <p class="tit">테슬라가 말한다! 4차...
-                                </p>
-                            </div>
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
                             </a>
                         </div>
                         <div class="item">
-                           <a href="#">
-                            <div class="img imgFill">
-                                <img src="images/list_sp01.png" alt="">
-                            </div>
-                            <div class="txt">
-                                <p class="division">[이러닝]</p>
-                                <p class="tit">테슬라가 말한다! 4차...
-                                </p>
-                            </div>
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
                             </a>
                         </div>
                         <div class="item">
-                           <a href="#">
-                            <div class="img imgFill">
-                                <img src="images/list_sp01.png" alt="">
-                            </div>
-                            <div class="txt">
-                                <p class="division">[이러닝]</p>
-                                <p class="tit">테슬라가 말한다! 4차...
-                                </p>
-                            </div>
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
                             </a>
                         </div>
                     </ul>
@@ -130,22 +133,65 @@
                     </a></li>
             </ul>
         </div>
+        <!--//quick_menu-->
         <div class="inner">
             <ul class="bread_crumb">
                 <li>HOME</li>
-                <li>통합검색</li>
+                <li>학습지원센터</li>
+                <li>공지사항</li>
             </ul>
-            <h3 class="page_tit">통합 검색</h3>
-            <p class="result-txt">
-                ‘<span class="blue">검색어</span>’에 대한 검색 결과입니다.
-            </p>
-            <div class="result_wrap clear">
-               <hr class="gray_line">
-                <div class="no_data">
-                    <p>검색 결과가 없습니다.</p>
+            <div class="clear">
+                <div id="side">
+                    <h3 class="tit">학습지원센터</h3>
+                    <ul class="snb">
+                        <li class="active"><a href="#">공지사항</a></li>
+                        <li><a href="#">학습공동체</a></li>
+                        <li><a href="#">자주하는질문</a></li>
+                        <li><a href="#">묻고답하기</a></li>
+                        <li><a href="#">원격지원</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">학습방법안내</a></li>
+                    </ul>
                 </div>
+                <div id="contents">
+                    <h3 class="page_tit">공지사항</h3>
+                    
+                    <div class="board_view">
+                        <div class="tit">
+                        <div class="import_wrap">
+                        <span class="import">중요</span>
+                        <h3>
+                            제목이 노출되는 영역입니다. 제목이 노출되는 영역입니다.
+                        </h3>
+                        </div>
+                        <ul class="info">
+                            <li class="name">운영자</li>
+                            <li class="date">2022.04.19</li>
+                            <li class="view">조회 100</li>
+                        </ul>
+                        </div>
+                        <div class="board_view_cont">
+                            <p>본문 내용이 노출되는 영역입니다.본문 내용이 노출되는 영역입니다.본문 내용이 노출되는 영역입니다.
+본문 내용이 노출되는 영역입니다.본문 내용이 노출되는 영역입니다.
+본문 내용이 노출되는 영역입니다.본문 내용이 노출되는 영역입니다.</p>
+                        </div>
+                        <div class="board_file">
+                            <p class="txt">첨부파일</p>
+                            <div class="cont">
+                                <ul>
+                                    <li><a href="#">example.pdf</a> <span>(4,344K)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="btn_wrap tct mg50">
+                            <a href="#" class="btn_style01 btn_black02">
+                                목록
+                            </a>
+                        </div>
             </div>
         </div>
+    </div>
     </div>
     <!--//content-page-->
 

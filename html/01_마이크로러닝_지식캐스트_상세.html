@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/run.js"></script>
 </head>
@@ -66,7 +68,8 @@
     <!--//header-->
     <!--content-page-->
     <div class="content-page">
-       
+        <!--quick_menu-->
+
         <div class="quick_menu">
             <ul>
                 <li class="quick"><a href="#"><span></span>
@@ -88,39 +91,39 @@
                     </ul>
                     <ul class="recent_more">
                         <div class="item">
-                           <a href="#">
-                            <div class="img imgFill">
-                                <img src="images/list_sp01.png" alt="">
-                            </div>
-                            <div class="txt">
-                                <p class="division">[이러닝]</p>
-                                <p class="tit">테슬라가 말한다! 4차...
-                                </p>
-                            </div>
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
                             </a>
                         </div>
                         <div class="item">
-                           <a href="#">
-                            <div class="img imgFill">
-                                <img src="images/list_sp01.png" alt="">
-                            </div>
-                            <div class="txt">
-                                <p class="division">[이러닝]</p>
-                                <p class="tit">테슬라가 말한다! 4차...
-                                </p>
-                            </div>
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
                             </a>
                         </div>
                         <div class="item">
-                           <a href="#">
-                            <div class="img imgFill">
-                                <img src="images/list_sp01.png" alt="">
-                            </div>
-                            <div class="txt">
-                                <p class="division">[이러닝]</p>
-                                <p class="tit">테슬라가 말한다! 4차...
-                                </p>
-                            </div>
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
                             </a>
                         </div>
                     </ul>
@@ -130,19 +133,85 @@
                     </a></li>
             </ul>
         </div>
+        <!--//quick_menu-->
         <div class="inner">
             <ul class="bread_crumb">
                 <li>HOME</li>
-                <li>통합검색</li>
+                <li>마이크로러닝</li>
+                <li>지식 캐스트</li>
             </ul>
-            <h3 class="page_tit">통합 검색</h3>
-            <p class="result-txt">
-                ‘<span class="blue">검색어</span>’에 대한 검색 결과입니다.
-            </p>
-            <div class="result_wrap clear">
-               <hr class="gray_line">
-                <div class="no_data">
-                    <p>검색 결과가 없습니다.</p>
+            <div class="clear">
+                <div id="side">
+                    <h3 class="tit">마이크로러닝</h3>
+                    <ul class="snb">
+                        <li class="active"><a href="#">인기 상승 콘텐츠</a></li>
+                        <li><a href="#">분류별 콘텐츠</a></li>
+                        <li><a href="#">필수 콘텐츠</a></li>
+                        <li><a href="#">수강중인 콘텐츠</a></li>
+                        <li><a href="#">지식캐스트</a></li>
+                    </ul>
+                </div>
+                <div id="contents">
+                    <h3 class="page_tit">지식 캐스트</h3>
+                    <div class="board_view">
+                        <div class="tit">
+                        <h3>
+                            제목이 노출되는 영역입니다. 제목이 노출되는 영역입니다.
+                        </h3>
+                        <ul class="info">
+                            <li class="ct">공통/자기개발</li>
+                            <li class="name">운영자</li>
+                            <li class="date">2022.04.19</li>
+                            <li class="view">조회 100</li>
+                        </ul>
+                        </div>
+                        <div class="board_view_cont">
+                            <p>본문 내용이 노출되는 영역입니다.본문 내용이 노출되는 영역입니다.본문 내용이 노출되는 영역입니다.
+본문 내용이 노출되는 영역입니다.본문 내용이 노출되는 영역입니다.
+본문 내용이 노출되는 영역입니다.본문 내용이 노출되는 영역입니다.</p>
+                        </div>
+                        <div class="board_file">
+                            <p class="txt">첨부파일</p>
+                            <div class="cont">
+                                <ul>
+                                    <li><a href="#">example.pdf</a> <span>(4,344K)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="btn_wrap tct mg50">
+                            <a href="#" class="btn_style01 btn_gray01">
+                                목록
+                            </a>
+                        </div>
+                        
+                        <div class="comment_list">
+                           <div class="comment_top">
+                            <p class="comment_txt">
+                                댓글 <span>(2건)</span>
+                            </p>
+                            <div class="comment_write">
+                                <textarea placeholder="본문의 주제와 맞는 의견을 입력해주세요."></textarea>
+                                <button class="btn_style01 btn_black01">등록</button>
+                            </div>
+                            </div>
+                            <div class="comment_item">
+                                <div class="top">
+                                    <p class="name">홍길동<span class="id">(abc12) </span>
+                                    </p>
+                                    <div class="btn_area">
+                                        <a href="#" class="btn_style02 btn_blue">수정</a>
+                                        <a href="#" class="btn_style02 btn_gray02">삭제</a>
+                                    </div>
+                                    <p class="date">2022.04.20 15:30</p>
+                                </div>
+                                <div class="comment_cont">
+                                    <p>입력한 코멘트가 표시됩니다.
+</p>
+                                </div>
+                            </div>
+                            
+                        </div>
                 </div>
             </div>
         </div>

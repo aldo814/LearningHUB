@@ -7,12 +7,22 @@ body{font-size: 1.6rem}
 .bold{font-weight: bold;}
 .f14{font-size: 1.4rem}
 .blue{color: #36ace3;}
+.gray{color: #72787f}
+.orange{color: #f09338}
 .mb50{margin-bottom: 5rem}
+.mg15{margin: 1.5rem 0}
 .mg50{margin: 5rem 0}
 .mt30{margin-top: 3rem}
+.mb40{margin-bottom: 4rem}
+.w100{width: 100%;}
+.fl{float: left}
+.fr{float: right}
+.tct{text-align: center !important}
+.tlt{text-align: left !important}
+.trt{text-align: right !important}
 .clear:after{content: '';display: block;clear: both;}
-.txtCut1{width: 100%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
-.txtCut2{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;line-height: 2rem;height: 4rem}
+.txtCut1{width: 100%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: block;}
+.txtCut2{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;line-height: 2rem;height: 4rem;display: block}
 
 
 /* header */
@@ -79,6 +89,7 @@ body{font-size: 1.6rem}
 
 @media all and (max-width:768px){
     html{font-size: 9px}
+    .mb40{margin-bottom: 3rem}
 }
 
 @media all and (max-width:640px){
