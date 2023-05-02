@@ -13,8 +13,11 @@ body{font-size: 1.6rem}
 .mb50{margin-bottom: 5rem}
 .mg15{margin: 1.5rem 0}
 .mg50{margin: 5rem 0}
+.mgw50{margin: 5rem}
 .mt5{margin-top: 0.5rem}
+.mt40{margin-top: 4rem !important}
 .mt30{margin-top: 3rem}
+.mt50{margin-top: 5rem}
 .mt70{margin-top: 7rem}
 .mb40{margin-bottom: 4rem}
 .mb10{margin-bottom: 1rem !important}
@@ -97,6 +100,7 @@ body{font-size: 1.6rem}
     html{font-size: 9px}
     .mb40{margin-bottom: 3rem}
     .mt70{margin-top: 4rem}
+    .mgw50{margin: 5rem 0}
 }
 
 @media all and (max-width:640px){
