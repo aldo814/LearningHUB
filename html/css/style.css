@@ -558,6 +558,27 @@
 .login_wrap .kakao{background: #ffd800;color: #fff;}
 .login_wrap .join{border: 1px solid #1b1d1f;}
 
+/* otp */
+.otp_wrap{margin-top: 10rem}
+.otp_wrap .tct{font-weight: 500;word-break: keep-all}
+.otp_wrap .otp_area{max-width: 350px;width: 100%;margin: 4rem auto 0 auto}
+.otp_wrap .otp_area .input_wrap{background: #f7f8fa;padding: 1rem 1.5rem 1rem 3rem;box-sizing: border-box;display: flex;justify-content: space-between;align-items: center}
+.otp_wrap .otp_area .input_wrap input{border: 0;background: none;font-size: 1.4rem;}
+.otp_wrap .otp_area .input_wrap input::placeholder{color: #9ea4aa}
+.otp_wrap .otp_area .input_wrap .time{font-size: 1.4rem;}
+.otp_wrap .otp_area .btn{font-weight: 500;padding: 0.8rem 1rem;border-radius: 10px;display: block ;text-align: center;box-sizing: border-box}
+.otp_wrap .otp_area .btn_black01{margin: 1.5rem 0 3rem 0 }
+.otp_wrap .otp_area .btn_wrap::after{content: '';display: block;clear: both}
+.otp_wrap .otp_area .btn_wrap .btn{width: calc(50% - 5px);float: left;}
+.otp_wrap .otp_area .btn_wrap .btn + .btn{margin-left: 10px}
+
+/* 경력 개발 계획 */
+.career_plan{display: flex;align-items: center}
+.career_plan .arrow{text-indent: -9999px;background: url(../images/arrow03.png) no-repeat;width: 12px;height: 22px;margin: 0 25px}
+.career_plan .item{border: 1px solid #9ea4aa;padding: 2.5rem 3rem;box-sizing: border-box;border-radius:100px;flex: 1 1}
+.career_plan .item .tit{font-size: 2rem;font-weight: 500;margin-bottom: 1rem}
+.career_plan .item .desc{font-size: 1.4rem;color: #72787f;word-break: keep-all}
+
 @media all and (max-width:1200px){
     .board_search_wrap.in_btn02 .board_search{margin-left: 10rem}
     .board_search_wrap.in_btn02 a{margin-right: 8rem}
@@ -713,6 +734,8 @@
     
     .prd_wrap .item{width: calc(33.333% - 20px)}
     .prd_wrap .arrow{background-size: 10px;width: 10px;margin: 3rem 10px 0 10px}
+    .login_wrap,
+    .otp_wrap{margin: 5rem auto 0 auto}
 }
 
 @media all and (max-width:640px){

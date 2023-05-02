@@ -3,12 +3,13 @@
 body,html{font-family: 'Noto Sans KR',sans-serif;color: #1b1d1f;}
 html{font-size: 10px}
 body{font-size: 1.6rem}
+.txtUnder{text-decoration: underline}
 .inner{max-width: 1200px;width: calc(100% - 40px);margin: auto}
 .bold{font-weight: bold;}
 .f14{font-size: 1.4rem}
 .blue{color: #36ace3;}
 .gray{color: #72787f}
-.black{color: #1b1d1f}
+.black{color: #1b1d1f !important}
 .orange{color: #f09338}
 .mb50{margin-bottom: 5rem}
 .mg15{margin: 1.5rem 0}
@@ -18,10 +19,13 @@ body{font-size: 1.6rem}
 .mt40{margin-top: 4rem !important}
 .mt30{margin-top: 3rem}
 .mt50{margin-top: 5rem}
+.mt60{margin-top: 6rem}
 .mt70{margin-top: 7rem}
+.mb10{margin-bottom: 1rem !important}
+.mb20{margin-bottom: 2rem !important}
 .mb40{margin-bottom: 4rem}
 .mb10{margin-bottom: 1rem !important}
-.w100{width: 100%;}
+.w100{width: 100% !important;}
 .pl15{padding-left: 15px}
 .f14{font-size: 1.4rem}
 .fl{float: left}
