@@ -676,8 +676,28 @@
 .w10{width: 10%;flex: auto  !important}
 .w30{width: 30%;flex: auto !important}
 
-#header,
-#footer{display: none}
+/* 나의 강의실 */
+.my_lr{display: flex;border: 1px solid #c9cdd2}
+.my_lr .info{display: flex;border-right: 1px solid #c9cdd2;padding: 2rem;width: 480px}
+.my_lr .info .img{background: url(../images/person_ico.png) no-repeat;width: 50px;height: 50px;}
+.my_lr .info  .txt{width: calc(100% - 65px);margin-left: 15px}
+.my_lr .info .top{display: flex; align-items: center;margin-bottom: .7rem}
+.my_lr .info .top .name{font-weight: 500;margin-right: 2rem}
+.my_lr .info ul{display: flex;flex-wrap: wrap;}
+.my_lr .info ul li{position: relative;margin-right: 7px;padding-right: 7px;}
+.my_lr .info ul li:before{content: '';display: block;width: 1px;height: 18px;background: #9ea4aa;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+.my_lr .info ul li:last-child{margin-right: 0;padding-right: 0}
+.my_lr .info ul li:last-child:before{display: none}
+.my_lr .cont{width: calc(100% - 480px);display: flex;flex-wrap: wrap;}
+.my_lr .cont .item{width: 50%;border-top: 1px solid #c9cdd2;border-right:1px solid #c9cdd2;box-sizing: border-box; padding: 1rem 2rem;display: flex;align-items: center;}
+.my_lr .cont .item:nth-child(-n + 2){border-top: 0}
+.my_lr .cont .item:nth-child(2n){border-right: 0}
+.my_lr .cont .item:nth-child(1):before{content: '';display: block;background: url(../images/lr_ico01.png) no-repeat center;width: 16px;height: 16px}
+.my_lr .cont .item:nth-child(2):before{content: '';display: block;background: url(../images/lr_ico02.png) no-repeat center;width: 16px;height: 15px}
+.my_lr .cont .item:nth-child(3):before{content: '';display: block;background: url(../images/lr_ico03.png) no-repeat center;width: 16px;height: 16px}
+.my_lr .cont .item:nth-child(4):before{content: '';display: block;background: url(../images/lr_ico04.png) no-repeat center;width: 16px;height: 15px}
+.my_lr .cont .left{margin-left: 0.5rem}
+.my_lr .cont .right{margin-left: auto}
 
 @media all and (max-width:1200px){
     .board_search_wrap.in_btn02 .board_search{margin-left: 10rem}
