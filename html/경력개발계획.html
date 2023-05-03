@@ -12,6 +12,8 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
     <script src="js/run.js"></script>
 </head>
 
@@ -68,159 +70,130 @@
     <!--//header-->
     <!--content-page-->
     <div class="content-page">
-        <!--quick_menu-->
-
-        <div class="quick_menu">
-            <ul>
-                <li class="quick"><a href="#"><span></span>
-                        <p> QUICK</p>
-                    </a>
-                    <ul>
-                        <li><a href="#">수강신청</a></li>
-                        <li><a href="#">자주하는 질문</a></li>
-                        <li><a href="#">묻고 답하기</a></li>
-                    </ul>
-                </li>
-                <li class="recent"><a href="#"><span></span>
-                        <p>최근 본 과정</p>
-                    </a>
-                    <ul>
-                        <li><a href="#">테슬라가 말한다! 4...</a></li>
-                        <li><a href="#">테슬라가 말한다! 4...</a></li>
-                        <li><a href="#">테슬라가 말한다! 4...</a></li>
-                    </ul>
-                    <ul class="recent_more">
-                        <div class="item">
-                            <a href="#">
-                                <div class="img imgFill">
-                                    <img src="images/list_sp01.png" alt="">
-                                </div>
-                                <div class="txt">
-                                    <p class="division">[이러닝]</p>
-                                    <p class="tit">테슬라가 말한다! 4차...
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <div class="img imgFill">
-                                    <img src="images/list_sp01.png" alt="">
-                                </div>
-                                <div class="txt">
-                                    <p class="division">[이러닝]</p>
-                                    <p class="tit">테슬라가 말한다! 4차...
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <div class="img imgFill">
-                                    <img src="images/list_sp01.png" alt="">
-                                </div>
-                                <div class="txt">
-                                    <p class="division">[이러닝]</p>
-                                    <p class="tit">테슬라가 말한다! 4차...
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </ul>
-                </li>
-                <li class="top"><a href="#"><span></span>
-                        <p>TOP</p>
-                    </a></li>
-            </ul>
-        </div>
-        <!--//quick_menu-->
         <div class="inner">
             <ul class="bread_crumb">
                 <li>HOME</li>
-                <li>학습지원센터 </li>
-                <li>이벤트
+                <li>경력개발계획
                 </li>
             </ul>
             <div class="clear">
-                <div id="side">
-                    <h3 class="tit">학습지원센터</h3>
-                    <ul class="snb">
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">학습공동체</a></li>
-                        <li><a href="#">자주하는질문</a></li>
-                        <li><a href="#">묻고답하기</a></li>
-                        <li><a href="#">원격지원</a></li>
-                        <li class="active"><a href="#">이벤트</a></li>
-                        <li><a href="#">학습방법안내</a></li>
-                    </ul>
-                </div>
-                <div id="contents">
-                    <h3 class="page_tit">이벤트
+                <div id="contents" class="full">
+                    <h3 class="page_tit">경력 개발 계획
                     </h3>
-                    <ul class="tab_style04">
-                        <li><a href="#">진행중인 이벤트</a></li>
-                        <li class="active"><a href="#">종료된 이벤트</a></li>
-                    </ul>
-                    <div class="board_search_wrap in_btn in_select mt70">
+                    <div class="career_plan">
+                        <div class="item">
+                            <p class="tit"><span>01</span> 경력목표수립</p>
+                            <p class="desc">올해/장기목표 수립, 희망 직무/부서 설정 및 올해의
+                                자격증, 어학 취득 목표를 설정합니다.</p>
+                        </div>
+                        <span class="arrow">다음</span>
+                        <div class="item">
+                            <p class="tit"><span>02</span> 교육계획수립</p>
+                            <p class="desc">일반검색, 역량진단결과에 따라 수립할 수 있으며
+                                교육 계획 시간을 충족해야 합니다.</p>
+                        </div>
+                        <span class="arrow">다음</span>
+                        <div class="item">
+                            <p class="tit"><span>03</span> 계획승인요청</p>
+                            <p class="desc">승인요청선지정 및 계획에 대한 승인요청을<br>
+                                할 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="board_search_wrap center mt60">
                         <div class="board_search">
-                            <input type="text" placeholder="검색어를 입력해주세요.">
+                            <input type="text" placeholder="계획명을 입력해주세요.">
                             <button type="submit">검색</button>
                         </div>
-                        <select class="select_style04">
-                            <option>전체</option>
-                        </select>
                     </div>
-                    <div class="board_list end_ev_list">
-                        <table>
-                            <caption>공지사항</caption>
-                            <colgroup>
-                                <col style="width: 15%">
-                                <col>
-                                <col style="width: 15%">
-                                <col style="width: 15%">
-                                <col style="width: 15%">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="col">번호</th>
-                                    <th scope="col">제목</th>
-                                    <th scope="col">등록일</th>
-                                    <th scope="col">참여여부</th>
-                                    <th scope="col">당첨조회</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="num m_hide">1</td>
-                                    <td class="tlt tit"><a href="#" class="txtCut1">이벤트 제목이 노출됩니다. 이벤트 제목이 노출됩니다</a></td>
-                                    <td class="date">2022.01.01</td>
-                                    <td class="part">미참여</td>
-                                    <td class="btn">
-                                        <a href="javascript:openModal('modal1')" class="btn_style04 btn_black01">당첨조회</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="table_wrap">
+                        <div class="board_list filter_table">
+                            <table>
+                                <caption>공지사항</caption>
+                                <colgroup>
+                                    <col style="width: 15%">
+                                    <col>
+                                    <col style="width: 20%">
+                                    <col style="width: 15%">
+                                    <col style="width: 15%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="filter">해당년도</th>
+                                        <th scope="col" class="filter">계획명</th>
+                                        <th scope="col" class="no_filter">계획기간</th>
+                                        <th scope="col" class="no_filter">계획여부</th>
+                                        <th scope="col" class="no_filter">승인현황</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022</td>
+                                        <td class="tlt"><a href="#" class="txtCut1 txtUnder">2022년 경력개발계획</a></td>
+                                        <td>2020.02.13 ~ 2022.03.31</td>
+                                        <td>승인</td>
+                                        <td>
+                                            <a href="javascript:openModal('modal1')" class="btn_style04 btn_gray01 black">승인현황</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022</td>
+                                        <td class="tlt"><a href="#" class="txtCut1 txtUnder">2022년 경력개발계획</a></td>
+                                        <td>2020.02.13 ~ 2022.03.31</td>
+                                        <td>계획실시</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td class="tlt"><a href="#" class="txtCut1 txtUnder">2021년 하반기 자기개발계획</a></td>
+                                        <td>2020.02.13 ~ 2022.03.31</td>
+                                        <td>미작성</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021</td>
+                                        <td class="tlt"><a href="#" class="txtCut1 txtUnder">2021년도 경력개발계획</a></td>
+                                        <td>2020.02.13 ~ 2022.03.31</td>
+                                        <td>승인</td>
+                                        <td>
+                                            <a href="javascript:openModal('modal1')" class="btn_style04 btn_gray01 black">승인현황</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
+
+
                     <!--팝업-->
                     <div class="shadow"></div>
-                    <div class="popUp modal1">
+                    <div class="popUp modal1 w600">
                         <div class="popTop">
-                            <h3>당첨조회</h3>
+                            <h3>승인 현황</h3>
                             <a href="#" class="close" onclick="close_pop()">닫기</a>
                         </div>
                         <div class="popCont">
                             <div class="pc_pd scr">
-                                <p>당첨내역이 노출됩니다. 당첨내역이 노출됩니다. <br>
-                                    당첨내역이 노출됩니다. 당첨내역이 노출됩니다. <br>
-                                    당첨내역이 노출됩니다. 당첨내역이 노출됩니다.
-
-                                </p>
+                                <table class="table_style02">
+                                    <caption>승인현황</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1차승인자 결재 </th>
+                                            <td colspan="3">홍길동(수석/선임)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">처리상태</th>
+                                            <td>승인</td>
+                                            <th scope="row">처리일시</th>
+                                            <td>21-04-02 14:40</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <hr class="black_line mt50">
                             <div class="btn_wrap tct mt40">
-                                <a href="#" class="btn_style01 btn_gray03" onclick="close_pop()">
-                                    닫기
+                                <a href="#" class="btn_style01 btn_gray04" onclick="close_pop()">
+                                    확인
                                 </a>
                             </div>
                         </div>
@@ -269,7 +242,6 @@
                     <!--//paging-->
                 </div>
             </div>
-
         </div>
     </div>
     <!--//content-page-->
@@ -309,6 +281,10 @@
         </div>
     </footer>
     <!--//footer-->
+
+    <script>
+        $('.filter_table').excelTableFilter();
+    </script>
 </body>
 
 </html>

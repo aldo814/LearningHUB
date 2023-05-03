@@ -94,7 +94,18 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $(this.hash).offset().top
         }, 500)
+    });
+
+
+    $('.popUp .view_area_cont .tab_style01 a').on('click', function (e) {
+        var href = $(this).attr("href"),
+            target = $(href).parents(".mCustomScrollbar");
+        if (target.length) {
+            e.preventDefault();
+            target.mCustomScrollbar("scrollTo", href);
+        }
     })
+
 
     //파일
     $(document).on('click', '.file_close', function () {
@@ -139,6 +150,10 @@ $(document).ready(function () {
         $(this).parent().siblings().find('.a').slideUp()
         $(this).parent().siblings().removeClass('active')
     });
+
+
+
+
 
 
 });

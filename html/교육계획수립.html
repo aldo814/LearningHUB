@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header id="header">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="러닝허브"></a>
+                </h1>
+                <div class="seach_area">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="교육과정을 검색하세요.">
+                        <button type="submit">검색</button>
+                    </div>
+                    <div class="search_history">
+                        <ul>
+                            <li>
+                                <a href="#" class="txt">최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어2</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어3</a><a href="#" class="del">삭제</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="all_del">전체 삭제</a>
+                    </div>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+            <div class="gnb_wrap">
+                <a href="#" class="all_menu">전체메뉴
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">마이크로러닝</a></li>
+                        <li><a href="#">역량진단</a></li>
+                        <li><a href="#">경력개발계획</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습지원센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+    <!--content-page-->
+    <div class="content-page">
+        <div class="inner">
+            <ul class="bread_crumb">
+                <li>HOME</li>
+                <li>경력개발계획
+                </li>
+            </ul>
+            <div class="clear">
+                <div id="contents" class="full">
+                    <h3 class="page_tit">경력 개발 계획
+                    </h3>
+                    <div class="career_plan">
+                        <div class="item">
+                            <p class="tit"><span>01</span> 경력목표수립</p>
+                            <p class="desc">올해/장기목표 수립, 희망 직무/부서 설정 및 올해의
+                                자격증, 어학 취득 목표를 설정합니다.</p>
+                        </div>
+                        <span class="arrow">다음</span>
+                        <div class="item">
+                            <p class="tit"><span>02</span> 교육계획수립</p>
+                            <p class="desc">일반검색, 역량진단결과에 따라 수립할 수 있으며
+                                교육 계획 시간을 충족해야 합니다.</p>
+                        </div>
+                        <span class="arrow">다음</span>
+                        <div class="item">
+                            <p class="tit"><span>03</span> 계획승인요청</p>
+                            <p class="desc">승인요청선지정 및 계획에 대한 승인요청을<br>
+                                할 수 있습니다.</p>
+                        </div>
+                    </div>
+
+                    <ul class="tab_style04 mt50">
+                        <li><a href="#">경력목표수립</a></li>
+                        <li class="active"><a href="#">교육계획수립</a></li>
+                    </ul>
+                    <div class="mt40">
+                        <h3 class="tit01 mb15">
+                            홍길동님의 계획 현황 : <span class="orange">미충족</span>
+                        </h3>
+
+                        <div class="table_wrap">
+                            <div class="board_list m_board_list">
+                                <table>
+                                    <caption>계획 현황</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">총시간</th>
+                                            <th scope="col">필수시간</th>
+                                            <th scope="col">선택시간</th>
+                                            <th scope="col">Pass/Fail 과정 수</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>의무</td>
+                                            <td>16</td>
+                                            <td>12</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>의무</td>
+                                            <td>16</td>
+                                            <td>12</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr class="gray_bg">
+                                            <td>충족 여부</td>
+                                            <td>충족</td>
+                                            <td class="orange">미충족</td>
+                                            <td>충족</td>
+                                            <td class="orange">미충족</td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt40">
+                        <div class="ft_top mb15 m_block">
+                            <h3 class="tit01">교육 계획 목록
+                                <span class="gray02 ml10 f14 noraml">(교육희망월을 ‘yyyy-mm’ 형태로 꼭 입력해 주세요.)</span>
+                            </h3>
+                            <a href="javascript:openModal('modal1')" class="btn_gray01 btn_style03">교육 추가</a>
+                        </div>
+                        <div class="table_wrap">
+                            <div class="board_list m_board_list">
+                                <table>
+                                    <caption>교육 계획 목록</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">과정명</th>
+                                            <th scope="col">학습유형</th>
+                                            <th scope="col">과정분류</th>
+                                            <th scope="col">이수시간</th>
+                                            <th scope="col">교육희망월</th>
+                                            <th scope="col">삭제</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>선택</td>
+                                            <td>독서통신 A코스</td>
+                                            <td>독서통신</td>
+                                            <td>10분 독서 &gt; IT</td>
+                                            <td>3</td>
+                                            <td><input type="text" class="input_style01 w100 tct"></td>
+                                            <td><a href="#" class="btn_gray07 btn_style04">삭제</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PASS</td>
+                                            <td>링크과정 A코스</td>
+                                            <td>링크과정</td>
+                                            <td>e북 &gt; IT</td>
+                                            <td>3</td>
+                                            <td><input type="text" class="input_style01 w100 tct"></td>
+                                            <td><a href="#" class="btn_gray07 btn_style04">삭제</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>필수</td>
+                                            <td>마이크로러닝 A코스</td>
+                                            <td>마이크로러닝</td>
+                                            <td>비즈니스 공통 &gt; IT</td>
+                                            <td>3</td>
+                                            <td><input type="text" class="input_style01 w100 tct"></td>
+                                            <td><a href="#" class="btn_gray07 btn_style04">삭제</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn_wrap tct mt50 four_btn">
+                        <a href="#" class="btn_style01 btn_gray01">
+                            취소
+                        </a>
+                        <a href="#" class="btn_style01 btn_gray05">
+                            다음단계
+                        </a>
+                        <a href="#" class="btn_style01 btn_gray06">
+                            임시저장
+                        </a>
+                        <a href="#" class="btn_style01 btn_gray07">
+                            승인요청
+                        </a>
+                    </div>
+
+                    <!--교육계획추가 팝업-->
+                    <div class="shadow"></div>
+                    <div class="popUp modal1 w960">
+                        <div class="popTop">
+                            <h3>교육계획 추가</h3>
+                            <a href="#" class="close" onclick="close_pop()">닫기</a>
+                        </div>
+                        <div class="popCont">
+                            <div class="pc_pd">
+                                <div class="tab_container">
+                                    <ul class="tab_style03 tabs">
+                                        <li class="active"><a href="#" rel="tab1">필수/선택/PASS</a></li>
+                                        <li><a href="#" rel="tab2">추천</a></li>
+                                        <li><a href="#" rel="tab3">전체</a></li>
+                                    </ul>
+                                    <div class="tab_content mt30" id="tab1">
+                                        <p>
+                                            홍길동님의 정보에 따라 필수/선택/Pass 과정으로 선정된 교육정보입니다.
+
+                                        </p>
+                                        <div class="mt40">
+                                            <h3 class="tit02">필수/선택 교육 과정 </h3>
+                                            <div class="table_wrap">
+                                                <table class="table_style02 filter_table scr_table" id="filter_table01">
+                                                    <caption>필수/선택 교육 과정 </caption>
+                                                    <colgroup>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col" class="filter">구분</th>
+                                                            <th scope="col" class="filter">과정명</th>
+                                                            <th scope="col" class="filter">학습유형</th>
+                                                            <th scope="col" class="filter">과정분류</th>
+                                                            <th scope="col" class="filter">이수시간</th>
+                                                            <th scope="col" class="no_filter">추가</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="scr">
+                                                        <tr>
+                                                            <td>선택</td>
+                                                            <td class="tlt txtCut1"><a href="#">독서통신 A코스</a></td>
+                                                            <td>독서통신</td>
+                                                            <td>10분 독서 &gt; IT</td>
+                                                            <td>3</td>
+                                                            <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>선택</td>
+                                                            <td class="tlt txtCut1"><a href="#">독서통신 A코스</a></td>
+                                                            <td>독서통신</td>
+                                                            <td>10분 독서 &gt; IT</td>
+                                                            <td>3</td>
+                                                            <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>선택</td>
+                                                            <td class="tlt txtCut1"><a href="#">독서통신 A코스</a></td>
+                                                            <td>독서통신</td>
+                                                            <td>10분 독서 &gt; IT</td>
+                                                            <td>3</td>
+                                                            <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>선택</td>
+                                                            <td class="tlt txtCut1"><a href="#">독서통신 A코스</a></td>
+                                                            <td>독서통신</td>
+                                                            <td>10분 독서 &gt; IT</td>
+                                                            <td>3</td>
+                                                            <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mt40">
+                                            <h3 class="tit02">Pass/Fail 교육 과정 </h3>
+                                            <div class="table_wrap">
+                                                <table class="table_style02 filter_table scr_table" id="filter_table02">
+                                                    <caption>Pass/Fail 교육 과정 </caption>
+                                                    <colgroup>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col" class="filter">구분</th>
+                                                            <th scope="col" class="filter">과정명</th>
+                                                            <th scope="col" class="filter">학습유형</th>
+                                                            <th scope="col" class="filter">과정분류</th>
+                                                            <th scope="col" class="filter">이수시간</th>
+                                                            <th scope="col" class="no_filter">추가</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="scr">
+                                                        <tr>
+                                                            <td>선택</td>
+                                                            <td class="tlt txtCut1"><a href="#">독서통신 A코스</a></td>
+                                                            <td>독서통신</td>
+                                                            <td>10분 독서 &gt; IT</td>
+                                                            <td>3</td>
+                                                            <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>선택</td>
+                                                            <td class="tlt txtCut1"><a href="#">독서통신 A코스</a></td>
+                                                            <td>독서통신</td>
+                                                            <td>10분 독서 &gt; IT</td>
+                                                            <td>3</td>
+                                                            <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>선택</td>
+                                                            <td class="tlt txtCut1"><a href="#">독서통신 A코스</a></td>
+                                                            <td>독서통신</td>
+                                                            <td>10분 독서 &gt; IT</td>
+                                                            <td>3</td>
+                                                            <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>선택</td>
+                                                            <td class="tlt txtCut1"><a href="#">독서통신 A코스</a></td>
+                                                            <td>독서통신</td>
+                                                            <td>10분 독서 &gt; IT</td>
+                                                            <td>3</td>
+                                                            <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab_content mt30" id="tab2">
+                                        <p>
+                                            홍길동님의 최근 역량진단 결과입니다.
+                                        </p>
+                                        <div class="gray_bg pd10 mt20">
+                                            <p class="bold">
+                                                2021하반기 개인별 리더십/직무 역량 진단에 따른 추천교육(2021-10-01~2021-12-31)
+
+                                            </p>
+                                        </div>
+
+                                        <div class="mt30 acq_wrap">
+                                            <select class="select_style06">
+                                                <option>전체</option>
+                                                <option>기획력</option>
+                                                <option>문제해결능력</option>
+                                                <option>솔선수범</option>
+                                                <option>시장 환경 분석하기</option>
+                                                <option>의사소통능력</option>
+                                                <option>자사 역량 분석하기</option>
+                                                <option>제안서 발표하기</option>
+                                                <option>제안서 작성하기</option>
+                                                <option>제안요청서 분석하기</option>
+                                                <option>창의적 문제해결</option>
+                                                <option>책임감</option>
+                                            </select>
+                                            <div>
+                                                <p>홍길동님 취득점수</p>
+                                                <p>
+                                                    <strong class="bold">54</strong>점
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="table_wrap mt20">
+                                            <table class="table_style02 scr_table">
+                                                <caption>추천 교육 과정 </caption>
+                                                <colgroup>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="w15">역량명</th>
+                                                        <th scope="col" class="w30">과정명</th>
+                                                        <th scope="col" class="w10">학습유형</th>
+                                                        <th scope="col" class="w30">과정분류</th>
+                                                        <th scope="col" class="w10">이수시간</th>
+                                                        <th scope="col" class="w15">추가</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="scr mh156">
+                                                    <tr>
+                                                        <td class="w15">솔선수범</td>
+                                                        <td class="tlt txtCut1 w30">
+                                                            <a href="#">10명 중 9명이 틀리는 한글 맞춤법</a>
+                                                        </td>
+                                                        <td class="w10">독서통신</td>
+                                                        <td class="w30">비즈니스 공통 &gt; 리더십 &gt; 자기관리</td>
+                                                        <td class="w10">3</td>
+                                                        <td class="w15"><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w15">솔선수범</td>
+                                                        <td class="tlt txtCut1 w30">
+                                                            <a href="#">10명 중 9명이 틀리는 한글 맞춤법</a>
+                                                        </td>
+                                                        <td class="w10">독서통신</td>
+                                                        <td class="w30">비즈니스 공통 &gt; 리더십 &gt; 자기관리</td>
+                                                        <td class="w10">3</td>
+                                                        <td class="w15"><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w15">솔선수범</td>
+                                                        <td class="tlt txtCut1 w30">
+                                                            <a href="#">10명 중 9명이 틀리는 한글 맞춤법</a>
+                                                        </td>
+                                                        <td class="w10">독서통신</td>
+                                                        <td class="w30">비즈니스 공통 &gt; 리더십 &gt; 자기관리</td>
+                                                        <td class="w10">3</td>
+                                                        <td class="w15"><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w15">솔선수범</td>
+                                                        <td class="tlt txtCut1 w30">
+                                                            <a href="#">10명 중 9명이 틀리는 한글 맞춤법</a>
+                                                        </td>
+                                                        <td class="w10">독서통신</td>
+                                                        <td class="w30">비즈니스 공통 &gt; 리더십 &gt; 자기관리</td>
+                                                        <td class="w10">3</td>
+                                                        <td class="w15"><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <!--paging-->
+                                        <ul class="paging02">
+                                            <li class="arrow prev">
+                                                <a href="#">이전페이지</a>
+                                            </li>
+                                            <li class="num active">
+                                                <a href="#">1</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">2</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">3</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">4</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">5</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">6</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">7</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">8</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">9</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">10</a>
+                                            </li>
+                                            <li class="arrow next">
+                                                <a href="#">다음페이지</a>
+                                            </li>
+                                        </ul>
+                                        <!--//paging-->
+                                    </div>
+
+                                    <div class="tab_content mt30" id="tab3">
+                                        <h3 class="tit02">필수/선택 교육 과정 </h3>
+                                        <div class="table_wrap">
+                                            <table class="table_style02 filter_table scr_table" id="filter_table03">
+                                                <caption>필수/선택 교육 과정 </caption>
+                                                <colgroup>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="filter">과정명</th>
+                                                        <th scope="col" class="filter">학습유형</th>
+                                                        <th scope="col" class="filter">과정분류</th>
+                                                        <th scope="col" class="filter">이수시간</th>
+                                                        <th scope="col" class="no_filter">추가</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="scr mh250">
+                                                    <tr>
+                                                        <td class="tlt txtCut1">
+                                                            <a href="#">독서통신 A코스</a>
+                                                        </td>
+                                                        <td>독서통신</td>
+                                                        <td>10분 독서 &gt; IT</td>
+                                                        <td>3</td>
+                                                        <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tlt txtCut1">
+                                                            <a href="#">독서통신 A코스</a>
+                                                        </td>
+                                                        <td>독서통신</td>
+                                                        <td>10분 독서 &gt; IT</td>
+                                                        <td>3</td>
+                                                        <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="tlt txtCut1">
+                                                            <a href="#">독서통신 A코스</a>
+                                                        </td>
+                                                        <td>독서통신</td>
+                                                        <td>10분 독서 &gt; IT</td>
+                                                        <td>3</td>
+                                                        <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="tlt txtCut1">
+                                                            <a href="#">독서통신 A코스</a>
+                                                        </td>
+                                                        <td>독서통신</td>
+                                                        <td>10분 독서 &gt; IT</td>
+                                                        <td>3</td>
+                                                        <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td class="tlt txtCut1">
+                                                            <a href="#">독서통신 A코스</a>
+                                                        </td>
+                                                        <td>독서통신</td>
+                                                        <td>10분 독서 &gt; IT</td>
+                                                        <td>3</td>
+                                                        <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tlt txtCut1">
+                                                            <a href="#">독서통신 A코스</a>
+                                                        </td>
+                                                        <td>독서통신</td>
+                                                        <td>10분 독서 &gt; IT</td>
+                                                        <td>3</td>
+                                                        <td><a href="#" class="btn_gray01 hover btn_style04">추가</a></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!--paging-->
+                                        <ul class="paging02">
+                                            <li class="arrow prev">
+                                                <a href="#">이전페이지</a>
+                                            </li>
+                                            <li class="num active">
+                                                <a href="#">1</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">2</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">3</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">4</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">5</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">6</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">7</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">8</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">9</a>
+                                            </li>
+                                            <li class="num">
+                                                <a href="#">10</a>
+                                            </li>
+                                            <li class="arrow next">
+                                                <a href="#">다음페이지</a>
+                                            </li>
+                                        </ul>
+                                        <!--//paging-->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--//교육계획추가 팝업-->
+
+
+                    <!--교육과정 상세정보 팝업-->
+
+                    <div class="popUp modal2 w960">
+                        <div class="popTop">
+                            <h3>교육과정 상세정보</h3>
+                            <a href="#" class="close" onclick="close_pop()">닫기</a>
+                        </div>
+                        <div class="popCont">
+                            <div class="scr mh_scr">
+                                <div class="gray_bg">
+                                    <div class="btn_wrap tct mt0">
+                                        <a href="#" class="btn_style01 btn_gray01" onclick="close_pop()">
+                                            취소
+                                        </a>
+                                        <a href="#" class="btn_style01 btn_gray04" onclick="close_pop()">
+                                            계획추가
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pc_pd">
+                                    <h3 class="tit02 mt40">
+                                        파이썬을 활용한 데이터 분석 및 시각화
+                                    </h3>
+                                    <div class="cont_view">
+                                        <div class="view_area block">
+                                            <div class="view_area_cont w100">
+                                            <div class="tab_wrap">
+                                                <ul class="tab_style01 full">
+                                                    <li class="active"><a href="#target01">과정정보</a></li>
+                                                    <li><a href="#target02">수료기준</a></li>
+                                                    <li><a href="#target03">강사소개</a></li>
+                                                    <li><a href="#target04">학습후기(20)</a></li>
+                                                </ul>
+                                            </div>
+                                                <div class="con_list mt30">
+                                                    <div class="item" id="target01">
+                                                        <h4 class="f16">과정소개</h4>
+                                                        <dl class="pl10">
+                                                            <dt class="f14">과정소개</dt>
+                                                            <dd class="f14 gray">파이썬을 활용하여 다양한 정형/비정형 데이터를 분석하는 통계 기법, 분석된 결과를 시각화하는
+                                                                방법, 메일 보내기 자동화 방법을 학습합니다. 다양한 예제를 통해 배우고 실습함으로써 실무적용
+                                                                능력을 습득할 수 있습니다</dd>
+                                                        </dl>
+                                                        <dl class="pl10">
+                                                            <dt class="f14">교육대상</dt>
+                                                            <dd>
+                                                                <ul class="list_style01">
+                                                                    <li class="f14 gray">기획, 마케팅, MD, 영업 담당자</li>
+                                                                    <li class="f14 gray">데이터 분석이 필요한 전임직원</li>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                        <dl class="pl10">
+                                                            <dt class="f14">학습목표</dt>
+                                                            <dd>
+                                                                <ul class="list_style01">
+                                                                    <li class="f14 gray">Jupyter Notebook 프로그램을 사용할 수 있다.</li>
+                                                                    <li class="f14 gray">파이썬에서 사용되는 다양한 시각화 방법을 실행할 수 있다.</li>
+                                                                    <li class="f14 gray">다양한 텍스트 분석기법과 통계분석 기법 및 업무 자동화 기술을 기억하고 활용할 수 있다.</li>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="item" id="target02">
+                                                        <h4 class="f16">수료기준</h4>
+                                                        <table class="table_style02">
+                                                            <caption>수료기준</caption>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">평가항목</th>
+                                                                    <th scope="col">총점 반영률</th>
+                                                                    <th scope="col">수료조건</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="tct">진도율</td>
+                                                                    <td class="tct">100%</td>
+                                                                    <td class="tct">80</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="tct">총점</td>
+                                                                    <td class="tct">100%</td>
+                                                                    <td class="tct">80점 이상</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="item" id="target03">
+                                                        <h4>강사소개</h4>
+                                                        <dl>
+                                                            <dt>강사명</dt>
+                                                            <dd>김교수</dd>
+                                                        </dl>
+                                                        <dl>
+                                                            <dt>주요경력</dt>
+                                                            <dd>
+                                                                <ul class="list_style01">
+                                                                    <li>현) 한국IBM MBPS 차장</li>
+                                                                    <li>삼성전자 프린팅 사업부</li>
+                                                                    <li>글로벌 운영 서비스 교육 컨설턴트</li>
+                                                                    <li>통신산업영업본부 영업 대표</li>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                        <dl>
+                                                            <dt>학력사항</dt>
+                                                            <dd>
+                                                                <ul class="list_style01">
+                                                                    <li>고려대학교 노어논문학 학사 졸업</li>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+
+                                                    <div class="item" id="target04">
+                                                        <h4>학습후기</h4>
+                                                        <div class="review_dashboard">
+                                                            <div class="dashboard-star">
+                                                                <p class="review_tit">
+                                                                    만족도
+                                                                </p>
+                                                                <div class="star">
+                                                                    <div class="star_bg">
+                                                                        <span style="width: 92%"></span>
+                                                                    </div>
+                                                                    <p class="star_txt">
+                                                                        4.8
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <ul class="review-filter">
+                                                                <li class="active"><a href="#">베스트순</a></li>
+                                                                <li><a href="#">최신순</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <!--review-list-->
+                                                        <div class="review-list">
+                                                            <div class="item">
+                                                                <div class="rv_header">
+                                                                    <p class="name">홍*동(abc***)</p>
+                                                                    <p class="date">
+                                                                        2023-04-04
+                                                                    </p>
+                                                                    <div class="star">
+                                                                        <div class="star_bg">
+                                                                            <span style="width: 92%"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rv_body">
+                                                                    <p>저에게는 참 도움이 되는 과정입니다.<br>
+                                                                        강의도 재밌고 시험이 좀 어려웠지만 보는 내내 집중할 수 있어서 참 좋았습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="rv_header">
+                                                                    <p class="name">홍*동(abc***)</p>
+                                                                    <p class="date">
+                                                                        2023-04-04
+                                                                    </p>
+                                                                    <div class="star">
+                                                                        <div class="star_bg">
+                                                                            <span style="width: 92%"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rv_body">
+                                                                    <p>저에게는 참 도움이 되는 과정입니다.<br>
+                                                                        강의도 재밌고 시험이 좀 어려웠지만 보는 내내 집중할 수 있어서 참 좋았습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="rv_header">
+                                                                    <p class="name">홍*동(abc***)</p>
+                                                                    <p class="date">
+                                                                        2023-04-04
+                                                                    </p>
+                                                                    <div class="star">
+                                                                        <div class="star_bg">
+                                                                            <span style="width: 92%"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rv_body">
+                                                                    <p>저에게는 참 도움이 되는 과정입니다.<br>
+                                                                        강의도 재밌고 시험이 좀 어려웠지만 보는 내내 집중할 수 있어서 참 좋았습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="rv_header">
+                                                                    <p class="name">홍*동(abc***)</p>
+                                                                    <p class="date">
+                                                                        2023-04-04
+                                                                    </p>
+                                                                    <div class="star">
+                                                                        <div class="star_bg">
+                                                                            <span style="width: 92%"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rv_body">
+                                                                    <p>저에게는 참 도움이 되는 과정입니다.<br>
+                                                                        강의도 재밌고 시험이 좀 어려웠지만 보는 내내 집중할 수 있어서 참 좋았습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="rv_header">
+                                                                    <p class="name">홍*동(abc***)</p>
+                                                                    <p class="date">
+                                                                        2023-04-04
+                                                                    </p>
+                                                                    <div class="star">
+                                                                        <div class="star_bg">
+                                                                            <span style="width: 92%"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rv_body">
+                                                                    <p>저에게는 참 도움이 되는 과정입니다.<br>
+                                                                        강의도 재밌고 시험이 좀 어려웠지만 보는 내내 집중할 수 있어서 참 좋았습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--//review-list-->
+
+                                                        <!--paging-->
+                                                        <ul class="paging">
+                                                            <li class="arrow prev">
+                                                                <a href="#">이전페이지</a>
+                                                            </li>
+                                                            <li class="num active">
+                                                                <a href="#">1</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">2</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">3</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">4</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">5</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">6</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">7</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">8</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">9</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">10</a>
+                                                            </li>
+                                                            <li class="arrow next">
+                                                                <a href="#">다음페이지</a>
+                                                            </li>
+                                                        </ul>
+                                                        <!--//paging-->
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--//교육과정 상세정보 팝업-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//content-page-->
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/foot_logo.png" alt="러닝허브">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">환불규정</a></li>
+                </ul>
+                <div class="family_site">
+                    <select class="select_style01">
+                        <option>관련사이트</option>
+                    </select>
+                    <a href="#">이동</a>
+                </div>
+            </div>
+            <div class="bt">
+                <div class="txt">
+                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
+                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
+                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
+                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
+                </div>
+                <img src="images/foot_mark.png" alt="우수훈련기관">
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
+    <script>
+        $('#filter_table01').excelTableFilter();
+        $('#filter_table02').excelTableFilter();
+        $('#filter_table03').excelTableFilter();
+
+    </script>
+</body>
+
+</html>

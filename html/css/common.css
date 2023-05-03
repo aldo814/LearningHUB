@@ -6,27 +6,39 @@ body{font-size: 1.6rem}
 .txtUnder{text-decoration: underline}
 .inner{max-width: 1200px;width: calc(100% - 40px);margin: auto}
 .bold{font-weight: bold;}
+.block{display: block !important}
+.noraml{font-weight: normal}
 .f14{font-size: 1.4rem}
 .blue{color: #36ace3;}
 .gray{color: #72787f}
+.gray02{color: #9ea4aa}
 .black{color: #1b1d1f !important}
-.orange{color: #f09338}
+.orange{color: #f09338 !important}
 .mb50{margin-bottom: 5rem}
 .mg15{margin: 1.5rem 0}
 .mg50{margin: 5rem 0}
 .mgw50{margin: 5rem}
+.mt0{margin-top:0rem !important}
 .mt5{margin-top: 0.5rem}
 .mt40{margin-top: 4rem !important}
+.mt20{margin-top: 2rem}
 .mt30{margin-top: 3rem}
 .mt50{margin-top: 5rem}
 .mt60{margin-top: 6rem}
 .mt70{margin-top: 7rem}
 .mb10{margin-bottom: 1rem !important}
+.mb15{margin-bottom: 1.5rem !important}
 .mb20{margin-bottom: 2rem !important}
 .mb40{margin-bottom: 4rem}
 .mb10{margin-bottom: 1rem !important}
 .w100{width: 100% !important;}
+.mw250{max-width: 250px;width: 100%}
+.w600{max-width: 600px !important}
+.w960{max-width: 960px !important}
 .pl15{padding-left: 15px}
+.pl10{padding-left: 10px}
+.pd10{padding: 10px !important}
+.pr0{padding-right: 0 !important}
 .f14{font-size: 1.4rem}
 .fl{float: left}
 .fr{float: right}
