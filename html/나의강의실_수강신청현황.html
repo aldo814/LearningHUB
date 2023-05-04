@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header id="header">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="러닝허브"></a>
+                </h1>
+                <div class="seach_area">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="교육과정을 검색하세요.">
+                        <button type="submit">검색</button>
+                    </div>
+                    <div class="search_history">
+                        <ul>
+                            <li>
+                                <a href="#" class="txt">최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어2</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어3</a><a href="#" class="del">삭제</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="all_del">전체 삭제</a>
+                    </div>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+            <div class="gnb_wrap">
+                <a href="#" class="all_menu">전체메뉴
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">마이크로러닝</a></li>
+                        <li><a href="#">역량진단</a></li>
+                        <li><a href="#">경력개발계획</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습지원센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+    <!--content-page-->
+    <div class="content-page">
+        <!--quick_menu-->
+
+        <div class="quick_menu">
+            <ul>
+                <li class="quick"><a href="#"><span></span>
+                        <p> QUICK</p>
+                    </a>
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">자주하는 질문</a></li>
+                        <li><a href="#">묻고 답하기</a></li>
+                    </ul>
+                </li>
+                <li class="recent"><a href="#"><span></span>
+                        <p>최근 본 과정</p>
+                    </a>
+                    <ul>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                    </ul>
+                    <ul class="recent_more">
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </ul>
+                </li>
+                <li class="top"><a href="#"><span></span>
+                        <p>TOP</p>
+                    </a></li>
+            </ul>
+        </div>
+        <!--//quick_menu-->
+        <div class="inner">
+            <ul class="bread_crumb">
+                <li>HOME</li>
+                <li>나의 강의실</li>
+                <li>수강신청 현황</li>
+            </ul>
+            <div class="clear">
+                <div id="side">
+                    <h3 class="tit">나의 강의실</h3>
+                    <ul class="snb">
+                        <li class="active"><a href="#">수강신청 현황</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습 이력 현황</a></li>
+                        <li><a href="#">나의 경력 활동</a></li>
+                        <li><a href="#">사외 교육</a></li>
+                        <li><a href="#">학습 레벨</a></li>
+                        <li><a href="#">마일리지 이용/적립</a></li>
+                        <li><a href="#">개인정보 수정</a></li>
+                    </ul>
+                </div>
+                <div id="contents">
+                    <h3 class="page_tit">수강신청 현황</h3>
+                    <div class="board_search_wrap center">
+                        <div class="board_search">
+                            <input type="text" placeholder="교육과정명을 입력해주세요.">
+                            <button type="submit">검색</button>
+                        </div>
+                    </div>
+                    <div class="div_table02">
+                        <div class="thead">
+                            <p class="th">교육과정</p>
+                            <p class="th m_hide">신청일시</p>
+                            <p class="th">상태</p>
+                        </div>
+                        <div class="td colspan3">
+                            <div class="con_list row con_list_table">
+                                <div class="item no_link">
+                                    <div class="img imgFill">
+                                        <img src="images/list_sp01.png" alt="">
+                                        <p class="category bg_blue">필수</p>
+                                        <p class="time">20:10</p>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <p class="division">이러닝</p>
+                                                <p class="rate">4.8</p>
+                                            </div>
+                                            <a href="javascript:openModal('modal1')" class="tit txtCut1">(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무</a>
+                                            <ul class="info">
+                                                <li>
+                                                    <strong>교육분류</strong>
+                                                    <span>공통</span>
+                                                </li>
+                                                <li>
+                                                    <strong>학습시간</strong>
+                                                    <span>4주(17시간)</span>
+                                                </li>
+                                                <li class="w100">
+                                                    <strong>교육기간</strong>
+                                                    <span>2022.04.01 ~ 2022.04.30</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cont m_hide">
+                                            <p class="navy">2022-01-01 09:00</p>
+                                        </div>
+                                        <div class="cont">
+                                            <p class="navy mb10">신청</p>
+                                            <div class="btn_wr ap">
+                                                <a href="#" class="btn_style07 btn_gray01 navy">신청 취소</a>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <span style="width: 50%"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="td colspan3">
+                            <div class="con_list row con_list_table">
+                                <div class="item no_link">
+                                    <div class="img imgFill">
+                                        <img src="images/list_sp01.png" alt="">
+                                        <p class="category bg_orange">선택</p>
+                                        <p class="time">20:10</p>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <p class="division">이러닝</p>
+                                                <p class="rate">4.8</p>
+                                            </div>
+                                            <a href="#" class="tit txtCut1">(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무</a>
+                                            <ul class="info">
+                                                <li>
+                                                    <strong>교육분류</strong>
+                                                    <span>공통</span>
+                                                </li>
+                                                <li>
+                                                    <strong>학습시간</strong>
+                                                    <span>4주(17시간)</span>
+                                                </li>
+                                                <li class="w100">
+                                                    <strong>교육기간</strong>
+                                                    <span>2022.04.01 ~ 2022.04.30</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cont m_hide">
+                                            <p class="navy">2022-01-01 09:00</p>
+                                        </div>
+                                        <div class="cont">
+                                            <p class="navy mb10">신청</p>
+                                            <div class="btn_wr ap">
+                                                <a href="#" class="btn_style07 btn_gray01 navy">신청 취소</a>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <span style="width: 50%"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="td colspan3">
+                            <div class="con_list row con_list_table">
+                                <div class="item no_link">
+                                    <div class="img imgFill">
+                                        <img src="images/list_sp01.png" alt="">
+                                        <p class="category bg_green">PASS</p>
+                                        <p class="time">20:10</p>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <p class="division">이러닝</p>
+                                                <p class="rate">4.8</p>
+                                            </div>
+                                            <a href="#" class="tit txtCut1">(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무</a>
+                                            <ul class="info">
+                                                <li>
+                                                    <strong>교육분류</strong>
+                                                    <span>공통</span>
+                                                </li>
+                                                <li>
+                                                    <strong>학습시간</strong>
+                                                    <span>4주(17시간)</span>
+                                                </li>
+                                                <li class="w100">
+                                                    <strong>교육기간</strong>
+                                                    <span>2022.04.01 ~ 2022.04.30</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cont m_hide">
+                                            <p class="navy">2022-01-01 09:00</p>
+                                        </div>
+                                        <div class="cont">
+                                            <p class="navy mb10">신청</p>
+                                            <div class="btn_wr ap">
+                                                <a href="#" class="btn_style07 btn_gray01 navy">신청 취소</a>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <span style="width: 50%"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="td colspan3">
+                            <div class="con_list row con_list_table">
+                                <div class="item no_link">
+                                    <div class="img imgFill">
+                                        <img src="images/list_sp01.png" alt="">
+                                        <p class="category bg_blue">필수</p>
+                                        <p class="time">20:10</p>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <p class="division">이러닝</p>
+                                                <p class="rate">4.8</p>
+                                            </div>
+                                            <a href="#" class="tit txtCut1">(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무</a>
+                                            <ul class="info">
+                                                <li>
+                                                    <strong>교육분류</strong>
+                                                    <span>공통</span>
+                                                </li>
+                                                <li>
+                                                    <strong>학습시간</strong>
+                                                    <span>4주(17시간)</span>
+                                                </li>
+                                                <li class="w100">
+                                                    <strong>교육기간</strong>
+                                                    <span>2022.04.01 ~ 2022.04.30</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cont m_hide">
+                                            <p class="navy">2022-01-01 09:00</p>
+                                        </div>
+                                        <div class="cont">
+                                            <p class="navy mb10">신청</p>
+                                            <div class="btn_wr ap">
+                                                <a href="#" class="btn_style07 btn_gray01 navy">신청 취소</a>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <span style="width: 50%"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="td colspan3">
+                            <div class="con_list row con_list_table">
+                                <div class="item no_link">
+                                    <div class="img imgFill">
+                                        <img src="images/list_sp01.png" alt="">
+                                        <p class="category bg_blue">필수</p>
+                                        <p class="time">20:10</p>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="cont">
+                                            <div class="top">
+                                                <p class="division">이러닝</p>
+                                                <p class="rate">4.8</p>
+                                            </div>
+                                            <a href="#" class="tit txtCut1">(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무(Smart MBA) 전략수립실무</a>
+                                            <ul class="info">
+                                                <li>
+                                                    <strong>교육분류</strong>
+                                                    <span>공통</span>
+                                                </li>
+                                                <li>
+                                                    <strong>학습시간</strong>
+                                                    <span>4주(17시간)</span>
+                                                </li>
+                                                <li class="w100">
+                                                    <strong>교육기간</strong>
+                                                    <span>2022.04.01 ~ 2022.04.30</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cont m_hide">
+                                            <p class="navy">2022-01-01 09:00</p>
+                                        </div>
+                                        <div class="cont">
+                                            <p class="navy mb10">신청</p>
+                                            <div class="btn_wr ap">
+                                                <a href="#" class="btn_style07 btn_gray01 navy">신청 취소</a>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <span style="width: 50%"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--paging-->
+                    <ul class="paging02">
+                        <li class="arrow prev">
+                            <a href="#">이전페이지</a>
+                        </li>
+                        <li class="num active">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">4</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">5</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">6</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">7</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">8</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">9</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">10</a>
+                        </li>
+                        <li class="arrow next">
+                            <a href="#">다음페이지</a>
+                        </li>
+                    </ul>
+                    <!--//paging-->
+
+                    <!--과정정보 팝업-->
+                    <div class="shadow"></div>
+                    <div class="popUp modal1 w960">
+                        <div class="popTop">
+                            <h3>과정정보</h3>
+                            <a href="#" class="close" onclick="close_pop()">닫기</a>
+                        </div>
+                        <div class="popCont">
+                            <div class="scr mh_scr">
+                                <div class="pc_pd">
+                                    <div class="con_list row">
+                                        <div class="item no_link">
+                                            <div class="img imgFill">
+                                                <img src="images/list_sp01.png" alt="">
+                                                <p class="category bg_blue">필수</p>
+                                                <p class="time">20:10</p>
+                                            </div>
+                                            <div class="txt">
+                                                <div class="top">
+                                                    <p class="tit">(Smart MBA) 전략수립실무</p>
+                                                    <p class="rate">4.8</p>
+                                                </div>
+
+                                                <ul class="info flex">
+                                                    <li>
+                                                        <strong>과정유형</strong>
+                                                        <span>이러닝(PC+모바일)</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>고용보험여부</strong>
+                                                        <span>비고용보험</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>교육분류</strong>
+                                                        <span>직무</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>정원</strong>
+                                                        <span>무제한</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>신청기간</strong>
+                                                        <span>2022.03.08 ~ 2022.03.20</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>교재</strong>
+                                                        <span>제공</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>교육기간</strong>
+                                                        <span>2022.04.01 ~ 2022.04.30</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>수강료</strong>
+                                                        <span>124,200원</span>
+                                                    </li>
+                                                    <li>
+                                                        <strong>학습시간</strong>
+                                                        <span>4주(0시간)</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="cont_view mt30">
+                                        <div class="view_area block">
+                                            <div class="view_area_cont w100">
+                                                <div class="tab_wrap">
+                                                    <ul class="tab_style01 full">
+                                                        <li class="active"><a href="#target01">과정정보</a></li>
+                                                        <li><a href="#target02">수료기준</a></li>
+                                                        <li><a href="#target03">강사소개</a></li>
+                                                        <li><a href="#target04">학습후기(20)</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="con_list mt30">
+                                                    <div class="item" id="target01">
+                                                        <h4 class="f16">과정소개</h4>
+                                                        <dl class="pl10">
+                                                            <dt class="f14">과정소개</dt>
+                                                            <dd class="f14 gray">파이썬을 활용하여 다양한 정형/비정형 데이터를 분석하는 통계 기법, 분석된 결과를 시각화하는
+                                                                방법, 메일 보내기 자동화 방법을 학습합니다. 다양한 예제를 통해 배우고 실습함으로써 실무적용
+                                                                능력을 습득할 수 있습니다</dd>
+                                                        </dl>
+                                                        <dl class="pl10">
+                                                            <dt class="f14">교육대상</dt>
+                                                            <dd>
+                                                                <ul class="list_style01">
+                                                                    <li class="f14 gray">기획, 마케팅, MD, 영업 담당자</li>
+                                                                    <li class="f14 gray">데이터 분석이 필요한 전임직원</li>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                        <dl class="pl10">
+                                                            <dt class="f14">학습목표</dt>
+                                                            <dd>
+                                                                <ul class="list_style01">
+                                                                    <li class="f14 gray">Jupyter Notebook 프로그램을 사용할 수 있다.</li>
+                                                                    <li class="f14 gray">파이썬에서 사용되는 다양한 시각화 방법을 실행할 수 있다.</li>
+                                                                    <li class="f14 gray">다양한 텍스트 분석기법과 통계분석 기법 및 업무 자동화 기술을 기억하고 활용할 수 있다.</li>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="item" id="target02">
+                                                        <h4 class="f16">수료기준</h4>
+                                                        <table class="table_style02">
+                                                            <caption>수료기준</caption>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">평가항목</th>
+                                                                    <th scope="col">총점 반영률</th>
+                                                                    <th scope="col">수료조건</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="tct">진도율</td>
+                                                                    <td class="tct">100%</td>
+                                                                    <td class="tct">80</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="tct">총점</td>
+                                                                    <td class="tct">100%</td>
+                                                                    <td class="tct">80점 이상</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="item" id="target03">
+                                                        <h4>강사소개</h4>
+                                                        <dl>
+                                                            <dt>강사명</dt>
+                                                            <dd>김교수</dd>
+                                                        </dl>
+                                                        <dl>
+                                                            <dt>주요경력</dt>
+                                                            <dd>
+                                                                <ul class="list_style01">
+                                                                    <li>현) 한국IBM MBPS 차장</li>
+                                                                    <li>삼성전자 프린팅 사업부</li>
+                                                                    <li>글로벌 운영 서비스 교육 컨설턴트</li>
+                                                                    <li>통신산업영업본부 영업 대표</li>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                        <dl>
+                                                            <dt>학력사항</dt>
+                                                            <dd>
+                                                                <ul class="list_style01">
+                                                                    <li>고려대학교 노어논문학 학사 졸업</li>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+
+                                                    <div class="item" id="target04">
+                                                        <h4>학습후기</h4>
+                                                        <div class="review_dashboard">
+                                                            <div class="dashboard-star">
+                                                                <p class="review_tit">
+                                                                    만족도
+                                                                </p>
+                                                                <div class="star">
+                                                                    <div class="star_bg">
+                                                                        <span style="width: 92%"></span>
+                                                                    </div>
+                                                                    <p class="star_txt">
+                                                                        4.8
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <ul class="review-filter">
+                                                                <li class="active"><a href="#">베스트순</a></li>
+                                                                <li><a href="#">최신순</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <!--review-list-->
+                                                        <div class="review-list">
+                                                            <div class="item">
+                                                                <div class="rv_header">
+                                                                    <p class="name">홍*동(abc***)</p>
+                                                                    <p class="date">
+                                                                        2023-04-04
+                                                                    </p>
+                                                                    <div class="star">
+                                                                        <div class="star_bg">
+                                                                            <span style="width: 92%"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rv_body">
+                                                                    <p>저에게는 참 도움이 되는 과정입니다.<br>
+                                                                        강의도 재밌고 시험이 좀 어려웠지만 보는 내내 집중할 수 있어서 참 좋았습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="rv_header">
+                                                                    <p class="name">홍*동(abc***)</p>
+                                                                    <p class="date">
+                                                                        2023-04-04
+                                                                    </p>
+                                                                    <div class="star">
+                                                                        <div class="star_bg">
+                                                                            <span style="width: 92%"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rv_body">
+                                                                    <p>저에게는 참 도움이 되는 과정입니다.<br>
+                                                                        강의도 재밌고 시험이 좀 어려웠지만 보는 내내 집중할 수 있어서 참 좋았습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="rv_header">
+                                                                    <p class="name">홍*동(abc***)</p>
+                                                                    <p class="date">
+                                                                        2023-04-04
+                                                                    </p>
+                                                                    <div class="star">
+                                                                        <div class="star_bg">
+                                                                            <span style="width: 92%"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rv_body">
+                                                                    <p>저에게는 참 도움이 되는 과정입니다.<br>
+                                                                        강의도 재밌고 시험이 좀 어려웠지만 보는 내내 집중할 수 있어서 참 좋았습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="rv_header">
+                                                                    <p class="name">홍*동(abc***)</p>
+                                                                    <p class="date">
+                                                                        2023-04-04
+                                                                    </p>
+                                                                    <div class="star">
+                                                                        <div class="star_bg">
+                                                                            <span style="width: 92%"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rv_body">
+                                                                    <p>저에게는 참 도움이 되는 과정입니다.<br>
+                                                                        강의도 재밌고 시험이 좀 어려웠지만 보는 내내 집중할 수 있어서 참 좋았습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                <div class="rv_header">
+                                                                    <p class="name">홍*동(abc***)</p>
+                                                                    <p class="date">
+                                                                        2023-04-04
+                                                                    </p>
+                                                                    <div class="star">
+                                                                        <div class="star_bg">
+                                                                            <span style="width: 92%"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rv_body">
+                                                                    <p>저에게는 참 도움이 되는 과정입니다.<br>
+                                                                        강의도 재밌고 시험이 좀 어려웠지만 보는 내내 집중할 수 있어서 참 좋았습니다. </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--//review-list-->
+
+                                                        <!--paging-->
+                                                        <ul class="paging">
+                                                            <li class="arrow prev">
+                                                                <a href="#">이전페이지</a>
+                                                            </li>
+                                                            <li class="num active">
+                                                                <a href="#">1</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">2</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">3</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">4</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">5</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">6</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">7</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">8</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">9</a>
+                                                            </li>
+                                                            <li class="num">
+                                                                <a href="#">10</a>
+                                                            </li>
+                                                            <li class="arrow next">
+                                                                <a href="#">다음페이지</a>
+                                                            </li>
+                                                        </ul>
+                                                        <!--//paging-->
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--//과정정보 팝업-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//content-page-->
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/foot_logo.png" alt="러닝허브">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">환불규정</a></li>
+                </ul>
+                <div class="family_site">
+                    <select class="select_style01">
+                        <option>관련사이트</option>
+                    </select>
+                    <a href="#">이동</a>
+                </div>
+            </div>
+            <div class="bt">
+                <div class="txt">
+                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
+                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
+                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
+                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
+                </div>
+                <img src="images/foot_mark.png" alt="우수훈련기관">
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
+</body>
+
+</html>
