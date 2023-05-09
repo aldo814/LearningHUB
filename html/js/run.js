@@ -118,29 +118,43 @@ $(document).ready(function () {
     })
 
     $('#uploadFile').on('change', function () {
+        
         $(this).next('label').addClass('active')
         var filename = this.value;
         var lastIndex = filename.lastIndexOf("\\");
         if (lastIndex >= 0) {
             filename = filename.substring(lastIndex + 1);
         }
+        
+        var fi = document.getElementById('uploadFile');
+        if (fi.files.length > 0) {
 
-        var totalBytes = (this.files[0].size / 1024);
-        if (totalBytes < 1000000) {
-            var _size = (Math.floor(totalBytes * 1000) / 100) + 'KB';
+
+            // RUN A LOOP TO CHECK EACH SELECTED FILE.
+            for (var i = 0; i <= fi.files.length - 1; i++) {
+
+                var fname = fi.files.item(i).name;      // THE NAME OF THE FILE.
+                var fsize = fi.files.item(i).size ;      // THE SIZE OF THE FILE.
+                var _size = (Math.floor(fsize / 1000));
+
+                // SHOW THE EXTRACTED DETAILS OF THE FILE.
+                document.getElementById('upload_prev').innerHTML =
+                    document.getElementById('upload_prev').innerHTML + '<div class="file">' + '<div class="filenameupload">' + '<span class="name">' + fname + '</span>' + '<span class="size">' + '(<b>' + _size.toLocaleString() + '</b> K)' + '</span>' +  '</div>' +  '<a href="javascript:void()" class="file_close" >X</a></div>' + '</div>'
+            }
+            
         }
-        var files = $('#uploadFile')[0].files;
-        for (var i = 0; i < files.length; i++) {
-            $("#upload_prev").append('<div class="file">' + '<div class="filenameupload">' + '<span class="name">' + files[i].name + '</span>' + '<span class="size">(' + totalBytes.toLocaleString() + 'K' + ')</span>' +
 
-                '</div>' + '<a href="javascript:void()" class="file_close" >X</a></div>');
-        }
+//        var totalBytes = (this.files[0].size / 1024);
+//        if (totalBytes < 1000000) {
+//            var _size = (Math.floor(totalBytes * 1000) / 100) + 'KB';
+//        }
+//        var files = $('#uploadFile')[0].files;
+//        for (var i = 0; i < files.length; i++) {
+//            $("#upload_prev").append('<div class="file">' + '<div class="filenameupload">' + '<span class="name">' + files[i].name + '</span>' + '<span class="size">(' + totalBytes.toLocaleString() + 'K' + ')</span>' +
+//
+//                '</div>' + '<a href="javascript:void()" class="file_close" >X</a></div>');
+//        }
 
-    });
-
-
-    $('#selectFiles').click(function () {
-        $('#uploadFile').click();
     });
 
     //자주하는 질문
@@ -152,7 +166,10 @@ $(document).ready(function () {
     });
 
 
-
+    //학습목차
+    $('.div_table03 a').click(function(){
+        $(this).next().slideToggle();
+    })
 
 
 

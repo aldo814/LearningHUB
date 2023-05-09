@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>러닝허브</title>
-    <link rel="stylesheet" href="css/reset.css">
+     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
     <script src="js/run.js"></script>
 </head>
 
@@ -138,7 +140,8 @@
             <ul class="bread_crumb">
                 <li>HOME</li>
                 <li>나의 강의실</li>
-                <li>학습 후기</li>
+                <li>나의 경력활동</li>
+                <li>교육계획현황</li>
             </ul>
             <div class="clear">
                 <div id="side">
@@ -155,150 +158,155 @@
                     </ul>
                 </div>
                 <div id="contents">
-                    <h3 class="page_tit">학습 후기</h3>
-                       <div class="board_search_wrap in_btn in_select02">
-                       <select class="select_style03">
-                           <option>2022</option>
-                       </select>
-                        <div class="board_search">
-                            <input type="text" placeholder="검색어를 입력해주세요.">
-                            <button type="submit">검색</button>
+                    <h3 class="page_tit">교육계획현황</h3>
+                    
+                    <div class="table_wrap">
+                        <div class="board_list filter_table">
+                            <table>
+                                <caption>공지사항</caption>
+                                <colgroup>
+                                    <col style="width: 10%">
+                                    <col style="width: 8%">
+                                    <col>
+                                    <col style="width: 12%">
+                                    <col style="width: 15%">
+                                    <col style="width: 12%">
+                                    <col style="width: 10%">
+                                    <col style="width: 120px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="no_filter">이수여부</th>
+                                        <th scope="col" class="filter">구분</th>
+                                        <th scope="col" class="filter">과정명</th>
+                                        <th scope="col" class="filter">학습유형</th>
+                                        <th scope="col" class="filter">과정분류</th>
+                                        <th scope="col" class="filter">이수시간</th>
+                                        <th scope="col" class="filter">희망월</th>
+                                        <th scope="col" class="no_filter">이수여부</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>미완료<br>
+(미신청)</td>
+                                       <td>선택</td>
+                                        <td class="tlt txtCut1 vm">2022년 경력개발계획</td>
+                                        <td>독서통신</td>
+                                        <td>10분 독서 > IT</td>
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>2022.05</td>
+                                        <td>
+                                            <a href="#" class="btn_style04 btn_gray01">교육신청</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>미완료<br>
+(미신청)</td>
+                                       <td>선택</td>
+                                        <td class="tlt txtCut1 vm">2022년 경력개발계획</td>
+                                        <td>독서통신</td>
+                                        <td>10분 독서 > IT</td>
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>2022.05</td>
+                                        <td>
+                                            <a href="#" class="btn_style04 btn_gray01">교육신청</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>미완료<br>
+(미신청)</td>
+                                       <td>선택</td>
+                                        <td class="tlt txtCut1 vm">2022년 경력개발계획</td>
+                                        <td>독서통신</td>
+                                        <td>10분 독서 > IT</td>
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>2022.05</td>
+                                        <td>
+                                            <a href="#" class="btn_style04 btn_gray01">교육신청</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>미완료<br>
+(미신청)</td>
+                                       <td>선택</td>
+                                        <td class="tlt txtCut1 vm">2022년 경력개발계획</td>
+                                        <td>독서통신</td>
+                                        <td>10분 독서 > IT</td>
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>2022.05</td>
+                                        <td>
+                                            <a href="#" class="btn_style04 btn_gray01">교육신청</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>미완료<br>
+(미신청)</td>
+                                       <td>선택</td>
+                                        <td class="tlt txtCut1 vm">2022년 경력개발계획</td>
+                                        <td>독서통신</td>
+                                        <td>10분 독서 > IT</td>
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>2022.05</td>
+                                        <td>
+                                            <a href="#" class="btn_style04 btn_gray01">교육신청</a>
+                                        </td>
+                                    </tr>
+                                  
+                                </tbody>
+                            </table>
                         </div>
-                        <a href="#" class="btn_style01 btn_black01">후기 작성</a>
                     </div>
-                    <div class="board_list m_board_list">
-                        <table>
-                            <caption>학습후기</caption>
-                            <colgroup>
-                                <col style="width: 15%" class="m_hide">
-                                <col>
-                                <col style="width: 15%" class="mw20">
-                                <col style="width: 15%" class="mw20">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="m_hide">번호</th>
-                                    <th scope="col">수강과정</th>
-                                    <th scope="col">평점</th>
-                                    <th scope="col">작성일</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="num m_hide">1</td>
-                                    <td class="tlt tit"><a href="#" class="txtCut1">[사내 강사 양성 과정] 강사로서의 삶, 100세 시대를 준비하다.</a></td>
-                                    <td>
-                                        <div class="star">
-                                                    <div class="star_bg">
-                                                        <span style="width: 92%"></span>
-                                                    </div>
-                                                </div>
-                                    </td>
-                                    <td class="date">2022.01.01</td>
-                                </tr>
-                                <tr>
-                                    <td class="num m_hide">1</td>
-                                    <td class="tlt tit"><a href="#" class="txtCut1">[사내 강사 양성 과정] 강사로서의 삶, 100세 시대를 준비하다.</a></td>
-                                    <td>
-                                        <div class="star">
-                                                    <div class="star_bg">
-                                                        <span style="width: 92%"></span>
-                                                    </div>
-                                                </div>
-                                    </td>
-                                    <td class="date">2022.01.01</td>
-                                </tr>
-                                <tr>
-                                    <td class="num m_hide">1</td>
-                                    <td class="tlt tit"><a href="#" class="txtCut1">[사내 강사 양성 과정] 강사로서의 삶, 100세 시대를 준비하다.</a></td>
-                                    <td>
-                                        <div class="star">
-                                                    <div class="star_bg">
-                                                        <span style="width: 92%"></span>
-                                                    </div>
-                                                </div>
-                                    </td>
-                                    <td class="date">2022.01.01</td>
-                                </tr>
-                                <tr>
-                                    <td class="num m_hide">1</td>
-                                    <td class="tlt tit"><a href="#" class="txtCut1">[사내 강사 양성 과정] 강사로서의 삶, 100세 시대를 준비하다.</a></td>
-                                    <td>
-                                        <div class="star">
-                                                    <div class="star_bg">
-                                                        <span style="width: 92%"></span>
-                                                    </div>
-                                                </div>
-                                    </td>
-                                    <td class="date">2022.01.01</td>
-                                </tr>
-                                <tr>
-                                    <td class="num m_hide">1</td>
-                                    <td class="tlt tit"><a href="#" class="txtCut1">[사내 강사 양성 과정] 강사로서의 삶, 100세 시대를 준비하다.</a></td>
-                                    <td>
-                                        <div class="star">
-                                                    <div class="star_bg">
-                                                        <span style="width: 92%"></span>
-                                                    </div>
-                                                </div>
-                                    </td>
-                                    <td class="date">2022.01.01</td>
-                                </tr>
-                                <tr>
-                                    <td class="num m_hide">1</td>
-                                    <td class="tlt tit"><a href="#" class="txtCut1">[사내 강사 양성 과정] 강사로서의 삶, 100세 시대를 준비하다.</a></td>
-                                    <td>
-                                        <div class="star">
-                                                    <div class="star_bg">
-                                                        <span style="width: 92%"></span>
-                                                    </div>
-                                                </div>
-                                    </td>
-                                    <td class="date">2022.01.01</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-<!--paging-->
-                       <ul class="paging02">
-                           <li class="arrow prev">
-                               <a href="#">이전페이지</a>
-                           </li>
-                           <li class="num active">
-                               <a href="#">1</a>
-                           </li>
-                           <li class="num">
-                               <a href="#">2</a>
-                           </li>
-                           <li class="num">
-                               <a href="#">3</a>
-                           </li>
-                           <li class="num">
-                               <a href="#">4</a>
-                           </li>
-                           <li class="num">
-                               <a href="#">5</a>
-                           </li>
-                           <li class="num">
-                               <a href="#">6</a>
-                           </li>
-                           <li class="num">
-                               <a href="#">7</a>
-                           </li>
-                           <li class="num">
-                               <a href="#">8</a>
-                           </li>
-                           <li class="num">
-                               <a href="#">9</a>
-                           </li>
-                           <li class="num">
-                               <a href="#">10</a>
-                           </li>
-                           <li class="arrow next">
-                               <a href="#">다음페이지</a>
-                           </li>
-                       </ul>
-                       <!--//paging-->
+                    <!--paging-->
+                    <ul class="paging02">
+                        <li class="arrow prev">
+                            <a href="#">이전페이지</a>
+                        </li>
+                        <li class="num active">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">4</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">5</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">6</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">7</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">8</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">9</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">10</a>
+                        </li>
+                        <li class="arrow next">
+                            <a href="#">다음페이지</a>
+                        </li>
+                    </ul>
+                    <!--//paging-->
                 </div>
             </div>
         </div>
@@ -340,6 +348,9 @@
         </div>
     </footer>
     <!--//footer-->
+    <script>
+        $('.filter_table').excelTableFilter();
+    </script>
 </body>
 
 </html>

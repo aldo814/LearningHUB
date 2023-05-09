@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header id="header">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="러닝허브"></a>
+                </h1>
+                <div class="seach_area">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="교육과정을 검색하세요.">
+                        <button type="submit">검색</button>
+                    </div>
+                    <div class="search_history">
+                        <ul>
+                            <li>
+                                <a href="#" class="txt">최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어2</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어3</a><a href="#" class="del">삭제</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="all_del">전체 삭제</a>
+                    </div>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+            <div class="gnb_wrap">
+                <a href="#" class="all_menu">전체메뉴
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">마이크로러닝</a></li>
+                        <li><a href="#">역량진단</a></li>
+                        <li><a href="#">경력개발계획</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습지원센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+    <!--content-page-->
+    <div class="content-page">
+        <!--quick_menu-->
+
+        <div class="quick_menu">
+            <ul>
+                <li class="quick"><a href="#"><span></span>
+                        <p> QUICK</p>
+                    </a>
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">자주하는 질문</a></li>
+                        <li><a href="#">묻고 답하기</a></li>
+                    </ul>
+                </li>
+                <li class="recent"><a href="#"><span></span>
+                        <p>최근 본 과정</p>
+                    </a>
+                    <ul>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                    </ul>
+                    <ul class="recent_more">
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </ul>
+                </li>
+                <li class="top"><a href="#"><span></span>
+                        <p>TOP</p>
+                    </a></li>
+            </ul>
+        </div>
+        <!--//quick_menu-->
+        <div class="inner">
+            <ul class="bread_crumb">
+                <li>HOME</li>
+                <li>나의 강의실</li>
+                <li>설문함</li>
+            </ul>
+            <div class="clear">
+                <div id="side">
+                    <h3 class="tit">나의 강의실</h3>
+                    <ul class="snb">
+                        <li class="active"><a href="#">수강신청 현황</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습 이력 현황</a></li>
+                        <li><a href="#">나의 경력 활동</a></li>
+                        <li><a href="#">사외 교육</a></li>
+                        <li><a href="#">학습 레벨</a></li>
+                        <li><a href="#">마일리지 이용/적립</a></li>
+                        <li><a href="#">개인정보 수정</a></li>
+                    </ul>
+                </div>
+                <div id="contents">
+                    <h3 class="page_tit">설문함</h3>
+                    <!--tab-->
+                    <div class="tab_wrap mb50">
+                        <ul class="tab_style01">
+                            <li class="active w180"><a href="#">진행중인 설문</a></li>
+                            <li class="w180"><a href="#">마감된 설문</a></li>
+                        </ul>
+                    </div>
+                    <!--//tab-->
+                    <div class="board_list end_ev_list hover_table">
+                        <table>
+                            <caption>설문함</caption>
+                            <colgroup>
+                                <col style="width: 7%">
+                                <col style="width: 15%">
+                                <col>
+                                <col style="width: 30%">
+                                <col style="width: 15%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="m_hide">번호</th>
+                                    <th scope="col">설문구분</th>
+                                    <th scope="col">설문명</th>
+                                    <th scope="col">기간</th>
+                                    <th scope="col">참여</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="num m_hide">1</td>
+                                    <td class="m_tlt">과정만족도</td>
+                                    <td class="tlt tit txtCut1">설문명이 노출됩니다.</td>
+                                    <td class="date">2021.05.01 14:00 ~ 2021.05.31 22:00</td>
+                                    <td class="btn">
+                                        <a href="javascript:openModal('modal1')" class="btn_style03 btn_gray01 black">설문하기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="num m_hide">1</td>
+                                    <td class="m_tlt">과정만족도</td>
+                                    <td class="tlt tit txtCut1">설문명이 노출됩니다.</td>
+                                    <td class="date">2021.05.01 14:00 ~ 2021.05.31 22:00</td>
+                                    <td class="btn">
+                                        <a href="javascript:openModal('modal1')" class="btn_style03 btn_gray01 black">설문하기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="num m_hide">1</td>
+                                    <td class="m_tlt">과정만족도</td>
+                                    <td class="tlt tit txtCut1">설문명이 노출됩니다.</td>
+                                    <td class="date">2021.05.01 14:00 ~ 2021.05.31 22:00</td>
+                                    <td class="btn">
+                                        <a href="javascript:openModal('modal1')" class="btn_style03 btn_gray01 black">설문하기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="num m_hide">1</td>
+                                    <td class="m_tlt">과정만족도</td>
+                                    <td class="tlt tit txtCut1">설문명이 노출됩니다.</td>
+                                    <td class="date">2021.05.01 14:00 ~ 2021.05.31 22:00</td>
+                                    <td class="btn">
+                                        <a href="javascript:openModal('modal1')" class="btn_style03 btn_gray01 black">설문하기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="num m_hide">1</td>
+                                    <td class="m_tlt">과정만족도</td>
+                                    <td class="tlt tit txtCut1">설문명이 노출됩니다.</td>
+                                    <td class="date">2021.05.01 14:00 ~ 2021.05.31 22:00</td>
+                                    <td class="btn">
+                                        <a href="javascript:openModal('modal1')" class="btn_style03 btn_gray01 black">설문하기</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--paging-->
+                    <ul class="paging02">
+                        <li class="arrow prev">
+                            <a href="#">이전페이지</a>
+                        </li>
+                        <li class="num active">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">4</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">5</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">6</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">7</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">8</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">9</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">10</a>
+                        </li>
+                        <li class="arrow next">
+                            <a href="#">다음페이지</a>
+                        </li>
+                    </ul>
+                    <!--//paging-->
+                    <!--팝업-->
+                    <div class="shadow"></div>
+                    <div class="popUp modal1 w760">
+                        <div class="popTop">
+                            <h3>설문하기</h3>
+                            <a href="#" class="close" onclick="close_pop()">닫기</a>
+                        </div>
+                        <div class="popCont">
+                            <div class="pc_pd scr">
+                                <p class="tit02">교육과정명이 들어가는자리 입니다. </p>
+                                <table class="table_style02">
+                                    <caption>교육과정명</caption>
+                                    <colgroup>
+                                        <col style="width: 27%">
+                                        <col style="width: 25%">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="bold02">구분</th>
+                                            <th scope="col" class="bold02">강사명</th>
+                                            <th scope="col" class="bold02">설문기간</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="tct">과정만족도 or 강사만족도</td>
+                                            <td class="tct">홍길동, 임꺽정, 이순신</td>
+                                            <td class="tct">2022.05.01 14:00 ~ 2022.05.31 22:00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="f14 blue trt mt15">총 25문항 중 14문항에 대해 응답하셨습니다.
+                                </p>
+                                <table class="table_style04 mt30">
+                                    <caption>설문하기</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="tlt q_th">학습환경이 마음에 들었나요? </th>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="tlt">
+                                                <ul>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd01" name="ex_rds">
+                                                            <label for="ex_rd01">매우 만족</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd02" name="ex_rds">
+                                                            <label for="ex_rd02">만족</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd03" name="ex_rds">
+                                                            <label for="ex_rd03">보통</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd04" name="ex_rds">
+                                                            <label for="ex_rd04">불만족</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd05" name="ex_rds">
+                                                            <label for="ex_rd05">매우 불만족</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row" class="tlt q_th">고객이 우리의 존립이유이자 목표라는 인식하에 고객을 존중하고 고객의 입장에서 생각하며 고객을 모든 행동의
+      최우선 기준으로 생각한다. </th>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="tlt">
+                                                <ul>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd06" name="ex_rds02">
+                                                            <label for="ex_rd06">매우 그렇다</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd07" name="ex_rds02">
+                                                            <label for="ex_rd07">그렇다</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd08" name="ex_rds02">
+                                                            <label for="ex_rd08">보통이다</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd09" name="ex_rds02">
+                                                            <label for="ex_rd09">그렇지 않다</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd10" name="ex_rds02">
+                                                            <label for="ex_rd10">전혀 그렇지 않다</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row" class="tlt q_th">교육 만족도 조사</th>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="tlt">
+                                               <ul>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd06" name="ex_rds02">
+                                                            <label for="ex_rd06">매우 그렇다</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd07" name="ex_rds02">
+                                                            <label for="ex_rd07">그렇다</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd08" name="ex_rds02">
+                                                            <label for="ex_rd08">보통이다</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb15">
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd09" name="ex_rds02">
+                                                            <label for="ex_rd09">그렇지 않다</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="radio">
+                                                            <input type="radio" id="ex_rd10" name="ex_rds02">
+                                                            <label for="ex_rd10">전혀 그렇지 않다</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row" class="tlt q_th">해당 교육과정 수강 후기를 입력해 주세요.</th>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="tlt">
+                                                <textarea class="textarea" placeholder="최소 10자 이상 입력해주세요. 
+"></textarea>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="btn_wrap tct mt40">
+                                <a href="#" class="btn_style01 btn_black02" onclick="close_pop()">
+                                    제출하기
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--//팝업-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//content-page-->
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/foot_logo.png" alt="러닝허브">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">환불규정</a></li>
+                </ul>
+                <div class="family_site">
+                    <select class="select_style01">
+                        <option>관련사이트</option>
+                    </select>
+                    <a href="#">이동</a>
+                </div>
+            </div>
+            <div class="bt">
+                <div class="txt">
+                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
+                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
+                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
+                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
+                </div>
+                <img src="images/foot_mark.png" alt="우수훈련기관">
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
+</body>
+
+</html>
