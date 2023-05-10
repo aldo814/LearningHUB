@@ -184,10 +184,15 @@
 /* layout */
 #side{float: left;width: 190px;}
 #side .tit{font-size: 2rem;font-weight: 500;padding-bottom: 1.5rem;border-bottom: 2.5px solid #1b1d1f;}
-#side .snb li {padding: 1.5rem;border-bottom: 1px solid #9ea4aa;}
-#side .snb li:last-child{border-bottom: 0}
-#side .snb li.active a{color: #1b1d1f;font-weight: 500}
-#side .snb li a{display: block;font-size: 1.6rem;color: #454c53}
+#side .snb > li > a{padding: 1.5rem;border-bottom: 1px solid #9ea4aa;}
+#side .snb > li:last-child{border-bottom: 0}
+#side .snb > li.active > a{color: #1b1d1f;font-weight: 500}
+#side .snb > li.active ul{display: block;}
+#side .snb > li a{display: block;font-size: 1.6rem;color: #454c53}
+#side .snb > li > ul{padding: 1.5rem;border-bottom: 1px solid #9ea4aa;display: none}
+#side .snb > li > ul li a{color: #454c53;margin-bottom: 1rem}
+#side .snb > li > ul li.active a{color: #1b1d1f;font-weight: 500}
+#side .snb > li > ul li:last-child a{margin-bottom: 0}
 #contents {float: left;width: calc(100% - 240px);margin-left: 50px;}
 #contents.full{float: none;width: 100%;margin-left: 0}
 

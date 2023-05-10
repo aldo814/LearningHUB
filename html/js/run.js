@@ -256,6 +256,12 @@ $(document).ready(function () {
         $('.file_img input[type="file"]').val("");
         $(this).parent().find('img').attr("src", '/images/dft_img.png')
     });
+    
+    //snb
+    $('.snb > li > a').click(function(){
+       $(this).parent().addClass('active');
+       $(this).parent().siblings().removeClass('active');
+    });
 
 });
 
