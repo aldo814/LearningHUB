@@ -56,22 +56,81 @@ $(document).ready(function () {
 
     // tab 
     // 탭 컨텐츠 숨기기
-    $(".tab_content").hide();
+    $(".tab_container > .tab_content").hide();
 
     // 첫번째 탭콘텐츠 보이기
     $(".tab_container").each(function () {
         $(this).children(".tabs li:first").addClass("active"); //Activate first tab
         $(this).children(".tab_content").first().show();
     });
+
+    $(".tab_container02 > .tab_content").hide();
+    $(".tab_container02").each(function () {
+        $(this).children(".tab_content").first().show();
+    });
+
+    $('.player_wrap .side_wrap').hide()
+    $('.player_wrap').each(function () {
+        $('.player_wrap .side_wrap').first().show();
+    });
+
+    $('.side_wrap .side_close,.sh').click(function () {
+        $('.player_wrap').addClass('full')
+    });
+
+    //탭메뉴 클릭 이벤트
+    $(".side_tab li a").click(function () {
+
+        $(this).parent().siblings("li").removeClass("active");
+        $(this).parent().addClass("active");
+        $(this).parent().parent().parent().children(".side_wrap").hide();
+        var activeTab = $(this).attr("rel");
+        $('.player_wrap').removeClass('full')
+        $("#" + activeTab).fadeIn();
+        $("#" + activeTab).addClass('active')
+    });
+
     //탭메뉴 클릭 이벤트
     $(".tabs li a").click(function () {
 
         $(this).parent().siblings("li").removeClass("active");
         $(this).parent().addClass("active");
-        $(this).parent().parent().parent().parent().find(".tab_content").hide();
+        $(this).parent().parent().parent().children(".tab_content").hide();
         var activeTab = $(this).attr("rel");
         $("#" + activeTab).fadeIn();
     });
+
+    // 드롭다운 탭
+    if ($(window).width() < 768) {
+        $('.tab_select').addClass('m_tab');
+        $('.player_wrap').addClass('full');
+    } else {
+        $('.tab_select').removeClass('m_tab');
+    }
+
+    $(window).resize(function () {
+        if ($(window).width() < 768) {
+            $('.tab_select').addClass('m_tab');
+            $('.player_wrap').addClass('full');
+        } else {
+            $('.tab_select').removeClass('m_tab');
+        }
+    });
+    $('.m_tab .tabs_dropdown').each(function (i, elm) {
+        $(elm).text($(elm).next('ul').find('li.active a').text());
+    });
+
+    $('.m_tab .tabs_dropdown').on('click', function (e) {
+        e.preventDefault();
+        $(e.target).toggleClass('open').next('ul').slideToggle();
+    });
+
+    $('.m_tab li a').on('click', function (e) {
+        $(this).parent().parent().hide();
+        $(this).parent().parent().prev('a').text($(this).text());
+    });
+
+
 
     $(".tab_style01 li a").click(function () {
         $(this).parent().siblings("li").removeClass("active");
@@ -115,7 +174,7 @@ $(document).ready(function () {
             $('.file_wrap label').removeClass('active')
         }
 
-    })
+    });
 
     $('#uploadFile').on('change', function () {
 
@@ -163,6 +222,70 @@ $(document).ready(function () {
 
 
     });
+
+    $('.homework_wrap > .item').each(function () {
+
+        $(this).find('.table_upload').each(function () {
+            var filename = this.value;
+            if (!filename) {
+                $(this).parent().next().find('.no_file').show();
+                $(this).parent().next('.div_table05').addClass('no_file_table')
+            } else {
+                $(this).parent().next().find('.td').show();
+                $(this).parent().next('.div_table05').removeClass('no_file_table')
+            }
+        });
+        $(this).find('.table_upload').on('change', function () {
+            var filename = this.value;
+            var lastIndex = filename.lastIndexOf("\\");
+            if (lastIndex >= 0) {
+                filename = filename.substring(lastIndex + 1);
+            }
+
+            $(this).parent().next().find('.td').show();
+            $(this).parent().next().find('.no_file').hide();
+            $(this).parent().next('.div_table05').removeClass('no_file_table')
+
+            var totalBytes = (this.files[0].size);
+            var totalSize = (Math.floor(totalBytes / 1000));
+            var files = $(this)[0].files;
+            for (var i = 0; i < files.length; i++) {
+                $(this).parent().next().find(".file_name").html(files[i].name);
+                $(this).parent().next().find(".file_size").html(totalBytes.toLocaleString());
+                $(this).parent().next().find(".file_btn").html('<a href="#" class="btn_style09 btn_black01">다운로드</a><a href="#" class="btn_style09 btn_gray01 file_del ml5">삭제 </a>');
+
+            }
+
+            if (this.files && this.files[0]) {
+
+                var maxSize = 10 * 1024 * 1024;
+                var fileSize = this.files[0].size;
+
+                if (fileSize > maxSize) {
+                    alert("첨부파일 사이즈는 10MB 이내로 등록 가능합니다.");
+                    $(this).val('');
+                    return false;
+                }
+            }
+
+
+        });
+
+
+    });
+
+    $(document).on('click', '.file_del', function () {
+        if (confirm('삭제 하시겠습니까?')) {
+            $(this).parent().parent().parent().prev().find('.table_upload').val("");
+            $(this).parent().parent().parent().find('.no_file').show();
+            $(this).parent().parent().parent().find('.td').hide();
+            $(this).parent().parent().parent().addClass('no_file_table')
+        } else {}
+
+
+
+    });
+
 
     //자주하는 질문
     $('.q_a .q').click(function () {
@@ -216,52 +339,63 @@ $(document).ready(function () {
 
 
     });
-    
+
     // 이미지 file
-    	var container = $('.file_img'), 
-            inputFile = $('.file_img input'), 
-            img, btn, txt = '등록', 
-            txtAfter = '등록';
-			
-	if(!container.find('.file_img input').length){
-		container.prepend('<input type="button" value="'+txt+'" id="upload">');
-		btn = $('#upload');
-		img = $('#uploadImg');
-	}
-			
-	btn.on('click', function(){
-		inputFile.click();
-	});
+    var container = $('.file_img'),
+        inputFile = $('.file_img input'),
+        img, btn, txt = '등록',
+        txtAfter = '등록';
 
-	inputFile.on('change', function(e){
-		container.find('label').html( inputFile.val() );
-		
-		var i = 0;
-		for(i; i < e.originalEvent.srcElement.files.length; i++) {
-			var file = e.originalEvent.srcElement.files[i], 
-				reader = new FileReader();
+    if (!container.find('.file_img input').length) {
+        container.prepend('<input type="button" value="' + txt + '" id="upload">');
+        btn = $('#upload');
+        img = $('#uploadImg');
+    }
 
-			reader.onloadend = function(){
-				img.attr('src', reader.result).animate({opacity: 1}, 700);
-			}
-			reader.readAsDataURL(file);
-			$('.img_area').css('display','flex');
-            
-		}
-		
-		btn.val( txtAfter );
-	});
-    
-    $('.img_area .del').click(function(){
+    btn.on('click', function () {
+        inputFile.click();
+    });
+
+    inputFile.on('change', function (e) {
+        container.find('label').html(inputFile.val());
+
+        var i = 0;
+        for (i; i < e.originalEvent.srcElement.files.length; i++) {
+            var file = e.originalEvent.srcElement.files[i],
+                reader = new FileReader();
+
+            reader.onloadend = function () {
+                img.attr('src', reader.result).animate({
+                    opacity: 1
+                }, 700);
+            }
+            reader.readAsDataURL(file);
+            $('.img_area').css('display', 'flex');
+
+        }
+
+        btn.val(txtAfter);
+    });
+
+    $('.img_area .del').click(function () {
         $('.file_img input[type="file"]').val("");
         $(this).parent().find('img').attr("src", '/images/dft_img.png')
     });
-    
+
     //snb
-    $('.snb > li > a').click(function(){
-       $(this).parent().addClass('active');
-       $(this).parent().siblings().removeClass('active');
+    $('.snb > li > a').click(function () {
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
     });
+
+    // 아코디언 테이블
+    $('.accordion_table >  table > tbody .tlt').click(function () {
+        $(this).parent().next('.fold').toggle();
+        $(this).next('.fold').toggleClass('open')
+    });
+
+
+
 
 });
 
@@ -292,7 +426,10 @@ function openModal(modalname) {
     $(".shadow").show();
     $('body').addClass('not_scroll');
     var offset = jQuery(document).scrollTop();
-    jQuery("body").css({"position":"fixed","top":-offset});
+    jQuery("body").css({
+        "position": "fixed",
+        "top": -offset
+    });
 }
 
 function close_pop(flag) {
@@ -300,5 +437,5 @@ function close_pop(flag) {
     $(".shadow").hide();
     $('body').removeClass('not_scroll');
     var offset = jQuery("body").offset().top;
-    jQuery("html,body").css("position","static").scrollTop(-offset);
+    jQuery("html,body").css("position", "static").scrollTop(-offset);
 };

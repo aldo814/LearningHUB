@@ -16,6 +16,7 @@ body{font-size: 1.6rem}
 .gray02{color: #9ea4aa}
 .black{color: #1b1d1f !important}
 .orange{color: #f09338 !important}
+.red{color: #ff0000}
 .navy{color: #454c53 !important}
 .mla{margin-left: auto}
 .mh60{max-height: 60px}
@@ -33,10 +34,13 @@ body{font-size: 1.6rem}
 .mt50{margin-top: 5rem}
 .mt60{margin-top: 6rem}
 .mt70{margin-top: 7rem}
+.ml15{margin-left: 1.5rem}
+.ml5{margin-left: .5rem}
+.mb5{margin-bottom: 0.5rem !important}
 .mb10{margin-bottom: 1rem !important}
 .mb15{margin-bottom: 1.5rem !important}
 .mb20{margin-bottom: 2rem !important}
-.mb40{margin-bottom: 4rem}
+.mb40{margin-bottom: 4rem !important}
 .mb10{margin-bottom: 1rem !important}
 .w100{width: 100% !important;}
 .wd100{width: 100px}
@@ -48,9 +52,11 @@ body{font-size: 1.6rem}
 .w960{max-width: 960px !important}
 .mw150{max-width: 150px}
 .w120{max-width: 120px;width: 100%}
+.pd0{padding:0 !important}
 .pl15{padding-left: 15px}
 .pl10{padding-left: 10px}
 .pd10{padding: 10px !important}
+.pd10_02{padding: 10px 0!important}
 .pr0{padding-right: 0 !important}
 .f14{font-size: 1.4rem}
 .fl{float: left}
