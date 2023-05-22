@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header id="header">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="러닝허브"></a>
+                </h1>
+                <div class="seach_area">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="교육과정을 검색하세요.">
+                        <button type="submit">검색</button>
+                    </div>
+                    <div class="search_history">
+                        <ul>
+                            <li>
+                                <a href="#" class="txt">최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어2</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어3</a><a href="#" class="del">삭제</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="all_del">전체 삭제</a>
+                    </div>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+            <div class="gnb_wrap">
+                <a href="#" class="all_menu">전체메뉴
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">마이크로러닝</a></li>
+                        <li><a href="#">역량진단</a></li>
+                        <li><a href="#">경력개발계획</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습지원센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+    <!--content-page-->
+    <div class="content-page">
+        <div class="inner">
+            <ul class="bread_crumb">
+                <li>HOME</li>
+                <li>로그인
+                </li>
+                <li>회원가입
+                </li>
+            </ul>
+            <div class="clear">
+                <div id="contents" class="full">
+                    <h3 class="page_tit">회원가입
+                    </h3>
+                    <ul class="tab_style04 join_tab">
+                        <li><a href="#"><span class="num">STEP1.</span> 본인인증
+                            </a></li>
+                        <li><a href="#"><span class="num">STEP2.</span> 약관동의
+                            </a></li>
+                        <li class="active"><a href="#"><span class="num">STEP3.</span> 회원정보입력
+                            </a></li>
+                        <li><a href="#"><span class="num">STEP4.</span> 가입완료
+                            </a></li>
+                    </ul>
+
+                    <div class="join_content">
+                        <p class="vital trt mt40 mb20"><span class="orange">*</span> 필수입력 항목입니다.
+                        </p>
+                        <div class="item">
+                            <div class="tit">
+                                <label for="id">이메일 아이디</label>
+                                <span class="orange">*</span>
+                            </div>
+                            <div class="cont">
+                               <div class="id_wrap">
+                                <input type="text" id="id" placeholder="이메일을 입력해주세요.
+">
+                                <p>@</p>
+                                <input type="text" placeholder="NAVER.COM">
+                                <a href="#" class="btn_style02 btn_gray02">중복검사</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">
+                                <label for="pass01">비밀번호</label>
+                                <span class="orange">*</span>
+                            </div>
+                            <div class="cont">
+                                <input type="password" id="pass01" placeholder="비밀번호를 입력해주세요." class="w500">
+                                <p>ⓘ 8자 이상으로 영문, 숫자, 특수기호를 모두 조합하여 입력. 단, 다음의 특수기호는 보안상 사용 불가합니다.';-<()\/</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">
+                                <label for="pass02">비밀번호 확인</label>
+                                <span class="orange">*</span>
+                            </div>
+                            <div class="cont">
+                                <input type="password" id="pass02" placeholder="다시 한번 입력해주세요." class="w500">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">
+                                <label for="name">이름</label>
+                                <span class="orange">*</span>
+                            </div>
+                            <div class="cont">
+                                <input type="password" id="name" placeholder="이름을 입력해주세요." class="w500">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">
+                                <label for="tel">휴대폰 번호</label>
+                                <span class="orange">*</span>
+                            </div>
+                            <div class="cont">
+                               <div class="phone_wrap">
+                                <input type="text" id="tel" placeholder="휴대폰 번호를 입력해주세요." class="w500">
+                                 <a href="#" class="btn_style02 btn_gray02 ml15">인증번호</a>
+                                 </div>
+                                  <div class="phone_wrap02">
+                                  <div><input type="text" placeholder="인증번호를 입력해주세요.
+">
+                                  <p class="time">03:00</p>
+                                  </div>
+                                  <a href="#" class="btn_style02 btn_gray05 ml15">확인</a>
+                                  <a href="#" class="btn_style02 btn_gray02 ml5">재발송</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="tit">
+                                <label for="address">주소</label>
+                                <span class="orange">*</span>
+                            </div>
+                            <div class="cont">
+                                <div class="address_wrap01">
+                                    <input type="text" id="address" class="w500">
+                                     <a href="#" class="btn_style02 btn_gray02 ml15">우편번호 찾기</a>
+                                </div>
+                                <div class="harf_wrap mt10">
+                                    <input type="text">
+                                    <input type="text">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">
+                                <label for="email">이메일</label>
+                                <span class="orange">*</span>
+                            </div>
+                            <div class="cont">
+                                <input type="text" id="email"  class="w500">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">
+                                <label for="birth">생년월일</label>
+                            </div>
+                            <div class="cont">
+                                <input type="text" id="birth"  class="w500">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">
+                                <label for="gender">성별</label>
+                            </div>
+                            <div class="cont">
+                                <div class="radio_list">
+                                    <div class="radio02">
+                                        <input type="radio" id="male" name="gender">
+                                        <label for="male">남</label>
+                                    </div>
+                                    <div class="radio02">
+                                        <input type="radio" id="female" name="gender">
+                                        <label for="female">여</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">
+                                <label for="belong">소속기관/소속부서 </label>
+                            </div>
+                            <div class="cont">
+                                <div class="harf_wrap">
+                                    <select class="select_style03" id="belong">
+                                        <option></option>
+                                    </select>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">
+                                <label for="class">직급</label>
+                            </div>
+                            <div class="cont">
+                                <input type="text" class="w500" id="class">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tit">
+                                <label for="comptel">회사 전화번호</label>
+                            </div>
+                            <div class="cont">
+                                <input type="text" class="w500" id="comptel">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="btn_wrap tct mt60">
+                        <a href="#" class="btn_style01 btn_gray03">
+                            취소
+                        </a>
+                        <a href="#" class="btn_style01 btn_black02">
+                            다음
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//content-page-->
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/foot_logo.png" alt="러닝허브">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">환불규정</a></li>
+                </ul>
+                <div class="family_site">
+                    <select class="select_style01">
+                        <option>관련사이트</option>
+                    </select>
+                    <a href="#">이동</a>
+                </div>
+            </div>
+            <div class="bt">
+                <div class="txt">
+                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
+                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
+                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
+                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
+                </div>
+                <img src="images/foot_mark.png" alt="우수훈련기관">
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
+</body>
+
+</html>

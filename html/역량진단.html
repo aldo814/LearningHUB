@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header id="header">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="러닝허브"></a>
+                </h1>
+                <div class="seach_area">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="교육과정을 검색하세요.">
+                        <button type="submit">검색</button>
+                    </div>
+                    <div class="search_history">
+                        <ul>
+                            <li>
+                                <a href="#" class="txt">최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어2</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어3</a><a href="#" class="del">삭제</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="all_del">전체 삭제</a>
+                    </div>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+            <div class="gnb_wrap">
+                <a href="#" class="all_menu">전체메뉴
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">마이크로러닝</a></li>
+                        <li><a href="#">역량진단</a></li>
+                        <li><a href="#">경력개발계획</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습지원센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+    <!--content-page-->
+    <div class="content-page">
+        <div class="inner">
+            <ul class="bread_crumb">
+                <li>HOME</li>
+                <li>역량진단
+                </li>
+            </ul>
+            <div class="clear">
+                <div id="contents" class="full">
+                    <h3 class="page_tit">역량진단</h3>
+                </div>
+            </div>
+            <!--팝업-->
+            <div class="shadow"></div>
+            <div class="popUp modal1 w800">
+                <div class="popTop">
+                    <h3>역량진단 실시
+                    </h3>
+                    <a href="#" class="close" onclick="close_pop()">닫기</a>
+                </div>
+                <div class="popCont">
+                    <div class="pc_pd scr">
+                        <div class="diag_step">
+                            <div class="active">
+                                <p>기본정보 확인</p>
+                            </div>
+                            <span class="arrow">다음</span>
+                            <div>
+                                <p>현수준 진단</p>
+                            </div>
+                            <span class="arrow">다음</span>
+                            <div>
+                                <p>진단완료</p>
+                            </div>
+                        </div>
+
+
+                        <div class="diag_tit mt40">
+                            <p>2022년 사람중심 다면진단 </p>
+                            <ul>
+                                <li>다면진단</li>
+                                <li>2022-04-16 ~ 2022-04-30</li>
+                            </ul>
+                        </div>
+
+                        <p class="mt40 bold02">
+                            피진단자 목록
+                        </p>
+                        <table class="table_style05 mt20 diag_table">
+                            <caption>피진단자 목록</caption>
+                            <colgroup>
+                                <col>
+                                <col style="width: 13%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                                <col style="width: 15%">
+                                <col style="width: 15%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">성명</th>
+                                    <th scope="col">부서</th>
+                                    <th scope="col">직급</th>
+                                    <th scope="col">직무</th>
+                                    <th scope="col">리더십</th>
+                                    <th scope="col">평가구분</th>
+                                    <th scope="col">진단여부</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="name vm">홍길동(abc123)</td>
+                                    <td class="vm">사업팀</td>
+                                    <td class="vm">선임</td>
+                                    <td class="vm">영업</td>
+                                    <td class="vm">팀원</td>
+                                    <td class="dv vm">
+                                        <p>자신을 진단</p>
+                                    </td>
+                                    <td class="btn vm">
+                                        <a href="#" class="btn_style02 btn_gray02">진단시작</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name vm">홍길동(abc123)</td>
+                                    <td class="vm">사업팀</td>
+                                    <td class="vm">선임</td>
+                                    <td class="vm">영업</td>
+                                    <td class="vm">팀원</td>
+                                    <td class="dv vm">
+                                        <p>자신을 진단</p>
+                                    </td>
+                                    <td class="btn vm">
+                                        <a href="#" class="btn_style02 btn_gray02">진단시작</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="name vm">홍길동(abc123)</td>
+                                    <td class="vm">사업팀</td>
+                                    <td class="vm">선임</td>
+                                    <td class="vm">영업</td>
+                                    <td class="vm">팀원</td>
+                                    <td class="dv vm">
+                                        <p>자신을 진단</p>
+                                    </td>
+                                    <td class="btn vm">
+                                        <a href="#" class="btn_style02 btn_gray02">진단시작</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <hr class="black_line mt50">
+                    <div class="btn_wrap tct mt40">
+                        <a href="#" class="btn_style01 btn_black02">
+                            이전
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="popUp modal2 w800">
+                <div class="popTop">
+                    <h3>역량진단 실시
+                    </h3>
+                    <a href="#" class="close" onclick="close_pop()">닫기</a>
+                </div>
+                <div class="popCont">
+                    <div class="pc_pd scr">
+                        <div class="diag_step">
+                            <div>
+                                <p>기본정보 확인</p>
+                            </div>
+                            <span class="arrow">다음</span>
+                            <div class="active">
+                                <p>현수준 진단</p>
+                            </div>
+                            <span class="arrow">다음</span>
+                            <div>
+                                <p>진단완료</p>
+                            </div>
+                        </div>
+
+
+                        <div class="diag_tit mt40">
+                            <p>2022년 사람중심 다면진단 </p>
+                            <ul>
+                                <li>다면진단</li>
+                                <li>2022-04-16 ~ 2022-04-30</li>
+                            </ul>
+                        </div>
+
+                        <div class="diag_area mt30">
+                            <div class="diag_top">
+                                <p>21</p>
+                                <ul>
+                                    <li>21</li>
+                                    <li>49</li>
+                                </ul>
+                            </div>
+                            <div class="diag_cont">
+                                <div class="top">역량 : <ul>
+                                        <li>의사소통능력</li>
+                                        <li>하위요소 </li>
+                                    </ul>
+                                </div>
+                                <div class="diag">
+                                    <p class="q">유사한 문제를 해결한 기존의 사례를 분석하고 새로운 아이디어를 구상하여 해결방안을 마련한다.</p>
+                                    <ul>
+                                        <li>
+                                            <div class="radio">
+                                                <input type="radio" name="diag" id="diag01">
+                                                <label for="diag01">
+                                                    1. 전혀 그렇지 않다.
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radio">
+                                                <input type="radio" name="diag" id="diag02">
+                                                <label for="diag02">
+                                                    2. 그렇지 않다.
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radio">
+                                                <input type="radio" name="diag" id="diag03">
+                                                <label for="diag03">
+                                                    3. 보통이다.
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radio">
+                                                <input type="radio" name="diag" id="diag04">
+                                                <label for="diag04">
+                                                    4. 그렇다
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radio">
+                                                <input type="radio" name="diag" id="diag05">
+                                                <label for="diag05">
+                                                    5. 매우 그렇다.
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr class="black_line mt50">
+                    <div class="btn_wrap tct mt40 three_btn">
+                        <a href="#" class="btn_style01 btn_black01">
+                            이전
+                        </a>
+                         <a href="#" class="btn_style01 btn_gray03">
+                            임시저장
+                        </a>
+                         <a href="#" class="btn_style01 btn_black02">
+                            진단완료
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+            <div class="popUp modal3 w800">
+                <div class="popTop">
+                    <h3>역량진단 실시
+                    </h3>
+                    <a href="#" class="close" onclick="close_pop()">닫기</a>
+                </div>
+                <div class="popCont">
+                    <div class="pc_pd scr">
+                        <div class="diag_step">
+                            <div>
+                                <p>기본정보 확인</p>
+                            </div>
+                            <span class="arrow">다음</span>
+                            <div>
+                                <p>현수준 진단</p>
+                            </div>
+                            <span class="arrow">다음</span>
+                            <div class="active">
+                                <p>진단완료</p>
+                            </div>
+                        </div>
+
+
+                        <div class="diag_tit mt40">
+                            <p>2022년 사람중심 다면진단 </p>
+                            <ul>
+                                <li>다면진단</li>
+                                <li>2022-04-16 ~ 2022-04-30</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="join_complete border_none mt60">
+                            <p class="f16">진단이 완료되었습니다!</p>
+                            <p class="f14 mt5">진단이 완료되었습니다!
+재진단을 원하시는 경우 부서장님 혹은 교육운영자에게 문의해 주세요. <br>
+"부서장메뉴>역량진단결과>진단실시현황" 메뉴에서 재진단 설정이 가능합니다.
+</p>
+                        </div>
+
+                    </div>
+
+                    <hr class="black_line mt50">
+                    <div class="btn_wrap tct mt40 three_btn">
+                         <a href="#" class="btn_style01 btn_black02"  onclick="close_pop()">
+                            확인
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!--//팝업-->
+        </div>
+    </div>
+    <!--//content-page-->
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/foot_logo.png" alt="러닝허브">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">환불규정</a></li>
+                </ul>
+                <div class="family_site">
+                    <select class="select_style01">
+                        <option>관련사이트</option>
+                    </select>
+                    <a href="#">이동</a>
+                </div>
+            </div>
+            <div class="bt">
+                <div class="txt">
+                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
+                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
+                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
+                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
+                </div>
+                <img src="images/foot_mark.png" alt="우수훈련기관">
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
+</body>
+
+</html>

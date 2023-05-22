@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header id="header">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="러닝허브"></a>
+                </h1>
+                <div class="seach_area">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="교육과정을 검색하세요.">
+                        <button type="submit">검색</button>
+                    </div>
+                    <div class="search_history">
+                        <ul>
+                            <li>
+                                <a href="#" class="txt">최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어2</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어3</a><a href="#" class="del">삭제</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="all_del">전체 삭제</a>
+                    </div>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+            <div class="gnb_wrap">
+                <a href="#" class="all_menu">전체메뉴
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">마이크로러닝</a></li>
+                        <li><a href="#">역량진단</a></li>
+                        <li><a href="#">경력개발계획</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습지원센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--//header-->
+    <!--content-page-->
+    <div class="content-page">
+        <!--quick_menu-->
+
+        <div class="quick_menu">
+            <ul>
+                <li class="quick"><a href="#"><span></span>
+                        <p> QUICK</p>
+                    </a>
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">자주하는 질문</a></li>
+                        <li><a href="#">묻고 답하기</a></li>
+                    </ul>
+                </li>
+                <li class="recent"><a href="#"><span></span>
+                        <p>최근 본 과정</p>
+                    </a>
+                    <ul>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                        <li><a href="#">테슬라가 말한다! 4...</a></li>
+                    </ul>
+                    <ul class="recent_more">
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="img imgFill">
+                                    <img src="images/list_sp01.png" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="division">[이러닝]</p>
+                                    <p class="tit">테슬라가 말한다! 4차...
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </ul>
+                </li>
+                <li class="top"><a href="#"><span></span>
+                        <p>TOP</p>
+                    </a></li>
+            </ul>
+        </div>
+        <!--//quick_menu-->
+        <div class="inner">
+            <ul class="bread_crumb">
+                <li>HOME</li>
+                <li>부서장 메뉴
+                </li>
+                <li>교육훈련결과</li>
+                <li> 조직수강현황</li>
+            </ul>
+            <div class="clear">
+                <div id="side">
+                    <h3 class="tit">부서장 메뉴
+                    </h3>
+                    <ul class="snb">
+                        <li class="active"><a href="#">교육훈련결과</a>
+                            <ul>
+                                <li><a href="#">교육현황</a></li>
+                                <li><a href="#">조직수강현황
+                                    </a></li>
+                                <li><a href="#">의무학점달성현황
+                                    </a></li>
+                                <li><a href="#">승진기준달성현황
+                                    </a></li>
+                                <li><a href="#">계획대비실행율
+
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">역량진단결과</a>
+                            <ul>
+                                <li><a href="#">진단실시현황</a></li>
+                                <li><a href="#">소속별응답현황</a></li>
+                                <li><a href="#">직무별응답현황</a></li>
+                                <li><a href="#">역량별직무/리더십점수</a></li>
+                                <li><a href="#">역량별점수</a></li>
+                                <li><a href="#">종합진단결과</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">경력현황</a>
+                            <ul>
+                                <li><a href="#">계획수립현황</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">승인하기</a>
+                            <ul>
+                                <li><a href="#">교육승인</a></li>
+                                <li><a href="#">경력개발계획 승인</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <div id="contents">
+                    <h3 class="page_tit">조직수강현황</h3>
+                    <div class="board_search_wrap in_btn03 m_btn03">
+                        <div class="date_search">
+                            <label for="date">년도/월
+</label>
+                            <div class="datep_wrap02">
+                                <select class="select_style03 w130 mr10" id="date">
+                                    <option></option>
+                                </select>
+                                <select class="select_style03 w130">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <a href="#" class="btn_style08 btn_black01">검색</a>
+                        </div>
+                        <div class="btn_area">
+                            <a href="#" class="btn_style08 btn_black01 ">엑셀 다운로드</a>
+                        </div>
+                    </div>
+                        <div class="table_style05">
+                            <table>
+                             <caption>조직수강현황</caption>
+                              <thead>
+                                  <tr>
+                                      <th scope="col">날짜</th>
+                                      <th scope="col">신청</th>
+                                      <th scope="col">수강</th>
+                                      <th scope="col">수료</th>
+                                  </tr>
+                              </thead>
+                               <tbody>
+                                   <tr>
+                                       <td class="txtUnder">
+                                           <a href="javascript:openModal('modal1')">2022.05.01</a>
+                                       </td>
+                                       <td>2</td>
+                                       <td>4</td>
+                                       <td>3</td>
+                                   </tr>
+                                   <tr>
+                                       <td class="txtUnder">
+                                           <a href="javascript:openModal('modal1')">2022.05.01</a>
+                                       </td>
+                                       <td>2</td>
+                                       <td>4</td>
+                                       <td>3</td>
+                                   </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                         <!--팝업-->
+                    <div class="shadow"></div>
+                    <div class="popUp modal1 w800">
+                        <div class="popTop">
+                            <h3>수강현황 상세</h3>
+                            <a href="#" class="close" onclick="close_pop()">닫기</a>
+                        </div>
+                        <div class="popCont">
+                            <div class="pc_pd scr">
+                              
+                               <div class="table_style05 table_wrap">
+                                   <table>
+                                       <caption>수강현황 상세</caption>
+                                       <colgroup>
+                                           <col>
+                                           <col style="width: 10%">
+                                           <col>
+                                           <col style="width: 15%">
+                                           <col style="width: 10%">
+                                           <col style="width: 10%">
+                                       </colgroup>
+                                       <thead>
+                                           <tr>
+                                               <th scope="col">과정</th>
+                                               <th scope="col">차수</th>
+                                               <th scope="col">교육기간</th>
+                                               <th scope="col">부서</th>
+                                               <th scope="col">성명</th>
+                                               <th scope="col">상태</th>
+                                           </tr>
+                                       </thead>
+                                       <tbody>
+                                           <tr>
+                                               <td class="tlt">사이버 A 코스
+</td>
+                                               <td>1</td>
+                                               <td>2022-02-01~2022-12-30
+</td>
+                                               <td>대외사업팀</td>
+                                               <td>홍길동</td>
+                                               <td>신청</td>
+                                           </tr>
+                                       </tbody>
+                                   </table>
+                               </div>
+                            </div>
+                            <hr class="black_line mt50">
+                            <div class="btn_wrap tct mt40">
+                                <a href="#" class="btn_style01 btn_gray03" onclick="close_pop()">
+                                    닫기
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--//팝업-->
+                        
+                    <!--paging-->
+                    <ul class="paging02">
+                        <li class="arrow prev">
+                            <a href="#">이전페이지</a>
+                        </li>
+                        <li class="num active">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">4</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">5</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">6</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">7</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">8</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">9</a>
+                        </li>
+                        <li class="num">
+                            <a href="#">10</a>
+                        </li>
+                        <li class="arrow next">
+                            <a href="#">다음페이지</a>
+                        </li>
+                    </ul>
+                    <!--//paging-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//content-page-->
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/foot_logo.png" alt="러닝허브">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">환불규정</a></li>
+                </ul>
+                <div class="family_site">
+                    <select class="select_style01">
+                        <option>관련사이트</option>
+                    </select>
+                    <a href="#">이동</a>
+                </div>
+            </div>
+            <div class="bt">
+                <div class="txt">
+                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
+                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
+                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
+                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
+                </div>
+                <img src="images/foot_mark.png" alt="우수훈련기관">
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
+    <script>
+        $('.filter_table').excelTableFilter();
+
+    </script>
+</body>
+
+</html>
