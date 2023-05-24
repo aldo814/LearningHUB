@@ -143,8 +143,8 @@
                 <li>HOME</li>
                 <li>부서장 메뉴
                 </li>
-                <li>교육훈련결과</li>
-                <li>계획대비실행율</li>
+                <li>승인하기</li>
+                <li>경력개발계획 승인</li>
             </ul>
             <div class="clear">
                 <div id="side">
@@ -190,85 +190,51 @@
                     </ul>
                 </div>
                 <div id="contents">
-                    <h3 class="page_tit">계획대비실행율</h3>
-                    <div class="board_search_wrap in_btn03">
+                    <h3 class="page_tit">경력개발계획 승인</h3>
+                    <div class="board_search_wrap in_btn03 mt30">
                         <div class="date_search">
                             <label for="date">계획선택</label>
                             <div class="datep_wrap02">
                                 <select class="select_style03 w130 mr10" id="date">
-                                    <option></option>
+                                    <option>2022년</option>
                                 </select>
-                                 <select class="select_style03">
+                                <select class="select_style03 w210">
                                     <option>2022년 역량진단 </option>
                                 </select>
                             </div>
                         </div>
+
                         <div class="btn_area">
                             <a href="#" class="btn_style08 btn_black01 ">엑셀 다운로드</a>
                         </div>
                     </div>
-                   
+
                     <div class="table_wrap">
                         <div class="table_style05 filter_table" id="filter_table01">
                             <table>
-                                <caption>의무학점달성현황</caption>
-                                <colgroup>
-                                   <col style="width: 13%">
-                                    
-                                </colgroup>
+                                <caption>경력개발계획 승인</caption>
                                 <thead>
                                     <tr>
-                                        <th scope="col" rowspan="2" class="filter vm">전체부서명</th>
-                                        <th scope="col" rowspan="2" class="filter vm">성명</th>
-                                        <th scope="col" rowspan="2" class="filter vm">직급</th>
-                                        <th scope="col" colspan="3" class="no_filter vm">교육</th>
-                                        <th scope="col" colspan="3" class="no_filter vm">자격증</th>
-                                        <th scope="col" colspan="3" class="no_filter vm">어학시험</th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col" class="filter f12 vm">
-                                            계획시간
-                                        </th>
-                                        <th scope="col" class="filter vm f12">
-                                            취득시간
-                                        </th>
-                                        <th scope="col" class="filter vm f12">
-                                            실행율
-                                        </th>
-                                        <th scope="col" class="filter vm f12">
-                                            계획건수
-                                        </th>
-                                        <th scope="col" class="filter vm f12">
-                                            취득건수
-                                        </th>
-                                        <th scope="col" class="filter vm f12">
-                                            실행율
-                                        </th>
-                                        <th scope="col" class="filter vm f12">
-                                            계획건수
-                                        </th>
-                                        <th scope="col" class="filter vm f12">
-                                            취득건수
-                                        </th>
-                                        <th scope="col" class="filter vm f12">
-                                            실행율
-                                        </th>
-                                    </tr>
+                                        <th scope="col" class="vm">부서명</th>
+                                       <th scope="col" class="vm">전체부서명</th>
+                                       <th scope="col" class="vm">요청자</th>
+                                       <th scope="col" class="vm">사원번호</th>
+                                       <th scope="col" class="vm">직급</th>
+                                       <th scope="col" class="vm">승인현황</th>
+
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td class="vm">대외사업팀</td>
                                         <td class="vm">개발팀</td>
-                                        <td class="vm"><a href="javascript:openModal('modal1')">홍길동</a></td>
-                                        <td class="vm">연구소장/이사</td>
-                                        <td class="vm">16</td>
-                                        <td class="vm">15</td>
-                                        <td class="vm">100%</td>
-                                        <td class="vm">16</td>
-                                        <td class="vm">15</td>
-                                        <td class="vm">100%</td>
-                                        <td class="vm">16</td>
-                                        <td class="vm">15</td>
-                                        <td class="vm">0%</td>
+                                        <td class="vm"><a href="javascript:openModal('modal1')">홍길동</a>
+</td>
+                                        <td class="vm">11011111</td>
+                                        <td class="vm">선임/대리
+</td>
+                                        <td class="vm">승인</td>
+                                     
+                                     
                                     </tr>
                                 </tbody>
                             </table>
@@ -314,236 +280,212 @@
                         </li>
                     </ul>
                     <!--//paging-->
-                    
-                    
-
                     <!--팝업-->
                     <div class="shadow"></div>
                     <div class="popUp modal1 w800">
                         <div class="popTop">
-                            <h3>계획대비실행율 상세정보
-
-
-                            </h3>
+                            <h3>계획승인</h3>
                             <a href="#" class="close" onclick="close_pop()">닫기</a>
                         </div>
                         <div class="popCont">
                             <div class="pc_pd scr">
 
-                                <p class="f14 bold02">
-                                  홍길동님의 교육계획 목록입니다.
-
-
-                                </p>
-                                <div class="table_style05 filter_table mt15" id="filter_table02">
-                                    <table>
-                                        <caption>교육계획 목록</caption>
-                                        <colgroup>
-                                            <col style="width: 15%">
-                                            <col>
-                                            <col style="width: 15%">
-                                            <col style="width: 15%">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">학습유형</th>
-                                                <th scope="col">과정명</th>
-                                                <th scope="col">계획시간</th>
-                                                <th scope="col">이수시간</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="vm">집합교육</td>
-                                                <td class="tlt vm">독서통신 A 코스
-
-</td>
-                                                <td class="vm">3
-</td>
-                                                <td class="vm">4</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="btn_wrap tct mt0 three_btn">
+                                    <a href="#" class="btn_style01 btn_black02">
+                                        승인
+                                    </a>
+                                    <a href="#" class="btn_style01 btn_black01">
+                                        미승인
+                                    </a>
+                                    <a href="#" class="btn_style01 btn_gray03" onclick="close_pop()">
+                                        창닫기
+                                    </a>
                                 </div>
-                                    <!--paging-->
-                    <ul class="paging02">
-                        <li class="arrow prev">
-                            <a href="#">이전페이지</a>
-                        </li>
-                        <li class="num active">
-                            <a href="#">1</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">2</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">3</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">4</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">5</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">6</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">7</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">8</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">9</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">10</a>
-                        </li>
-                        <li class="arrow next">
-                            <a href="#">다음페이지</a>
-                        </li>
-                    </ul>
-                    <!--//paging-->
- <p class="f14 bold02 mt60">
-                          홍길동님의 자격증 계획 목록입니다. </p>
-                                  <div class="table_style05 filter_table" id="filter_table03">
-                                    <table>
-                                        <caption>자격증</caption>
-                                        <colgroup>
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">자격증</th>
-                                                <th scope="col">실행여부</th>
-                                               
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="vm">정보처리기사</td>
-                                                <td class="vm">x
-</td>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                    <!--paging-->
-                    <ul class="paging02">
-                        <li class="arrow prev">
-                            <a href="#">이전페이지</a>
-                        </li>
-                        <li class="num active">
-                            <a href="#">1</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">2</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">3</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">4</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">5</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">6</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">7</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">8</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">9</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">10</a>
-                        </li>
-                        <li class="arrow next">
-                            <a href="#">다음페이지</a>
-                        </li>
-                    </ul>
-                    <!--//paging-->
-                                  
-                                   <p class="f14 bold02 mt60">
-                         홍길동님의 어학시험 계획 목록입니다.
- </p>
-                                    <div class="table_style05 filter_table" id="filter_table04">
-                                    <table>
-                                        <caption>어학시험</caption>
-                                        <colgroup>
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">어학시험</th>
-                                                <th scope="col">실행여부</th>
-                                               
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="vm">어학시험명</td>
-                                                <td class="vm">x
-</td>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                    <!--paging-->
-                    <ul class="paging02">
-                        <li class="arrow prev">
-                            <a href="#">이전페이지</a>
-                        </li>
-                        <li class="num active">
-                            <a href="#">1</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">2</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">3</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">4</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">5</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">6</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">7</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">8</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">9</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">10</a>
-                        </li>
-                        <li class="arrow next">
-                            <a href="#">다음페이지</a>
-                        </li>
-                    </ul>
-                    <!--//paging-->
+                                <div class="tab_container mt40">
+                                    <ul class="tab_style04 mb20 tabs">
+                                        <li class="active"><a href="#" rel="tab1">경력목표</a></li>
+                                        <li><a href="#" rel="tab2">교육계획</a></li>
+                                    </ul>
+                                      <div class="tab_content" id="tab1">
+                                        <div class="flex_wrap">
+                                            <div>
+                                                <label for="thisYear" class="f16 bold02">올해목표</label>
+                                                <textarea class="textarea mt10" id="thisYear"></textarea>
+                                            </div>
+                                            <div>
+                                                <label for="longTime" class="f16 bold02">장기목표</label>
+                                                <textarea class="textarea mt10
+                                                  
+                                              " id="longTime"></textarea>
+                                            </div>
+                                        </div>
 
-                                  
-                            </div>
-                            <hr class="black_line mt50">
-                            <div class="btn_wrap tct mt40">
-                                <a href="#" class="btn_style01 btn_gray03" onclick="close_pop()">
-                                    닫기
-                                </a>
+                                        <p class="mt40 bold02 mb15">희망직무 선택</p>
+                                        <div class="table_style05">
+                                            <table>
+                                                <caption>희망직무선택</caption>
+                                                <colgroup>
+                                                    <col style="width: 15%">
+                                                    <col>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">직무 1</th>
+                                                        <td class="tlt">개발
+                                                            <a href="#" class="ml15 btn_style02 btn_gray02">직무정보보기</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">직무 2</th>
+                                                        <td class="tlt">개발<a href="#" class="ml15 btn_style02 btn_gray02">직무정보보기</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">희망부서</th>
+                                                        <td class="tlt">개발팀</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <p class="mt40 bold02 mb15">자격증 취득 계획</p>
+                                        <div class="table_style05">
+                                            <table>
+                                                <caption>자격증 취득 계획</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">자격증명</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>정보처리기사</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                        <p class="mt40 bold02 mb15">어학 취득 계획
+                                        </p>
+                                        <div class="table_style05">
+                                            <table>
+                                                <caption>어학 취득 계획</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">어학명</th>
+                                                        <th scope="col">목표점수</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>TOEFL</td>
+                                                        <td>500</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+
+                                </div>
+                                    </div>
+                                    <div class="tab_content" id="tab2">
+                                        <div class="table_style05">
+                                            <table>
+                                                <caption>교육계획</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="vm">구분</th>
+                                                        <th scope="col" class="vm">총 시간</th>
+                                                        <th scope="col" class="vm">필수 시간</th>
+                                                        <th scope="col" class="vm">선택 시간</th>
+                                                        <th scope="col" class="vm">Pass/Fail과정 수</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>의무</td>
+                                                        <td>15</td>
+                                                        <td>12</td>
+                                                        <td>4</td>
+                                                        <td>4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>계획</td>
+                                                        <td>23</td>
+                                                        <td>11</td>
+                                                        <td>6</td>
+                                                        <td>2</td>
+                                                    </tr>
+                                                    <tr class="bg_gray">
+                                                        <td class="bold02">충족 여부</td>
+                                                        <td class="bold02">충족</td>
+                                                        <td class="bold02">미충족</td>
+                                                        <td class="bold02">충족</td>
+                                                        <td class="bold02">
+                                                            미충족
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <p class="mt40 bold02 mb15">교육 계획 목록
+                                        </p>
+                                        <div class="table_style05 table_wrap">
+                                            <table>
+                                                <caption>교육 계획 목록</caption>
+                                                <colgroup>
+                                                    <col style="width: 10%">
+                                                    <col>
+                                                    <col style="width: 15%">
+                                                    <col>
+                                                    <col style="width: 12%">
+                                                    <col style="width: 12%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">구분</th>
+                                                        <th scope="col">과정명</th>
+                                                        <th scope="col">학습유형</th>
+                                                        <th scope="col">과정분류</th>
+                                                        <th scope="col">계획 시간</th>
+                                                        <th scope="col">희망교육월</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="vm">선택</td>
+                                                        <td class="vm">독서통신 A 코스</td>
+                                                        <td class="vm">독서통신</td>
+                                                        <td class="vm">10분 독서 > IT</td>
+                                                        <td class="vm">3</td>
+                                                        <td class="vm">2022.01</td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td class="vm">PASS</td>
+                                                        <td class="vm">독서통신 A 코스</td>
+                                                        <td class="vm">마이크로러닝</td>
+                                                        <td class="vm">e북 > IT</td>
+                                                        <td class="vm">3</td>
+                                                        <td class="vm">2022.01</td>
+                                                    </tr>
+                                                     <tr>
+                                                        <td class="vm">필수</td>
+                                                        <td class="vm">링크과정 A 코스</td>
+                                                        <td class="vm">링크과정</td>
+                                                        <td class="vm">비즈니스 공통 > 경영일반</td>
+                                                        <td class="vm">3</td>
+                                                        <td class="vm">2022.01</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
                             </div>
                         </div>
-
                     </div>
                     <!--//팝업-->
+
 
                 </div>
             </div>
@@ -588,9 +530,7 @@
     <!--//footer-->
     <script>
         $('#filter_table01').excelTableFilter();
-        $('#filter_table02').excelTableFilter();
-        $('#filter_table03').excelTableFilter();
-        $('#filter_table04').excelTableFilter();
+
     </script>
 </body>
 

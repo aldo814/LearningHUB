@@ -143,8 +143,8 @@
                 <li>HOME</li>
                 <li>부서장 메뉴
                 </li>
-                <li>교육훈련결과</li>
-                <li>의무학점달성현황</li>
+                <li>역량진단결과</li>
+                <li>소속별응답현황</li>
             </ul>
             <div class="clear">
                 <div id="side">
@@ -190,13 +190,16 @@
                     </ul>
                 </div>
                 <div id="contents">
-                    <h3 class="page_tit">의무학점달성현황</h3>
+                    <h3 class="page_tit">소속별응답현황</h3>
                     <div class="board_search_wrap in_btn03">
                         <div class="date_search">
-                            <label for="date">기준연도</label>
+                            <label for="date">진단선택</label>
                             <div class="datep_wrap02">
-                                <select class="select_style03 w130" id="date">
-                                    <option></option>
+                                <select class="select_style03 w130 mr10" id="date">
+                                    <option>2022년</option>
+                                </select>
+                                 <select class="select_style03">
+                                    <option>2022년 역량진단 </option>
                                 </select>
                             </div>
                         </div>
@@ -204,84 +207,45 @@
                             <a href="#" class="btn_style08 btn_black01 ">엑셀 다운로드</a>
                         </div>
                     </div>
-                    <div class="table_wrap w_over">
+                   
+                    <div class="table_wrap">
                         <div class="table_style05 filter_table" id="filter_table01">
                             <table>
-                                <caption>의무학점달성현황</caption>
-                                <colgroup>
-                                    <col>
-                                    <col style="width: 8%">
-                                    <col style="width: 10%">
-                                    <col style="width: 6%">
-                                    <col style="width: 6%">
-                                    <col style="width: 7%">
-                                    <col style="width: 6%">
-                                    <col style="width: 6%">
-                                    <col style="width: 7%">
-                                    <col style="width: 6%">
-                                    <col style="width: 6%">
-                                    <col style="width: 7%">
-                                    <col style="width: 7%">
-                                    <col style="width: 8%">
-                                </colgroup>
+                                <caption>소속별응답현황</caption>
                                 <thead>
                                     <tr>
-                                        <th scope="col" rowspan="2" class="filter">전체부서명</th>
-                                        <th scope="col" rowspan="2" class="filter">성명</th>
-                                        <th scope="col" rowspan="2" class="filter">직급</th>
-                                        <th scope="col" colspan="3" class="no_filter">총시간</th>
-                                        <th scope="col" colspan="3" class="no_filter">필수시간</th>
-                                        <th scope="col" colspan="3" class="no_filter">선택시간</th>
-                                        <th scope="col" rowspan="2" class="filter">PASS</th>
-                                        <th scope="col" rowspan="2" class="filter">결과 </th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col" class="filter">
-                                            의무
+                                        <th scope="col" class="vm">
+                                            부서
                                         </th>
-                                        <th scope="col" class="filter">
-                                            실적
+                                         <th scope="col" class="vm">
+                                            전체부서명
                                         </th>
-                                        <th scope="col" class="filter">
-                                            이수율
+                                         <th scope="col" class="vm">
+                                            부서장
                                         </th>
-                                        <th scope="col" class="filter">
-                                            의무
+                                         <th scope="col" class="vm">
+                                            총인원
                                         </th>
-                                        <th scope="col" class="filter">
-                                            실적
+                                         <th scope="col" class="vm">
+                                            완료인원
                                         </th>
-                                        <th scope="col" class="filter">
-                                            이수율
+                                         <th scope="col" class="vm">
+                                            미완료인원
                                         </th>
-                                        <th scope="col" class="filter">
-                                            의무
+                                        <th scope="col" class="vm">
+                                            완료율(%)
                                         </th>
-                                        <th scope="col" class="filter">
-                                            실적
-                                        </th>
-                                        <th scope="col" class="filter">
-                                            이수율
-                                        </th>
-                                    </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>개발팀</td>
-                                        <td><a href="javascript:openModal('modal1')">홍길동</a></td>
-                                        <td>연구소장/이사</td>
-                                        <td>16</td>
-                                        <td>15</td>
-                                        <td>100%</td>
-                                        <td>16</td>
-                                        <td>15</td>
-                                        <td>100%</td>
-                                        <td>16</td>
-                                        <td>15</td>
-                                        <td>0%</td>
-                                        <td>F</td>
-                                        <td>미충족</td>
-                                    </tr>
+                                   <tr>
+                                       <td class="vm">대외사업팀</td>
+                                       <td class="vm">개발팀</td>
+                                       <td class="vm">홍길동</td>
+                                       <td class="vm">5</td>
+                                       <td class="vm">0</td>
+                                       <td class="vm">1</td>
+                                       <td class="vm">0</td>
+                                   </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -326,179 +290,8 @@
                         </li>
                     </ul>
                     <!--//paging-->
-
-                    <!--팝업-->
-                    <div class="shadow"></div>
-                    <div class="popUp modal1 w800">
-                        <div class="popTop">
-                            <h3>부서원의무시간달성현황 상세정보
-                            </h3>
-                            <a href="#" class="close" onclick="close_pop()">닫기</a>
-                        </div>
-                        <div class="popCont">
-                            <div class="pc_pd scr">
-
-                                <p class="f14 bold02">
-                                    ※ 홍길동( 선임/대리 ) 님이 2022년에 획득한 이수시간에 대한 이력입니다.
-
-                                </p>
-                                <div class="table_style05 filter_table mt15" id="filter_table02">
-                                    <table>
-                                        <caption>부서원의무시간달성현황 상세정보</caption>
-                                        <colgroup>
-                                            <col style="width: 15%">
-                                            <col>
-                                            <col style="width: 25%">
-                                            <col style="width: 19%">
-                                            <col style="width: 15%">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">학습유형</th>
-                                                <th scope="col">과정명</th>
-                                                <th scope="col">교육기간</th>
-                                                <th scope="col">필수/선택구분</th>
-                                                <th scope="col">이수시간</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="vm">집합교육</td>
-                                                <td class="tlt vm">전략심화과정-부장필수과정
-</td>
-                                                <td class="vm">2022-02-01~2022-12-30
-</td>
-                                                <td class="vm">필수</td>
-                                                <td class="vm">4</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                    <!--paging-->
-                    <ul class="paging02">
-                        <li class="arrow prev">
-                            <a href="#">이전페이지</a>
-                        </li>
-                        <li class="num active">
-                            <a href="#">1</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">2</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">3</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">4</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">5</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">6</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">7</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">8</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">9</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">10</a>
-                        </li>
-                        <li class="arrow next">
-                            <a href="#">다음페이지</a>
-                        </li>
-                    </ul>
-                    <!--//paging-->
-
-                           <p class="f14 bold02 mt60">
-                                  ※ 홍길동( 선임/대리 ) 님이 2022년 Pass/Fail 과정 실적입니다. </p>
-                                  <div class="table_style05 filter_table mt15" id="filter_table03">
-                                    <table>
-                                        <caption>부서원의무시간달성현황 상세정보</caption>
-                                        <colgroup>
-                                            <col style="width: 15%">
-                                            <col>
-                                            <col style="width: 25%">
-                                            <col style="width: 15%">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">학습유형</th>
-                                                <th scope="col">과정명</th>
-                                                <th scope="col">교육기간</th>
-                                                <th scope="col">이수시간</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="vm">집합교육</td>
-                                                <td class="tlt vm">전략심화과정-부장필수과정
-</td>
-                                                <td class="vm">2022-02-01~2022-12-30
-</td>
-                                                <td class="vm">4</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                    <!--paging-->
-                    <ul class="paging02">
-                        <li class="arrow prev">
-                            <a href="#">이전페이지</a>
-                        </li>
-                        <li class="num active">
-                            <a href="#">1</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">2</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">3</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">4</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">5</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">6</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">7</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">8</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">9</a>
-                        </li>
-                        <li class="num">
-                            <a href="#">10</a>
-                        </li>
-                        <li class="arrow next">
-                            <a href="#">다음페이지</a>
-                        </li>
-                    </ul>
-                    <!--//paging-->
-
-                                  
-                            </div>
-                            <hr class="black_line mt50">
-                            <div class="btn_wrap tct mt40">
-                                <a href="#" class="btn_style01 btn_gray03" onclick="close_pop()">
-                                    닫기
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--//팝업-->
+                    
+                    
 
                 </div>
             </div>
@@ -543,9 +336,6 @@
     <!--//footer-->
     <script>
         $('#filter_table01').excelTableFilter();
-        $('#filter_table02').excelTableFilter();
-        $('#filter_table03').excelTableFilter();
-
     </script>
 </body>
 
