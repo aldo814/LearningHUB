@@ -1,6 +1,5 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
- #header,
-    #footer{display: none}
+
 .vm{vertical-align: middle}
 /* select box */
 .select_style01{font-size: 1.4rem;color: #9ea4aa;background: url('../images/select_arrow.png') no-repeat right 10px center #f7f8f9; -webkit-appearance: none; -moz-appearance: none;appearance: none;font-family: inherit;padding: 7px 30px 7px 10px;border: 1px solid #c9cdd2}
