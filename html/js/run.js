@@ -453,44 +453,11 @@ $(document).ready(function () {
         }
     })
     
-var width = 100,
-    perfData = window.performance.timing,
-    EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
-    time = parseInt((EstimatedTime/1000)%60)*100;
-
-// Loadbar Animation
-$(".loading_pro_bar").animate({
-  width: width + "%"
-}, time);
-
-
-
-		
-function animateValue(id, start, end, duration) {
-  
-	var range = end - start,
-      current = start,
-      increment = end > start? 1 : -1,
-      stepTime = Math.abs(Math.floor(duration / range)),
-      obj = $(id);
     
-	var timer = setInterval(function() {
-		current += increment;
-		$(obj).text(current + "%");
-      //obj.innerHTML = current;
-		if (current == end) {
-			clearInterval(timer);
-		}
-	}, stepTime);
-}
-
-// Fading Out Loadbar on Finised
-setTimeout(function(){
-  $('.loading').fadeOut(300);
-}, time);
-
-
-
+$(window).load(function(){
+        $('.loading').hide();
+    })
+    
 
 });
 
@@ -534,3 +501,46 @@ function close_pop(flag) {
     var offset = jQuery("body").offset().top;
     jQuery("html,body").css("position", "static").scrollTop(-offset);
 };
+
+
+// 로딩
+document.onreadystatechange = function(e)
+{
+  if(document.readyState=="interactive")
+  {
+    var all = document.getElementsByTagName("*");
+    for (var i=0, max=all.length; i < max; i++) 
+    {
+      set_ele(all[i]);
+    }
+  }
+}
+
+function check_element(ele)
+{
+  var all = document.getElementsByTagName("*");
+  var totalele=all.length;
+  var per_inc=100/all.length;
+
+  if($(ele).on())
+  {
+    var prog_width=per_inc+Number(document.getElementById("progress_width").value);
+    document.getElementById("progress_width").value=prog_width;
+    $(".loading_pro_bar").animate({width:prog_width+"%"},10,function(){
+      if(document.getElementsByClassName("loading_pro_bar").style.width=="100%")
+      {
+      }			
+    });
+  }
+
+  else	
+  {
+    set_ele(ele);
+  }
+}
+
+function set_ele(set_element)
+{
+  check_element(set_element);
+}
+
