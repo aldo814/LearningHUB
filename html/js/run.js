@@ -452,6 +452,43 @@ $(document).ready(function () {
 
         }
     })
+    
+var width = 100,
+    perfData = window.performance.timing,
+    EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+    time = parseInt((EstimatedTime/1000)%60)*100;
+
+// Loadbar Animation
+$(".loading_pro_bar").animate({
+  width: width + "%"
+}, time);
+
+
+
+		
+function animateValue(id, start, end, duration) {
+  
+	var range = end - start,
+      current = start,
+      increment = end > start? 1 : -1,
+      stepTime = Math.abs(Math.floor(duration / range)),
+      obj = $(id);
+    
+	var timer = setInterval(function() {
+		current += increment;
+		$(obj).text(current + "%");
+      //obj.innerHTML = current;
+		if (current == end) {
+			clearInterval(timer);
+		}
+	}, stepTime);
+}
+
+// Fading Out Loadbar on Finised
+setTimeout(function(){
+  $('.loading').fadeOut(300);
+}, time);
+
 
 
 
