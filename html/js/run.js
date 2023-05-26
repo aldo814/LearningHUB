@@ -1,5 +1,49 @@
 $(document).ready(function () {
 
+    var swiper = new Swiper(".main_banner", {
+        slidesPerView: 'auto',
+        loop: true, 
+        // 좌우 화살표 navigation element 지정
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+             nextEl: ".swiper-button-next02",
+            prevEl: ".swiper-button-prev02"
+        },
+
+        on: {
+            init: function () {
+                $('.swiper-slide').addClass('changed');
+                $('.custom-fraction .current').text(this.realIndex + 1);
+                $('.custom-fraction .all').text(this.loopedSlides);
+                // console.log(this);
+                // console.log(this.loopedSlides)
+            },
+
+            slideChangeTransitionStart: function () {
+                $('.swiper-slide').addClass('changing');
+                $('.swiper-slide').removeClass('changed');
+
+                // 페이지 넘어갈 때마다 fraction 현재 인덱스 변경
+                $('.custom-fraction .current').text(this.realIndex + 1);
+            },
+
+            slideChangeTransitionEnd: function () {
+                $('.swiper-slide').removeClass('changing');
+                $('.swiper-slide').addClass('changed');
+            }
+        },
+        
+    });
+    
+      $(".swiper-button-pause").click(function () {
+            swiper.autoplay.stop();
+        });
+
+        $(".swiper-button-play").click(function () {
+            swiper.autoplay.start();
+        });
+
     $('a[href="#"]').click(function (event) {
         event.preventDefault();
     });
@@ -154,11 +198,11 @@ $(document).ready(function () {
             scrollTop: $(this.hash).offset().top
         }, 500)
     });
-    
+
     $('.view_area_cont .tab_style04 a').on('click', function (e) {
         e.preventDefault();
         $(this).parent().addClass('active');
-         $(this).parent().siblings().removeClass('active')
+        $(this).parent().siblings().removeClass('active')
         $('html, body').animate({
             scrollTop: $(this.hash).offset().top
         }, 500)
@@ -348,7 +392,7 @@ $(document).ready(function () {
 
 
     });
-    
+
     $(".datep02").datepicker({
 
         showOn: "both", // 버튼과 텍스트 필드 모두 캘린더를 보여준다.
@@ -452,12 +496,7 @@ $(document).ready(function () {
 
         }
     })
-    
-    
-$(window).load(function(){
-        $('.loading').hide();
-    })
-    
+
 
 });
 
@@ -503,44 +542,13 @@ function close_pop(flag) {
 };
 
 
-// 로딩
-document.onreadystatechange = function(e)
-{
-  if(document.readyState=="interactive")
-  {
-    var all = document.getElementsByTagName("*");
-    for (var i=0, max=all.length; i < max; i++) 
-    {
-      set_ele(all[i]);
-    }
-  }
+function onLoading(){
+    $('.loading').show();
 }
 
-function check_element(ele)
-{
-  var all = document.getElementsByTagName("*");
-  var totalele=all.length;
-  var per_inc=100/all.length;
 
-  if($(ele).on())
-  {
-    var prog_width=per_inc+Number(document.getElementById("progress_width").value);
-    document.getElementById("progress_width").value=prog_width;
-    $(".loading_pro_bar").animate({width:prog_width+"%"},10,function(){
-      if(document.getElementsByClassName("loading_pro_bar").style.width=="100%")
-      {
-      }			
-    });
-  }
-
-  else	
-  {
-    set_ele(ele);
-  }
+function offLoading (){
+    $('.loading').hide();
 }
 
-function set_ele(set_element)
-{
-  check_element(set_element);
-}
 

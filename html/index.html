@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -16,11 +17,12 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
     <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="js/run.js"></script>
 </head>
 
 <body>
-   <!--header-->
+    <!--header-->
     <header id="header">
         <div class="inner">
             <div class="top">
@@ -46,16 +48,16 @@
                         </ul>
                         <a href="#" class="all_del">전체 삭제</a>
                     </div>
-                    </div>
-                    <ul class="memberbx">
-                        <li class="login"><a href="#">로그인</a></li>
-                        <li class="join"><a href="#">회원가입</a></li>
-                    </ul>
-                
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+
             </div>
             <div class="gnb_wrap">
-               <a href="#" class="all_menu">전체메뉴
-               </a>
+                <a href="#" class="all_menu">전체메뉴
+                </a>
                 <nav id="gnb">
                     <ul>
                         <li><a href="#">수강신청</a></li>
@@ -69,43 +71,62 @@
             </div>
         </div>
     </header>
-     <!--//header-->
-     
-     <!--footer-->
-     <footer id="footer">
-         <div class="inner">
-             <div class="top">
-                 <h1 class="logo">
-                     <a href="#">
-                         <img src="images/foot_logo.png" alt="러닝허브">
-                     </a>
-                 </h1>
-                 <ul>
-                     <li><a href="#">회사소개</a></li>
-                     <li><a href="#">이용약관</a></li>
-                     <li class="bold"><a href="#">개인정보취급방침</a></li>
-                     <li><a href="#">찾아오시는길</a></li>
-                     <li><a href="#">환불규정</a></li>
-                 </ul>
-                 <div class="family_site">
-                     <select class="select_style01">
-                         <option>관련사이트</option>
-                     </select>
-                     <a href="#">이동</a>
-                 </div>
-             </div>
-             <div class="bt">
-                 <div class="txt">
-                     <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
-                     <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
-                     <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
-                     <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
-                 </div>
-                 <img src="images/foot_mark.png" alt="우수훈련기관">
-             </div>
-         </div>
-     </footer>
-     <!--//footer-->
+    <!--//header-->
+
+   <div class="inner">
+    <div class="swiper main_banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/main_banner01.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/main_banner02.png" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next02"></div>
+        <div class="swiper-button-prev02"></div>
+        <div class="custom-fraction">
+            <span class="current"></span>/<span class="all"></span>
+        </div>
+         <a href="#" class="swiper-button-play">play</a>
+         <a href="#" class="swiper-button-pause">stop</a>
+
+    </div>
+</div>
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/foot_logo.png" alt="러닝허브">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">환불규정</a></li>
+                </ul>
+                <div class="family_site">
+                    <select class="select_style01">
+                        <option>관련사이트</option>
+                    </select>
+                    <a href="#">이동</a>
+                </div>
+            </div>
+            <div class="bt">
+                <div class="txt">
+                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
+                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
+                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
+                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
+                </div>
+                <img src="images/foot_mark.png" alt="우수훈련기관">
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
 </body>
 
 </html>
