@@ -2,47 +2,233 @@ $(document).ready(function () {
 
     var swiper = new Swiper(".main_banner", {
         slidesPerView: 'auto',
-        loop: true, 
+        loop: true,
         // 좌우 화살표 navigation element 지정
         navigation: {
             nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-             nextEl: ".swiper-button-next02",
-            prevEl: ".swiper-button-prev02"
+            prevEl: ".swiper-button-prev"
         },
 
-        on: {
-            init: function () {
-                $('.swiper-slide').addClass('changed');
-                $('.custom-fraction .current').text(this.realIndex + 1);
-                $('.custom-fraction .all').text(this.loopedSlides);
-                // console.log(this);
-                // console.log(this.loopedSlides)
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+            formatFractionCurrent: function (number) {
+                return ('0' + number).slice(-2);
             },
-
-            slideChangeTransitionStart: function () {
-                $('.swiper-slide').addClass('changing');
-                $('.swiper-slide').removeClass('changed');
-
-                // 페이지 넘어갈 때마다 fraction 현재 인덱스 변경
-                $('.custom-fraction .current').text(this.realIndex + 1);
+            formatFractionTotal: function (number) {
+                return ('0' + number).slice(-2);
             },
-
-            slideChangeTransitionEnd: function () {
-                $('.swiper-slide').removeClass('changing');
-                $('.swiper-slide').addClass('changed');
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' +
+                    '<span class="' + totalClass + '"></span>';
             }
         },
-        
+
+    });
+
+    var swiper = new Swiper(".hot_cont .con_list", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        autoplay: false,
+        loop: false,
+        navigation: { // 버튼
+            nextEl: ".hot_cont .swiper-button-next",
+            prevEl: ".hot_cont .swiper-button-prev",
+        },
+        breakpoints: { //반응형
+            // 화면의 넓이가 320px 이상일 때
+            1024: {
+                slidesPerView: 3
+            },
+            // 화면의 넓이가 640px 이상일 때
+            768: {
+                slidesPerView: 2
+            }
+        }
     });
     
-      $(".swiper-button-pause").click(function () {
-            swiper.autoplay.stop();
-        });
+    var swiper = new Swiper(".new_cont .con_list", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        autoplay: false,
+        loop: false,
+        navigation: { // 버튼
+            nextEl: ".new_cont .swiper-button-next",
+            prevEl: ".new_cont .swiper-button-prev",
+        },
+        breakpoints: { //반응형
+            // 화면의 넓이가 320px 이상일 때
+            1024: {
+                slidesPerView: 3
+            },
+            // 화면의 넓이가 640px 이상일 때
+            768: {
+                slidesPerView: 2
+            }
+        }
+    });
+    
+    var swiper = new Swiper(".field_cont #tab01 .con_list", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        autoplay: false,
+        loop: false,
+        navigation: { // 버튼
+            nextEl: ".field_cont #tab01 .swiper-button-next",
+            prevEl: ".field_cont #tab01 .swiper-button-prev",
+        },
+        breakpoints: { //반응형
+            // 화면의 넓이가 320px 이상일 때
+            1024: {
+                slidesPerView: 3
+            },
+            // 화면의 넓이가 640px 이상일 때
+            768: {
+                slidesPerView: 2
+            }
+        }
+    });
+    
+    var swiper = new Swiper(".field_cont #tab02 .con_list", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        autoplay: false,
+        loop: false,
+        navigation: { // 버튼
+            nextEl: ".field_cont #tab02 .swiper-button-next",
+            prevEl: ".field_cont #tab02 .swiper-button-prev",
+        },
+        breakpoints: { //반응형
+            // 화면의 넓이가 320px 이상일 때
+            1024: {
+                slidesPerView: 3
+            },
+            // 화면의 넓이가 640px 이상일 때
+            768: {
+                slidesPerView: 2
+            }
+        }
+    });
+    
+    var swiper = new Swiper(".field_cont #tab03 .con_list", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        autoplay: false,
+        loop: false,
+        navigation: { // 버튼
+            nextEl: ".field_cont #tab03 .swiper-button-next",
+            prevEl: ".field_cont #tab03 .swiper-button-prev",
+        },
+        breakpoints: { //반응형
+            // 화면의 넓이가 320px 이상일 때
+            1024: {
+                slidesPerView: 3
+            },
+            // 화면의 넓이가 640px 이상일 때
+            768: {
+                slidesPerView: 2
+            }
+        }
+    });
+    
+    var swiper = new Swiper(".field_cont #tab04 .con_list", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        autoplay: false,
+        loop: false,
+        navigation: { // 버튼
+            nextEl: ".field_cont #tab04 .swiper-button-next",
+            prevEl: ".field_cont #tab04 .swiper-button-prev",
+        },
+        breakpoints: { //반응형
+            // 화면의 넓이가 320px 이상일 때
+            1024: {
+                slidesPerView: 3
+            },
+            // 화면의 넓이가 640px 이상일 때
+            768: {
+                slidesPerView: 2
+            }
+        }
+    });
+    
+    var swiper = new Swiper(".field_cont #tab05 .con_list", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        autoplay: false,
+        loop: false,
+        navigation: { // 버튼
+            nextEl: ".field_cont #tab05 .swiper-button-next",
+            prevEl: ".field_cont #tab05 .swiper-button-prev",
+        },
+        breakpoints: { //반응형
+            // 화면의 넓이가 320px 이상일 때
+            1024: {
+                slidesPerView: 3
+            },
+            // 화면의 넓이가 640px 이상일 때
+            768: {
+                slidesPerView: 2
+            }
+        }
+    });
+    
+    var swiper = new Swiper(".field_cont #tab06 .con_list", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        autoplay: false,
+        loop: false,
+        navigation: { // 버튼
+            nextEl: ".field_cont #tab06 .swiper-button-next",
+            prevEl: ".field_cont #tab06 .swiper-button-prev",
+        },
+        breakpoints: { //반응형
+            // 화면의 넓이가 320px 이상일 때
+            1024: {
+                slidesPerView: 3
+            },
+            // 화면의 넓이가 640px 이상일 때
+            768: {
+                slidesPerView: 2
+            }
+        }
+    });
+    
+    
+    var swiper = new Swiper(".micro_cont  .con_list", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        autoplay: false,
+        loop: false,
+        navigation: { // 버튼
+            nextEl: ".micro_cont .swiper-button-next",
+            prevEl: ".micro_cont .swiper-button-prev",
+        },
+        breakpoints: { //반응형
+            // 화면의 넓이가 320px 이상일 때
+            1024: {
+                slidesPerView: 3
+            },
+            // 화면의 넓이가 640px 이상일 때
+            768: {
+                slidesPerView: 2
+            }
+        }
+    });
+    
+    
 
-        $(".swiper-button-play").click(function () {
-            swiper.autoplay.start();
-        });
+    $(".swiper-button-pause").click(function () {
+        swiper.autoplay.stop();
+        $('.swiper-button-play').show();
+        $(this).hide();
+    });
+
+    $(".swiper-button-play").click(function () {
+        swiper.autoplay.start();
+        $(this).hide();
+        $(".swiper-button-pause").show();
+    });
 
     $('a[href="#"]').click(function (event) {
         event.preventDefault();
@@ -542,13 +728,11 @@ function close_pop(flag) {
 };
 
 
-function onLoading(){
+function onLoading() {
     $('.loading').show();
 }
 
 
-function offLoading (){
+function offLoading() {
     $('.loading').hide();
 }
-
-
