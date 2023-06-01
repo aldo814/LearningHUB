@@ -1,8 +1,47 @@
 $(document).ready(function () {
-
+    
+    $('.all_menu').click(function(){
+        $('.mega_menu').show();
+        $('.sitemapbg').show();
+        $('body').addClass('not_scroll');
+    });
+    
+    $('.mega_menu .close_btn').click(function(){
+        $('.mega_menu').hide();
+        $('.sitemapbg').hide();
+        $('body').removeClass('not_scroll');
+    });
+    
+    $('#header .m_menu .m_search .search_btn').click(function(){
+       $(this).toggleClass('active'); 
+        $(this).next().toggle();
+    });
+    
+    $('#header .m_menu_btn').click(function(){
+       $('.m_all_menu').show(); 
+    });
+    
+    $('.m_all_menu .m_gnb > li > a').click(function(){
+       $(this).next().toggle();
+        $(this).addClass('active')
+    });
+    
+    $('.m_all_menu .m_gnb > li > ul > li > a').click(function(){
+       $(this).next().toggle();
+        $(this).addClass('active')
+    });
+    
+     $('.m_all_menu .close_btn').click(function(){
+       $('.m_all_menu').hide();
+    });
+    
     var swiper = new Swiper(".main_banner", {
         slidesPerView: 'auto',
         loop: true,
+        autoplay: { 
+            delay: 5000,
+            disableOnInteraction: false, 
+        },
         // 좌우 화살표 navigation element 지정
         navigation: {
             nextEl: ".swiper-button-next",
@@ -41,12 +80,12 @@ $(document).ready(function () {
                 slidesPerView: 3
             },
             // 화면의 넓이가 640px 이상일 때
-            768: {
-                slidesPerView: 2
+            640: {
+               slidesPerView: "auto",
             }
         }
     });
-    
+
     var swiper = new Swiper(".new_cont .con_list", {
         spaceBetween: 20,
         slidesPerView: 4,
@@ -62,12 +101,12 @@ $(document).ready(function () {
                 slidesPerView: 3
             },
             // 화면의 넓이가 640px 이상일 때
-            768: {
-                slidesPerView: 2
+            640: {
+               slidesPerView: "auto",
             }
         }
     });
-    
+
     var swiper = new Swiper(".field_cont #tab01 .con_list", {
         spaceBetween: 20,
         slidesPerView: 4,
@@ -83,12 +122,12 @@ $(document).ready(function () {
                 slidesPerView: 3
             },
             // 화면의 넓이가 640px 이상일 때
-            768: {
-                slidesPerView: 2
+            640: {
+               slidesPerView: "auto",
             }
         }
     });
-    
+
     var swiper = new Swiper(".field_cont #tab02 .con_list", {
         spaceBetween: 20,
         slidesPerView: 4,
@@ -104,12 +143,12 @@ $(document).ready(function () {
                 slidesPerView: 3
             },
             // 화면의 넓이가 640px 이상일 때
-            768: {
-                slidesPerView: 2
+            640: {
+               slidesPerView: "auto",
             }
         }
     });
-    
+
     var swiper = new Swiper(".field_cont #tab03 .con_list", {
         spaceBetween: 20,
         slidesPerView: 4,
@@ -125,12 +164,12 @@ $(document).ready(function () {
                 slidesPerView: 3
             },
             // 화면의 넓이가 640px 이상일 때
-            768: {
-                slidesPerView: 2
+            640: {
+               slidesPerView: "auto",
             }
         }
     });
-    
+
     var swiper = new Swiper(".field_cont #tab04 .con_list", {
         spaceBetween: 20,
         slidesPerView: 4,
@@ -146,12 +185,12 @@ $(document).ready(function () {
                 slidesPerView: 3
             },
             // 화면의 넓이가 640px 이상일 때
-            768: {
-                slidesPerView: 2
+            640: {
+               slidesPerView: "auto",
             }
         }
     });
-    
+
     var swiper = new Swiper(".field_cont #tab05 .con_list", {
         spaceBetween: 20,
         slidesPerView: 4,
@@ -167,12 +206,12 @@ $(document).ready(function () {
                 slidesPerView: 3
             },
             // 화면의 넓이가 640px 이상일 때
-            768: {
-                slidesPerView: 2
+            640: {
+               slidesPerView: "auto",
             }
         }
     });
-    
+
     var swiper = new Swiper(".field_cont #tab06 .con_list", {
         spaceBetween: 20,
         slidesPerView: 4,
@@ -188,13 +227,13 @@ $(document).ready(function () {
                 slidesPerView: 3
             },
             // 화면의 넓이가 640px 이상일 때
-            768: {
-                slidesPerView: 2
+            640: {
+               slidesPerView: "auto",
             }
         }
     });
-    
-    
+
+
     var swiper = new Swiper(".micro_cont  .con_list", {
         spaceBetween: 20,
         slidesPerView: 4,
@@ -210,13 +249,58 @@ $(document).ready(function () {
                 slidesPerView: 3
             },
             // 화면의 넓이가 640px 이상일 때
-            768: {
-                slidesPerView: 2
+            640: {
+               slidesPerView: "auto",
             }
         }
     });
-    
-    
+
+    var swiper = new Swiper(".top_cont  .con_list", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        autoplay: false,
+        loop: false,
+        navigation: { // 버튼
+            nextEl: ".top_cont .swiper-button-next",
+            prevEl: ".top_cont .swiper-button-prev",
+        },
+        breakpoints: { //반응형
+            // 화면의 넓이가 320px 이상일 때
+            1024: {
+                slidesPerView: 3
+            },
+            // 화면의 넓이가 640px 이상일 때
+            640: {
+               slidesPerView: "auto",
+            }
+        }
+    });
+
+
+    var swiper = new Swiper(".card-wrap  .con_list", {
+        spaceBetween: 20,
+        slidesPerView: 3,
+        autoplay: false,
+        loop: false,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+        navigation: { // 버튼
+            nextEl: ".card-wrap .swiper-button-next",
+            prevEl: ".card-wrap .swiper-button-prev",
+        },
+        breakpoints: { //반응형
+            // 화면의 넓이가 320px 이상일 때
+            1024: {
+                slidesPerView: 3
+            },
+            // 화면의 넓이가 640px 이상일 때
+            768: {
+               slidesPerView: "auto",
+            }
+        }
+    });
 
     $(".swiper-button-pause").click(function () {
         swiper.autoplay.stop();
@@ -229,6 +313,36 @@ $(document).ready(function () {
         $(this).hide();
         $(".swiper-button-pause").show();
     });
+
+    var ticker = function()
+    {
+        timer = setTimeout(function(){
+            $('.top_searched li:first').animate( {marginTop: '-20px'}, 400, function()
+            {
+                $(this).detach().appendTo('.top_searched ul').removeAttr('style');
+            });
+            ticker();
+        }, 2000);         
+      };
+
+  var tickerover = function()
+  {
+    $('.top_searched').mouseover(function(){
+      clearTimeout(timer);
+        $(this).addClass('active')
+    });
+    $('.top_searched').mouseout(function(){
+      ticker();
+        $(this).removeClass('active')
+    });  
+  };
+  tickerover();
+  // 4 끝
+    ticker();
+ 
+
+
+
 
     $('a[href="#"]').click(function (event) {
         event.preventDefault();
@@ -711,10 +825,10 @@ function openModal(modalname) {
     document.get
     $("." + modalname).show();
     $(".shadow").show();
-    $('body').addClass('not_scroll');
     var offset = jQuery(document).scrollTop();
     jQuery("body").css({
         "position": "fixed",
+        "width":"100%",
         "top": -offset
     });
 }
@@ -722,7 +836,6 @@ function openModal(modalname) {
 function close_pop(flag) {
     $('.popUp').hide();
     $(".shadow").hide();
-    $('body').removeClass('not_scroll');
     var offset = jQuery("body").offset().top;
     jQuery("html,body").css("position", "static").scrollTop(-offset);
 };

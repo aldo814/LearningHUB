@@ -102,10 +102,15 @@
 
 
 /* 메인 */
-.main_banner{position: relative;}
+.main_banner{position: relative;height: 340px;position: relative}
+.main_banner .txt{padding: 0 70px;position: absolute;top: 50%;transform: translateY(-50%);width: 100%;color: #fff;box-sizing: border-box}
+.main_banner .txt h3{font-size: 3.2rem;font-weight: bold;margin-bottom: 1.5rem}
+.main_banner .txt p{font-weight: 500;}
+.main_banner .swiper-slide.item01{background: url(../images/main_banner01.png) no-repeat #6fb7ff bottom right 70px}
+.main_banner .swiper-slide.item02{background: url(../images/main_banner02.png) no-repeat #ffa358 bottom right 90px}
 .main_banner .swiper-button-prev,
 .main_banner .swiper-button-next{width: 6px;height: 10px;top: auto;margin-top: 0;bottom: 40px;}
-.main_banner img{display: block;}
+.main_banner img{display: block;width: 100%}
 .main_banner .swiper-button-prev{background: url(../images/mb_prev.png) no-repeat center;left: 70px;}
 .main_banner .swiper-button-next{background: url(../images/mb_next.png) no-repeat;left: 145px;}
 .main_banner .swiper-pagination{position: absolute;bottom: 36px;left: 86px !important;z-index: 5;font-size: 1.3rem;color: #72787f;text-align: left;display: flex;}
@@ -155,6 +160,25 @@
 .field_cont .tabs li a{display: block;width: 100%;height: 100%;}
 .field_cont .tabs li.active{background: #1b1d1f;color: #fff;border-color: #1b1d1f}
 .micro_cont{margin: 7rem 0}
+.card-wrap{background: #e1f0ff;padding: 7rem 0 ;margin: 7rem 0}
+.card-wrap .inner{display: flex;justify-content: space-between}
+.card-wrap .txt_cont{width: 275px;background: url(../images/card_img.png) no-repeat bottom left}
+.card-wrap .txt_cont h3{font-size: 2.6rem;font-weight: 500;margin-bottom: 1rem;}
+.card-wrap .txt_cont .txt{font-size: 1.8rem;}
+.card-wrap .con_list {width: calc(100% - 315px);overflow: hidden;padding-bottom: 50px;position: relative;}
+.card-wrap .con_list .swiper-pagination-progressbar{background: #ffffff;position: absolute;bottom: 3px !important;top: auto;width: calc(100% - 60px);height: 2px;border-radius: 0;}
+.card-wrap .con_list .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background: #72787f}
+.card-wrap .con_list .swiper-button-prev,
+.card-wrap .con_list .swiper-button-next{width: 16px;height: 10px;top: auto;bottom: 0;}
+.card-wrap .con_list .img{height: 180px !important}
+.card-wrap .con_list .swiper-button-prev{background: url(../images/card_prev.png) no-repeat;right: 31px;left: auto;}
+.card-wrap .con_list .swiper-button-next{background: url(../images/card_next.png) no-repeat;right: 0;}
+.today_cont h3{text-align: center;font-size: 2.6rem;font-weight: 500;margin-bottom: 4rem;}
+.today_cont .con_list{display: flex;justify-content: space-between}
+.today_cont .con_list > .item{width: calc(33.333% - 13.333px)}
+.today_cont .con_list > .item .tit{font-size: 1.8rem;margin-bottom: 0.5rem;}
+.today_cont .con_list > .item .desc{font-size: 1.4rem;}
+.today_cont .con_list > .item .img{height: 240px}
 
 /*학습공동체>학습자추가 팝업*/
 .popUp .selected_learner{background:#26282b; padding: 2rem 6rem;display: flex;align-items: flex-start}
@@ -1606,6 +1630,9 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 }
 
 @media all and (max-width:1200px){
+        /* 메인 */
+    .m_full{width: 100%;}
+    .main_notice .center{background-size: 180px;background-position:  right 10px bottom}
     .board_search_wrap.in_btn02 .board_search{margin-left: 10rem}
     .board_search_wrap.in_btn02 a{margin-right: 8rem}
     
@@ -1619,6 +1646,12 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 }
 
 @media all and (max-width:1024px){
+     /* 메인 */
+    .main_notice{display: block;}
+    .main_notice .notice{width: 100%;margin-bottom: 3rem}
+    .main_notice .center{width: 100%}
+    .main_banner .swiper-slide.item01{background-size: 300px}
+    .main_banner .swiper-slide.item02{background-size: 400px;background-position: right 70pxx bottom}
     /* 통합검색 */
     #side .tit,
     #side .com_search,
@@ -1741,7 +1774,16 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 
 
 @media all and (max-width:768px){
-    .popUp .popCont{padding: 2rem 0}
+    /* 메인 */
+    .field_cont .tabs{overflow-x: auto;white-space: nowrap;justify-content: flex-start}
+    .field_cont .tabs li{padding: 0.5rem 2rem}
+    .card-wrap .con_list .swiper-slide{width: 300px !important}
+    .today_cont .img{height: 160px !important}
+    .main_banner .txt{transform: none;top: 40px}
+    .main_banner .swiper-slide.item01{background-size: 200px;background-position: right 30px bottom}
+    .main_banner .swiper-slide.item02{background-size: 200px;background-position: right 30px bottom}
+    
+    .popUp .popCont{padding: 2rem 1rem}
     .popUp .popCont > .scr{max-height: calc(100vh  - 180px)}
     .m_tlt{text-align: left !important}
     .page_tit{font-size: 2rem;padding-bottom: 1.5rem;margin-bottom: 2rem}
@@ -2150,6 +2192,15 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 }
 
 @media all and (max-width:640px){
+    /* 메인 */
+    .cont_slide .con_list .swiper-slide{width: 260px !important}
+    .card-wrap .inner{display: block;}
+    .card-wrap .txt_cont{width: 100%;margin-bottom: 4rem;background-position: right bottom;padding-bottom: 80px}
+    .card-wrap .con_list{width: 100%}
+    .today_cont .con_list{display: block;}
+    .today_cont .con_list > .item{width: 100%;margin-bottom: 3rem;}
+    .today_cont .con_list > .item:last-child{margin-bottom: 0}
+    
     .btn_style01{width: 100px}
     /* tab */
     .tab_style01 li{flex: 1 1;margin-left: -1px;word-break: keep-all}
@@ -2265,6 +2316,13 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 }
 
 @media all and (max-width:480px){
+    /* 메인 */
+    .cont_slide h3{text-align: left}
+    .field_cont h3{text-align: center !important}
+    .main_banner .txt h3{font-size: 2.6rem}
+    .main_banner .txt p br{display: none}
+    .main_banner .txt p{word-break: keep-all}
+    
     /* tab */
     .tab_style01 li a .num{display: block}
     .table_style01 th, .table_style01 td{padding: 1rem 0.5rem;}
