@@ -126,6 +126,9 @@ td.txtCut1{display: table-cell}
 #header .gnb_wrap #gnb02 ul li:first-child{margin-left: 5rem}
 #header .gnb_wrap02{position: relative;} 
 
+.m_all_menu,
+.m_menu{display: none}
+
 .top_searched{height: 66px;margin-left: auto;overflow: hidden;position: relative;}
 .top_searched > p{display: none}
 .top_searched ul{position: relative}
@@ -216,6 +219,8 @@ td.txtCut1{display: table-cell}
     #header .m_menu .m_search > div > div{border: 1px solid #9ea4aa;border-radius: 30px;padding: 10px;display: flex;justify-content: space-between;background: #fff}
     #header .m_menu .m_search > div > div input{border: 0;width: calc(100% - 30px);outline: none}
     #header .m_menu .m_search > div > div button{background: url(../images/seach_ico.png) no-repeat;width: 22px;height: 21px;border: 0;text-indent: -9999px}
+    .m_all_menu,
+.m_menu{display: block}
     .m_all_menu{position: fixed;width: 100%;background: #fff;z-index: 99;left: -20px;top:0;left: 0;box-sizing: border-box;display: none}
     .m_all_menu .top{display: flex;justify-content: space-between;padding: 20px !important;box-sizing: border-box;}
     .m_all_menu .top .close_btn{background: url(../images/close_btn03.png) no-repeat;width: 14px;height: 14px;text-indent: -9999px}
