@@ -2516,6 +2516,8 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
     .j_result{display: block;}
     .j_result li{width: 100%;margin-right: 0;}
     .j_result li:nth-child(even){border-right: 1px solid #e8ebed}
+    
+        .pop_contents .three_btn{width: 100%}
 }
 
 @media all and (max-width:370px){
@@ -2632,4 +2634,6 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
     .score > div{width: 100%;margin-left: 0;box-sizing: border-box}
     
     .review_dashboard02 .dashboard-star{display: block;}
+    
+
 }
