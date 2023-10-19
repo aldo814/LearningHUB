@@ -856,6 +856,8 @@ function openModal(modalname) {
         "width": "100%",
         "top": -offset
     });
+    
+    $('.popUp .pop_wrap .pop_side .snb').hide()
 
 }
 

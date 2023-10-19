@@ -1809,7 +1809,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
     .main_banner .swiper-slide.item02{background-size: 200px;background-position: right 30px bottom}
     
     .popUp .popCont{padding: 2rem 1rem}
-    .popUp .popCont > .scr{max-height: calc(100vh  - 220px)}
+    .popUp .popCont > .scr{max-height: calc(100vh  - 180px)}
     .m_tlt{text-align: left !important}
     .page_tit{font-size: 2rem;padding-bottom: 1.5rem;margin-bottom: 2rem}
     .no_data{padding: 6rem 0}
@@ -1879,7 +1879,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
     /* popup */
     .popUp{height: 100vh;max-width: 100%}
     .popUp .popCont{min-height: calc(100vh - 160px);display: flex;flex-direction: column}
-    .popUp .popCont > .scr.mh_scr{max-height: calc(100vh - 160px)}
+    .popUp .popCont > .scr.mh_scr{max-height: calc(100vh - 120px)}
     .popUp .btn_wrap{margin-top: auto}
     .popUp .pc_pd .btn_wrap{margin-top: 3rem}
     
