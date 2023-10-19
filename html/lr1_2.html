@@ -22,159 +22,52 @@
 </head>
 
 <body>
-    <!--header-->
-    <header id="header">
-        <div class="inner">
-            <div class="top">
-                <h1 class="logo">
-                    <a href="#"><img src="images/logo.png" alt="러닝허브"></a>
-                </h1>
-                <div class="seach_area">
-                    <div class="input_wrap">
-                        <input type="text" placeholder="교육과정을 검색하세요.">
-                        <button type="submit">검색</button>
-                    </div>
-                    <div class="search_history">
-                        <ul>
-                            <li>
-                                <a href="#" class="txt">최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1</a><a href="#" class="del">삭제</a>
+
+    <div class="popUp winPop" style="display: block;max-width: 100%">
+        <div class="popTop">
+            <h3>나의 강의실</h3>
+            <a href="#" class="close" onclick="closeWPopup(this)">닫기</a>
+        </div>
+        <div class="popCont">
+            <div class="pc_pd">
+
+                <div class="clear pop_wrap">
+                    <div class="pop_side">
+                        <ul class="snb">
+                            <li class="active"><a href="#">학습홈</a>
+                                <ul>
+                                    <li>
+                                        <a href="b2c_%EB%82%98%EC%9D%98%EA%B0%95%EC%9D%98%EC%8B%A4_%ED%8C%9D%EC%97%85.html">학습홈</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_1.html">시험</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="lr1_2.html">과제</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_3.html">토론</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_4.html">설문</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_5.html">진도/성적</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li>
-                                <a href="#" class="txt">최근검색어2</a><a href="#" class="del">삭제</a>
-                            </li>
-                            <li>
-                                <a href="#" class="txt">최근검색어3</a><a href="#" class="del">삭제</a>
-                            </li>
+                            <li><a href="lr2.html">공지사항</a></li>
+                            <li><a href="lr3.html">자료실</a></li>
+                            <li><a href="lr4.html">과정질문</a></li>
+                            <li><a href="lr5.html">학습후기</a></li>
+                            <li><a href="lr6.html">의견나누기</a></li>
+                            <li><a href="lr7.html">관심단원</a></li>
                         </ul>
-                        <a href="#" class="all_del">전체 삭제</a>
                     </div>
-                </div>
-                <ul class="memberbx">
-                    <li class="login"><a href="#">로그인</a></li>
-                    <li class="join"><a href="#">회원가입</a></li>
-                </ul>
-
-            </div>
-            <div class="gnb_wrap">
-                <a href="#" class="all_menu">전체메뉴
-                </a>
-                <nav id="gnb">
-                    <ul>
-                        <li><a href="#">수강신청</a></li>
-                        <li><a href="#">마이크로러닝</a></li>
-                        <li><a href="#">역량진단</a></li>
-                        <li><a href="#">경력개발계획</a></li>
-                        <li><a href="#">나의 강의실</a></li>
-                        <li><a href="#">학습지원센터</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!--//header-->
-    <!--content-page-->
-    <div class="content-page">
-        <!--quick_menu-->
-
-        <div class="quick_menu">
-            <ul>
-                <li class="quick"><a href="#"><span></span>
-                        <p> QUICK</p>
-                    </a>
-                    <ul>
-                        <li><a href="#">수강신청</a></li>
-                        <li><a href="#">자주하는 질문</a></li>
-                        <li><a href="#">묻고 답하기</a></li>
-                    </ul>
-                </li>
-                <li class="recent"><a href="#"><span></span>
-                        <p>최근 본 과정</p>
-                    </a>
-                    <ul>
-                        <li><a href="#">테슬라가 말한다! 4...</a></li>
-                        <li><a href="#">테슬라가 말한다! 4...</a></li>
-                        <li><a href="#">테슬라가 말한다! 4...</a></li>
-                    </ul>
-                    <ul class="recent_more">
-                        <div class="item">
-                            <a href="#">
-                                <div class="img imgFill">
-                                    <img src="images/list_sp01.png" alt="">
-                                </div>
-                                <div class="txt">
-                                    <p class="division">[이러닝]</p>
-                                    <p class="tit">테슬라가 말한다! 4차...
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <div class="img imgFill">
-                                    <img src="images/list_sp01.png" alt="">
-                                </div>
-                                <div class="txt">
-                                    <p class="division">[이러닝]</p>
-                                    <p class="tit">테슬라가 말한다! 4차...
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#">
-                                <div class="img imgFill">
-                                    <img src="images/list_sp01.png" alt="">
-                                </div>
-                                <div class="txt">
-                                    <p class="division">[이러닝]</p>
-                                    <p class="tit">테슬라가 말한다! 4차...
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </ul>
-                </li>
-                <li class="top"><a href="#"><span></span>
-                        <p>TOP</p>
-                    </a></li>
-            </ul>
-        </div>
-        <!--//quick_menu-->
-        <div class="inner">
-            <ul class="bread_crumb">
-                <li>HOME</li>
-                <li>나의 강의실</li>
-                <li>나의 강의실</li>
-                <li>수강중인과정</li>
-            </ul>
-            <div class="clear">
-                <div id="side">
-                    <h3 class="tit">나의 강의실</h3>
-                    <ul class="snb">
-                        <li><a href="#">수강신청 현황</a></li>
-                        <li class="active"><a href="#">나의 강의실</a>
-                            <ul>
-                                <li class="active"><a href="#">수강중인과정</a></li>
-                                <li><a href="#">학습후기</a></li>
-                                <li><a href="#">설문함</a></li>
-                                <li><a href="#">쪽지함</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">학습 이력 현황</a></li>
-                        <li><a href="#">나의 경력 활동</a>
-                            <ul>
-                                <li><a href="#">교육계획현황</a></li>
-                                <li><a href="#">자격취득현황</a></li>
-                                <li><a href="#">어학취득현황</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">사외 교육</a></li>
-                        <li><a href="#">학습 레벨</a></li>
-                        <li><a href="#">마일리지 이용/적립</a></li>
-                        <li><a href="#">개인정보 수정</a></li>
-                    </ul>
-                </div>
-                <div id="contents">
+                
+             
+             
+                <div class="pop_contents">
                     <h3 class="page_tit">수강중인 과정</h3>
                     <div class="home_top">
                         <h3>B2B마케팅을 위한 솔루션 영업전략</h3>
@@ -199,17 +92,6 @@
                         </div>
                     </div>
 
-                    <div class="tab_wrap tab_select mb40">
-                        <a href="#" class="tabs_dropdown">학습홈</a>
-                        <ul class="tab_style01">
-                            <li class="w120"><a href="#">학습홈</a></li>
-                            <li class="w120"><a href="#">시험</a></li>
-                            <li class="active w120"><a href="#">과제</a></li>
-                            <li class="w120"><a href="#">토론</a></li>
-                            <li class="w120"><a href="#">설문</a></li>
-                            <li class="w120"><a href="#">진도/성적</a></li>
-                        </ul>
-                    </div>
 
                     <p class="tit02">유의사항</p>
                     <div class="gray_bg mb40">
@@ -303,475 +185,14 @@
                     </div>
 
                 </div>
-            </div>
-        </div>
-
-
-
-
-        <!--팝업-->
-        <div class="shadow"></div>
-        <div class="popUp modal1 w760">
-            <div class="popTop">
-                <h3>과정소개</h3>
-                <a href="#" class="close" onclick="close_pop()">닫기</a>
-            </div>
-            <div class="popCont">
-                <div class="pc_pd scr mh_scr">
-                    <p class="bold02 mb20">과정정보</p>
-                    <table class="table_style02 mb40">
-                        <caption>과정정보</caption>
-                        <colgroup>
-                            <col style="width: 18%">
-                            <col>
-                            <col style="width: 18%">
-                            <col>
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <th scope="row">과정명</th>
-                                <td colspan="3">B2B마케팅을 위한 솔루션 영업전략 - 1 기</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">과정유형</th>
-                                <td>이러닝</td>
-                                <th scope="row">교육분류</th>
-                                <td>공통</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">교육기간</th>
-                                <td>2022.01.18 ~ 2022.02.28</td>
-                                <th scope="row">차시/교육시간</th>
-                                <td>18차시 / 4주(17시간)</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">교육기관</th>
-                                <td>인키움</td>
-                                <th scope="row">정원</th>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">고용보험여부</th>
-                                <td>비고용보험</td>
-                                <th scope="row">강사</th>
-                                <td>박기성</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">수강비용</th>
-                                <td colspan="3">0 </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <p class="bold02 mb20">과정소개</p>
-                    <table class="table_style02 mb40 m_table">
-                        <caption>과정소개</caption>
-                        <colgroup>
-                            <col style="width: 18%">
-                            <col>
-                        </colgroup>
-
-                        <tbody>
-                            <tr>
-                                <th scope="row">과정내용</th>
-                                <td>환경 변화가 빨라지고 기업 간 경쟁이 치열해감에 따라 솔루션에 관심을 갖는 기업이 점점
-                                    늘어나고 있다. 그러나 소수의 기업을 제외하면 장기적 관점의 차별화된 경쟁력을 확보 하는데
-                                    필요한 교육시스템이 부족한 상황이다. </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">학습대상</th>
-                                <td>
-                                    <ul class="list_style03">
-                                        <li class="mb5">제품, 서비스, 솔루션 영업직</li>
-                                        <li>영업/마케팅팀 근무자</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">학습목표</th>
-                                <td>
-                                    <ul class="num_list">
-                                        <li> 솔루션 개념, 중요성, 고객 / 기업 측면의 가치창출 원천을 설명할 수 있다. </li>
-                                        <li>솔루션을 통한 가치창출 기회 발견, 가치 전달 수단의 설계, 고객과의 가치 공유 등과 관련된
-                                            솔루션 전개 방법론을 설명할 수 있다. </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">학습목차</th>
-                                <td>
-                                    <ul class="num_list">
-                                        <li> 전략의 개념 변화와 구성요소 </li>
-                                        <li>전략 구성 요소별 차별화 원천</li>
-                                        <li>차별화 원천으로서의 솔루션</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                    <p class="bold02 mb20">수료기준</p>
-                    <table class="table_style02 pc_show">
-                        <caption>수료기준</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">항목</th>
-                                <th scope="col">진도율</th>
-                                <th scope="col">중간시험</th>
-                                <th scope="col">최종시험</th>
-                                <th scope="col">과제</th>
-                                <th scope="col">총점</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="tct">반영율</td>
-                                <td class="tct">100%</td>
-                                <td class="tct">0%</td>
-                                <td class="tct">0%</td>
-                                <td class="tct">0%</td>
-                                <td class="tct">100%</td>
-                            </tr>
-                            <tr>
-                                <td class="tct">과락기준</td>
-                                <td class="tct">80%미만</td>
-                                <td class="tct">0점</td>
-                                <td class="tct">0점</td>
-                                <td class="tct">0점</td>
-                                <td class="tct">80점 미만</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-                    <table class="table_style02 m_show">
-                        <caption>수료기준</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">항목</th>
-                                <th scope="col">반영률</th>
-                                <th scope="col">과락기준</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">진도율</th>
-                                <td class="tct">100%</td>
-                                <td class="tct">80% 미만</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">중간시험</th>
-                                <td class="tct">0%</td>
-                                <td class="tct">0점</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">최종시험</th>
-                                <td class="tct">0%</td>
-                                <td class="tct">0점</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">과제</th>
-                                <td class="tct">0%</td>
-                                <td class="tct">0점</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">총점</th>
-                                <td class="tct">100%</td>
-                                <td class="tct">80점 미만</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!--//팝업-->
-        </div>
-
-
-        <!--팝업-->
-        <div class="popUp modal2">
-            <div class="popTop">
-                <h3>학습 가이드</h3>
-                <a href="#" class="close" onclick="close_pop()">닫기</a>
-            </div>
-            <div class="popCont">
-                <div class="pc_pd ">
-                    <p class="bold02 mb20">필독사항</p>
-                    <ul class="list_style01 mb40">
-                        <li class="gray f14 bold02">리포트는 학습종료일 이후에는 제출 불가
-                        </li>
-                        <li class="gray f14 bold02">모사리포트 제출시(타인의 리포트를 받아 제출하는 행위)에는 리포트 제출자 및 제공자 모두
-                            0점 처리</li>
-                    </ul>
-                    <p class="bold02 mb20">교육상세안내</p>
-                    <table class="table_style02">
-                        <caption>교육상세안내</caption>
-                        <colgroup>
-                            <col style="width: 30%">
-                            <col>
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col">구분</th>
-                                <th scope="col">내용</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="tct">재학습 기간</td>
-                                <td class="tct">교육종료 후 12개월까지</td>
-                            </tr>
-                            <tr>
-                                <td class="tct">1일 학습량</td>
-                                <td class="tct">1일 학습제한 8차시</td>
-                            </tr>
-                            <tr>
-                                <td class="tct">수료처리</td>
-                                <td class="tct">학습종료 후 7일이내
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <!--//팝업-->
-
-
-        <!--팝업-->
-        <div class="popUp modal3 w960" style="display: none">
-            <div class="popTop">
-                <h3>러닝허브입니다.</h3>
-                <a href="#" class="close" onclick="close_pop()">닫기</a>
-            </div>
-            <div class="popCont pd0">
-                <div class="player_wrap">
-                    <div class="left">
-                        <div class="video_area">
-                            <video controls src="http://content.learning-hub.co.kr/contents/Course/m_1093442/docs/01/F001.mp4"></video>
-                        </div>
-                        <div class="bt">
-                            <div class="pageNavi">
-                                <a href="#" class="prev">이전</a>
-                                <p class="pageNum">2/4</p>
-                                <a href="#" class="next">다음</a>
-                            </div>
-                            <div class="sub_title">
-                                <p>자막이 노출됩니다.자막이 노출됩니다.자막이 노출됩니다.자막이 노출됩니다.자막이 노출됩니다.자막이
-                                    노출됩니다. 자막이 노출됩니다.자막이 노출됩니다.자막이 노출됩니다.자막이 노출됩니다.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="side_wrap" id="p1">
-                            <div class="top">
-                                <p class="tit01">목차</p>
-                                <a href="#" class="side_close">닫기</a>
-                            </div>
-                            <div class="side_cont">
-                                <div class="index_top">
-                                    <p class="tit txtCut1">교육과정명 교육과정명 교육과...교육과정명 교육과정명 교육과...</p>
-                                    <p class="pr_late">
-                                        진도율 : 3강/10강(25%)
-                                    </p>
-                                </div>
-                                <div class="index_list">
-                                    <ul>
-                                        <li>1차시 차시명이 노출됩니다.
-                                            <ul class="list_style03">
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li>2차시 차시명이 노출됩니다.
-                                            <ul class="list_style03">
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li>2차시 차시명이 노출됩니다.
-                                            <ul class="list_style03">
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li>2차시 차시명이 노출됩니다.
-                                            <ul class="list_style03">
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                                <li>절명이 노출됩니다.
-                                                    <p class="gray">학습완료 | 40:20</p>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="side_wrap" id="p2">
-                            <div class="top">
-                                <p class="tit01">목차</p>
-                                <a href="#" class="side_close">닫기</a>
-                            </div>
-                            <div class="side_cont">
-                                <div class="index_top">
-                                    <p class="tit txtCut1">교육과정명 교육과정명 교육과...교육과정명 교육과정명 교육과...</p>
-                                    <p class="pr_late">
-                                        진도율 : 3강/10강(25%)
-                                    </p>
-                                </div>
-                                <div class="ask_area">
-                                    <div class="item">
-                                        <label for="tit">제목</label>
-                                        <input type="text" class="input_style02" id="tit">
-                                    </div>
-
-                                    <div class="item">
-                                        <label for="cont">내용</label>
-                                        <textarea class="textarea" id="cont"></textarea>
-                                    </div>
-                                </div>
-                                <div class="btn_area">
-                                    <a href="#" class="btn_style08 btn_gray04">저장</a>
-                                    <a href="#" class="btn_style08 btn_gray03 sh">취소</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="side_wrap" id="p3">
-                            <div class="top">
-                                <p class="tit01">목차</p>
-                                <a href="#" class="side_close">닫기</a>
-                            </div>
-                            <div class="side_cont">
-                                <div class="index_top">
-                                    <p class="tit txtCut1">교육과정명 교육과정명 교육과...교육과정명 교육과정명 교육과...</p>
-                                    <p class="pr_late">
-                                        진도율 : 3강/10강(25%)
-                                    </p>
-                                </div>
-                                <ul class="down_list">
-                                    <li>1차시명이 노출됩니다.
-                                        <ul class="list_style03">
-                                            <li>
-                                                <p>1절명이 노출됩니다.</p><a href="#" class="down_ico">다운로드</a>
-                                            </li>
-                                            <li>
-                                                <p>2절명이 노출됩니다.</p><a href="#" class="down_ico">다운로드</a>
-                                            </li>
-                                            <li>
-                                                <p>3절명이 노출됩니다.</p><a href="#" class="down_ico">다운로드</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>2차시명이 노출됩니다.
-                                        <ul class="list_style03">
-                                            <li>
-                                                <p>1절명이 노출됩니다.</p><a href="#" class="down_ico">다운로드</a>
-                                            </li>
-                                            <li>
-                                                <p>2절명이 노출됩니다.</p><a href="#" class="down_ico">다운로드</a>
-                                            </li>
-                                            <li>
-                                                <p>3절명이 노출됩니다.</p><a href="#" class="down_ico">다운로드</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                        <ul class="side_tab">
-                            <li class="active">
-                                <a href="#" rel="p1">목차</a>
-                            </li>
-                            <li>
-                                <a href="#" rel="p2">과정<br>
-                                    질문</a>
-                            </li>
-                            <li>
-                                <a href="#" rel="p3">교안<br>
-                                    받기</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--//팝업-->
-
-        <!--팝업-->
+                
+                
+                <div class="shadow"></div>
+                <!--팝업-->
         <div class="popUp modal4 w760">
             <div class="popTop">
                 <h3>모사답안 처리규정</h3>
-                <a href="#" class="close" onclick="close_pop()">닫기</a>
+                <a href="#" class="close" onclick="close_child_pop(this)">닫기</a>
             </div>
             <div class="popCont">
                 <div class="pc_pd scr mh_scr">
@@ -836,7 +257,7 @@
         <div class="popUp modal9 w760">
             <div class="popTop">
                 <h3>시험 응시</h3>
-                <a href="#" class="close" onclick="close_pop()">닫기</a>
+                <a href="#" class="close" onclick="close_child_pop(this)">닫기</a>
             </div>
             <div class="popCont">
                 <div class="pc_pd scr">
@@ -1004,7 +425,7 @@
          <div class="popUp modal5 w760">
             <div class="popTop">
                 <h3>1:1 문의사항</h3>
-                <a href="#" class="close" onclick="close_pop()">닫기</a>
+                <a href="#" class="close" onclick="close_child_pop(this)">닫기</a>
             </div>
             <div class="popCont">
                 <div class="pc_pd scr mh_scr">
@@ -1121,7 +542,7 @@
          <div class="popUp  w760">
             <div class="popTop">
                 <h3>1:1 문의사항</h3>
-                <a href="#" class="close" onclick="close_pop()">닫기</a>
+                <a href="#" class="close" onclick="close_child_pop(this)">닫기</a>
             </div>
             <div class="popCont">
                 <div class="pc_pd scr mh_scr">
@@ -1185,7 +606,7 @@
          <div class="popUp  w760">
             <div class="popTop">
                 <h3>1:1 문의사항</h3>
-                <a href="#" class="close" onclick="close_pop()">닫기</a>
+                <a href="#" class="close" onclick="close_child_pop(this)">닫기</a>
             </div>
             <div class="popCont">
                 <div class="pc_pd scr mh_scr">
@@ -1242,7 +663,7 @@
         <div class="popUp modal6 w760">
             <div class="popTop">
                 <h3>과제 제출</h3>
-                <a href="#" class="close" onclick="close_pop()">닫기</a>
+                <a href="#" class="close" onclick="close_child_pop(this)">닫기</a>
             </div>
             <div class="popCont">
                 <div class="pc_pd scr mh_scr">
@@ -1307,45 +728,13 @@
             </div>
         </div>
         <!--//과제 제출팝업-->
-        
-     </div>
-    <!--//content-page-->
-
-    <!--footer-->
-    <footer id="footer">
-        <div class="inner">
-            <div class="top">
-                <h1 class="logo">
-                    <a href="#">
-                        <img src="images/foot_logo.png" alt="러닝허브">
-                    </a>
-                </h1>
-                <ul>
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">이용약관</a></li>
-                    <li class="bold"><a href="#">개인정보취급방침</a></li>
-                    <li><a href="#">찾아오시는길</a></li>
-                    <li><a href="#">환불규정</a></li>
-                </ul>
-                <div class="family_site">
-                    <select class="select_style01">
-                        <option>관련사이트</option>
-                    </select>
-                    <a href="#">이동</a>
+                
                 </div>
-            </div>
-            <div class="bt">
-                <div class="txt">
-                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
-                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
-                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
-                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
-                </div>
-                <img src="images/foot_mark.png" alt="우수훈련기관">
             </div>
         </div>
-    </footer>
-    <!--//footer-->
+    </div>
+    
+    <!--//팝업-->
 </body>
 
 </html>

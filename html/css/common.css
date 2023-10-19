@@ -129,6 +129,7 @@ td.txtCut1{display: table-cell}
 .m_all_menu,
 .m_menu{display: none}
 
+
 .top_searched{height: 66px;margin-left: auto;overflow: hidden;position: relative;}
 .top_searched > p{display: none}
 .top_searched ul{position: relative}

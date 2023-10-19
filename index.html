@@ -753,6 +753,32 @@
 	            <a href="html/로딩바.html" target="_blank">로딩바</a>
 	        </td>
 	    </tr>
+	    <tr>
+	        <td></td>
+	        <td>팝업</td>
+	        <td>
+	            <a href="javascript:void(0);" target="_blank" onclick="popOpen01()">나의 강의실 팝업</a>
+	        </td>
+	    </tr>
+	    <script>
+                        //팝업
+                        function popOpen01()
+
+                        {
+                            var nWidth = "1280";
+
+                            var nHeight = "1000";
+
+                            var xPos = (document.body.clientWidth / 2) - (nWidth / 2);
+
+                            xPos += window.screenLeft; //듀얼 모니터
+
+                            var yPos = (screen.availHeight / 2) - (nHeight / 2);
+
+                            window.open("/html/b2c_나의강의실_팝업.html", "popOpen", "width=" + nWidth + ",height=" + nHeight + ", left=" + xPos + ", top=" + yPos + ", toolbars=no, resizable=no, scrollbars=no");
+                        }
+
+                    </script>
 	</tbody>
 	</table>
 </div>

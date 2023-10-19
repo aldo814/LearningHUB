@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+
+    <div class="popUp winPop" style="display: block;max-width: 100%">
+        <div class="popTop">
+            <h3>나의 강의실</h3>
+            <a href="#" class="close" onclick="closeWPopup(this)">닫기</a>
+        </div>
+        <div class="popCont">
+            <div class="pc_pd">
+
+                <div class="clear pop_wrap">
+                    <div class="pop_side">
+                        <ul class="snb">
+                           <li><a href="#">학습홈</a>
+                                <ul>
+                                    <li>
+                                        <a href="b2c_%EB%82%98%EC%9D%98%EA%B0%95%EC%9D%98%EC%8B%A4_%ED%8C%9D%EC%97%85.html">학습홈</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_1.html">시험</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_2.html">과제</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_3.html">토론</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_4.html">설문</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_5.html">진도/성적</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="lr2.html">공지사항</a></li>
+                            <li><a href="lr3.html">자료실</a></li>
+                            <li class="active"><a href="lr4.html">과정질문</a></li>
+                            <li><a href="lr5.html">학습후기</a></li>
+                            <li><a href="lr6.html">의견나누기</a></li>
+                            <li><a href="lr7.html">관심단원</a></li>
+                        </ul>
+                    </div>
+
+
+                    <!--과정질문 목록 -->
+                    <div class="pop_contents" >
+                        <div class="home_top">
+                            <h3>과정질문</h3>
+                        </div>
+                        <div class="popCont">
+                            <div class="board_search_wrap in_btn">
+                                <div class="board_search">
+                                    <input type="text" placeholder="검색어를 입력해주세요.">
+                                    <button type="submit">검색</button>
+                                </div>
+                                <a href="#" class="btn_style01 btn_gray01">글쓰기</a>
+                            </div>
+                            <table class="table_style02 debate_table">
+                                <caption>과정질문</caption>
+                                <colgroup>
+                                    <col style="width: 10%">
+                                    <col>
+                                    <col style="width: 20%">
+                                    <col style="width: 16%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">종류</th>
+                                        <th scope="col">작성일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tct">10</td>
+                                        <td class="tlt">
+                                            <a href="#" class="txtCut1">제목이 노출됩니다.</a>
+                                        </td>
+                                        <td class="tct">홍길동(abc123)</td>
+                                        <td class="tct">2022.05.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tct">10</td>
+                                        <td class="tlt">
+                                            <a href="#" class="txtCut1">제목이 노출됩니다.</a>
+                                        </td>
+                                        <td class="tct">홍길동(abc123)</td>
+                                        <td class="tct">2022.05.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tct">10</td>
+                                        <td class="tlt">
+                                            <a href="#" class="txtCut1">제목이 노출됩니다.</a>
+                                        </td>
+                                        <td class="tct">홍길동(abc123)</td>
+                                        <td class="tct">2022.05.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tct">10</td>
+                                        <td class="tlt">
+                                            <a href="#" class="txtCut1">제목이 노출됩니다.</a>
+                                        </td>
+                                        <td class="tct">홍길동(abc123)</td>
+                                        <td class="tct">2022.05.13</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--paging-->
+                            <ul class="paging">
+                                <li class="arrow prev">
+                                    <a href="#">이전페이지</a>
+                                </li>
+                                <li class="num active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="num">
+                                    <a href="#">2</a>
+                                </li>
+                                <li class="num">
+                                    <a href="#">3</a>
+                                </li>
+                                <li class="num">
+                                    <a href="#">4</a>
+                                </li>
+                                <li class="num">
+                                    <a href="#">5</a>
+                                </li>
+                                <li class="num">
+                                    <a href="#">6</a>
+                                </li>
+                                <li class="num">
+                                    <a href="#">7</a>
+                                </li>
+                                <li class="num">
+                                    <a href="#">8</a>
+                                </li>
+                                <li class="num">
+                                    <a href="#">9</a>
+                                </li>
+                                <li class="num">
+                                    <a href="#">10</a>
+                                </li>
+                                <li class="arrow next">
+                                    <a href="#">다음페이지</a>
+                                </li>
+                            </ul>
+                            <!--//paging-->
+                        </div>
+                        <!--//과정질문 목록-->
+
+                        <!--과정질문 상세-->
+                    </div>
+
+                    <div class="pop_contents"  style="display: none">
+                        <div class="home_top">
+                            <h3>과정질문</h3>
+                        </div>
+                        <div class="popCont">
+                            <table class="table_style02">
+                                <caption>과정질문</caption>
+                                <colgroup>
+                                    <col style="width: 15%">
+                                    <col>
+                                    <col style="width: 15%">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">제목</th>
+                                        <td colspan="3">질문 제목이 노출됩니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">작성자</th>
+                                        <td>홍길동(abc123)</td>
+                                        <th scope="row">작성일</th>
+                                        <td>2022.05.27</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">내용</th>
+                                        <td colspan="3">내용이 모두 노출됩니다. 내용이 모두 노출됩니다. 내용이 모두 노출
+                                            됩니다. 내용이 모두 노출됩니다.
+
+                                            내용이 모두 노출됩니다. 내용이 모두 노출됩니다. 내용이 모두 노출
+                                            됩니다. 내용이 모두 노출됩니다.
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">첨부파일</th>
+                                        <td colspan="3">
+                                            <div class="file_wrap">
+                                                <div class="upload_prev">
+                                                    <div class="file">
+                                                        <div class="filenameupload"><span class="name">example.pdf</span><span class="size">(1.817K)</span></div>
+                                                    </div>
+                                                    <div class="file">
+                                                        <div class="filenameupload"><span class="name">example.pdf</span><span class="size">(1.817K)</span></div>
+                                                    </div>
+                                                    <div class="file">
+                                                        <div class="filenameupload"><span class="name">example.pdf</span><span class="size">(1.817K)</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <div class="btn_wrap tct mt40 three_btn">
+                                <a href="#" class="btn_style01 btn_gray04">
+                                    수정
+                                </a>
+                                <a href="#" class="btn_style01 btn_gray03">
+                                    삭제
+                                </a>
+                                <a href="#" class="btn_style01 btn_gray01">
+                                    목록
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//과정질문 상세-->
+
+                    <div class="pop_contents" style="display: none">
+                        <div class="home_top">
+                            <h3>과정질문</h3>
+                        </div>
+                        <table class="table_style02 mt20">
+                            <caption>과정질문</caption>
+                            <colgroup>
+                                <col style="width: 15%">
+                                <col>
+                                <col style="width: 15%">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">제목</th>
+                                    <td colspan="3">
+                                        <input type="text" class="input_style03 w100" placeholder="제목을 입력하세요.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">작성자</th>
+                                    <td>홍길동(abc123)</td>
+                                    <th scope="row">작성일</th>
+                                    <td>2022.05.27</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">내용</th>
+                                    <td colspan="3">
+                                        <textarea class="textarea03" placeholder="내용을 입력하세요."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">첨부파일</th>
+                                    <td colspan="3">
+                                        <div class="file_wrap">
+                                            <div id="upload_prev"></div>
+                                            <input type="file" id="uploadFile" name="FileUpload" multiple="multiple" />
+                                            <label for="uploadFile">파일 업로드</label>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="btn_wrap tct mt40 three_btn">
+                            <a href="#" class="btn_style01 btn_gray04">
+                                저장
+                            </a>
+                            <a href="#" class="btn_style01 btn_gray01">
+                                목록
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--//과정질문 글쓰기-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--//팝업-->
+</body>
+
+</html>

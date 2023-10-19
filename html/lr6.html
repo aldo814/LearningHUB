@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+
+    <div class="popUp winPop" style="display: block;max-width: 100%">
+        <div class="popTop">
+            <h3>나의 강의실</h3>
+            <a href="#" class="close" onclick="closeWPopup(this)">닫기</a>
+        </div>
+        <div class="popCont">
+            <div class="pc_pd">
+
+                <div class="clear pop_wrap">
+                    <div class="pop_side">
+                        <ul class="snb">
+                            <li><a href="#">학습홈</a>
+                                <ul>
+                                    <li>
+                                        <a href="b2c_%EB%82%98%EC%9D%98%EA%B0%95%EC%9D%98%EC%8B%A4_%ED%8C%9D%EC%97%85.html">학습홈</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_1.html">시험</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_2.html">과제</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_3.html">토론</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_4.html">설문</a>
+                                    </li>
+                                    <li>
+                                        <a href="lr1_5.html">진도/성적</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="lr2.html">공지사항</a></li>
+                            <li><a href="lr3.html">자료실</a></li>
+                            <li><a href="lr4.html">과정질문</a></li>
+                            <li><a href="lr5.html">학습후기</a></li>
+                            <li class="active"><a href="lr6.html">의견나누기</a></li>
+                            <li><a href="lr7.html">관심단원</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <!--의견나누기 팝업-->
+                    <div class="pop_contents">
+                        <div class="home_top">
+                            <h3>의견나누기</h3>
+                        </div>
+                        <div class="opinion_wrap mt20">
+                            <div class="opinion_write">
+                                <textarea placeholder="의견을 입력해 주세요."></textarea>
+                                <button>댓글등록</button>
+                            </div>
+                            <div class="opinion_list">
+                                <div class="item">
+                                    <div class="top">
+                                        <ul>
+                                            <li>홍길동(abc123)</li>
+                                            <li>2022.05.27</li>
+                                        </ul>
+                                    </div>
+                                    <p class="cont">의견내용이 노출됩니다. 의견내용이 노출됩니다. 의견내용이 노출됩니다. 의견내용이 노출됩니다. 의견
+                                        내용이 노출됩니다. 의견내용이 노출됩니다. 의견내용이 노출됩니다. </p>
+                                    <div class="bt">
+                                        <div class="recomm_set">
+                                            <a href="#" class="up">100</a>
+                                            <a href="#" class="down">20</a>
+                                        </div>
+                                        <div class="btn_set">
+                                            <a href="#" class="btn_black01">수정</a>
+                                            <a href="#" class="btn_gray01">삭제</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="top">
+                                        <ul>
+                                            <li>홍길동(abc123)</li>
+                                            <li>2022.05.27</li>
+                                        </ul>
+                                    </div>
+                                    <p class="cont">의견내용이 노출됩니다. 의견내용이 노출됩니다. 의견내용이 노출됩니다. 의견내용이 노출됩니다. 의견
+                                        내용이 노출됩니다. 의견내용이 노출됩니다. 의견내용이 노출됩니다. </p>
+                                    <div class="bt">
+                                        <div class="recomm_set">
+                                            <a href="#" class="up">100</a>
+                                            <a href="#" class="down">20</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="top">
+                                        <ul>
+                                            <li>홍길동(abc123)</li>
+                                            <li>2022.05.27</li>
+                                        </ul>
+                                    </div>
+                                    <p class="cont">
+                                        <textarea>의견내용이 노출됩니다. 의견내용이 노출됩니다. 의견내용이 노출됩니다. 의견내용이 노출됩니다. 의견내용이 노출됩니다. 의견내용이 노출됩니다. 의견내용이 노출됩니다.</textarea>
+                                    </p>
+                                    <div class="bt">
+                                        <div class="recomm_set">
+                                            <a href="#" class="up">100</a>
+                                            <a href="#" class="down">20</a>
+                                        </div>
+                                        <div class="btn_set">
+                                            <a href="#" class="btn_gray04">저장</a>
+                                            <a href="#" class="btn_gray01">삭제</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--//의견나누기-->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--//팝업-->
+</body>
+
+</html>
