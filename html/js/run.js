@@ -825,6 +825,48 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 
 });
 
+
+$(window).resize(function(){
+    // 미디어 쿼리를 사용하여 화면 너비를 확인
+if (window.matchMedia("(max-width: 768px)").matches) {
+    
+    var activeLi = $(".winPop .snb > .active");
+    var ulExists = activeLi.find("ul").length > 0;
+    var activeText;
+    $('.winPop .snb').wrap('<div class="snb_select"></div>')
+    if (ulExists) {
+        // <ul> 아래에 "active" 클래스가 지정된 <li>가 있는 경우
+        activeText = activeLi.find("li.active a").text();
+    } else {
+        // <ul> 아래에 "active" 클래스가 지정된 <li>가 없는 경우, 첫 번째 <a> 요소의 텍스트 사용
+        activeText = activeLi.find("a").text();
+    }
+
+    // "activeText" 클래스가 지정된 <div> 요소에 텍스트를 append로 추가
+    $(".snb_select").prepend('<div class="activeText">' + activeText + '</div>');
+    
+    $('.snb_select .activeText').click(function(){
+        $(this).next().toggle();
+           $(this).parent().toggleClass('selected')
+    })
+    
+    $(".winPop .snb > li > a").click(function (e) {
+
+        // 모든 <li> 요소에서 "selected" 클래스 제거
+        $(".winPop .snb > li > a").removeClass('selected');
+
+        // 클릭된 <a> 요소의 다음 <ul> 요소의 상태를 토글하고 "selected" 클래스를 추가합니다.
+        var $nextUl = $(this).next('ul');
+        if ($nextUl.is(':visible')) {
+            $nextUl.hide();
+        } else {
+            $nextUl.show();
+            $(this).addClass('selected');
+        }
+    });
+}
+})
+
 function spinner() {
     //  SPINNER
     $("input[type='number']").spinner();
