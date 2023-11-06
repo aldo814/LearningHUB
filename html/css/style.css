@@ -1784,6 +1784,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 @media all and (max-width:1270px){
     
     .w_over{width: 100%;overflow-y: auto}   
+    .top_btn{display: none}
 }
 
 @media all and (max-width:1200px){
