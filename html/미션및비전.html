@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header id="header">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="러닝허브"></a>
+                </h1>
+                <div class="seach_area">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="교육과정을 검색하세요.">
+                        <button type="submit">검색</button>
+                    </div>
+                    <div class="search_history">
+                        <ul>
+                            <li>
+                                <a href="#" class="txt">최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어2</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어3</a><a href="#" class="del">삭제</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="all_del">전체 삭제</a>
+                    </div>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+            <div class="gnb_wrap">
+                <a href="#" class="all_menu">전체메뉴
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">마이크로러닝</a></li>
+                        <li><a href="#">역량진단</a></li>
+                        <li><a href="#">경력개발계획</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습지원센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- 모바일 메뉴 -->
+            <div class="m_menu">
+                <div class="m_search">
+                    <a href="#" class="search_btn">검색</a>
+                    <div>
+                        <div>
+                            <input type="text" placeholder="교육과정을 검색하세요.">
+                            <button type="submit">검색</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="m_menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="m_all_menu">
+                <div class="top">
+                    <h1 class="logo">
+                        <img src="images/logo.png" alt="러닝허브">
+                    </h1>
+                    <a href="#" class="close_btn">닫기</a>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+                <ul class="m_gnb">
+                    <li><a href="#">수강신청</a></li>
+                    <li><a href="#">마이크로러닝</a>
+                        <ul>
+                            <li><a href="#">인기 상승 콘텐츠</a></li>
+                            <li><a href="#">분류 별 콘텐츠</a></li>
+                            <li><a href="#">필수 콘텐츠</a></li>
+                            <li><a href="#">수강중인 콘텐츠</a></li>
+                            <li><a href="#">지식캐스트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">역량진단</a></li>
+                    <li><a href="#">경력개발계획</a></li>
+                    <li><a href="#">나의 강의실</a>
+                        <ul>
+                            <li><a href="#">수강신청현황</a></li>
+                            <li><a href="#">나의강의실</a>
+                                <ul>
+                                    <li><a href="#">수강 중인 과정</a></li>
+                                    <li><a href="#">학습후기</a></li>
+                                    <li><a href="#">설문함</a></li>
+                                    <li><a href="#">쪽지함</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">학습이력현황</a></li>
+                            <li><a href="#">나의 경력활동</a>
+                                <ul>
+                                    <li><a href="#">교육계획현황</a></li>
+                                    <li><a href="#">자격취득현황</a></li>
+                                    <li><a href="#">어학취득현황</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">사외교육</a></li>
+                            <li><a href="#">학습레벨</a></li>
+                            <li><a href="#">마일리지 이용/적립</a></li>
+                            <li><a href="#">개인정보 수정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">학습지원센터</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">학습공동체</a></li>
+                            <li><a href="#">자주하는질문</a></li>
+                            <li><a href="#">묻고답하기</a></li>
+                            <li><a href="#">원격지원</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">학습방법안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- //모바일 메뉴 -->
+        </div>
+    </header>
+
+    <!--전체메뉴-->
+    <div class="mega_menu">
+        <div class="top">
+            <h3>전체메뉴</h3>
+            <a href="#" class="close_btn">닫기</a>
+        </div>
+        <div class="cont">
+            <ul>
+                <li><a href="#">수강신청</a></li>
+                <li><a href="#">마이크로러닝</a>
+                    <ul>
+                        <li><a href="#">인기 상승 콘텐츠</a></li>
+                        <li><a href="#">분류 별 콘텐츠</a></li>
+                        <li><a href="#">필수 콘텐츠</a></li>
+                        <li><a href="#">수강중인 콘텐츠</a></li>
+                        <li><a href="#">지식캐스트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">역량진단</a></li>
+                <li><a href="#">경력개발계획</a></li>
+                <li><a href="#">나의 강의실</a>
+                    <ul>
+                        <li><a href="#">수강신청현황</a></li>
+                        <li><a href="#">나의강의실</a>
+                            <ul>
+                                <li><a href="#">수강 중인 과정</a></li>
+                                <li><a href="#">학습후기</a></li>
+                                <li><a href="#">설문함</a></li>
+                                <li><a href="#">쪽지함</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">학습이력현황</a></li>
+                        <li><a href="#">나의 경력활동</a>
+                            <ul>
+                                <li><a href="#">교육계획현황</a></li>
+                                <li><a href="#">자격취득현황</a></li>
+                                <li><a href="#">어학취득현황</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">사외교육</a></li>
+                        <li><a href="#">학습레벨</a></li>
+                        <li><a href="#">마일리지 이용/적립</a></li>
+                        <li><a href="#">개인정보 수정</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">학습지원센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">학습공동체</a></li>
+                        <li><a href="#">자주하는질문</a></li>
+                        <li><a href="#">묻고답하기</a></li>
+                        <li><a href="#">원격지원</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">학습방법안내</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="sitemapbg"></div>
+    <!--//전체메뉴-->
+    <!--//header-->
+
+
+    <div class="sub_top">
+        <div class="inner">
+            <h3>러닝허브(Learning Hub)</h3>
+            <p>러닝허브는 고객사 임직원의 역량 개발에 필요한 e-러닝, 독서 통신, 전화 영어, 집합 교육 등의 형식 학습과 온라인 강의 및 지식 정보 등
+                무형식 학습 콘텐츠를 통합하여 제공하는 <strong>Total Learning 서비스</strong> 입니다.</p>
+            <ul class="st_tab">
+                <li>
+                    <a href="회사소개.html">회사소개</a>
+                </li>
+                <li class="active">
+                    <a href="미션및비전.html">미션 및 비전</a>
+                </li>
+                <li>
+                    <a href="사업영역.html">사업영역</a>
+                </li>
+                <li>
+                    <a href="조직도.html">조직도</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sub_cont">
+        <div class="inner">
+             <h3 class="otit">INKIUM’s LAW</h3>
+             <div class="mission_wrap">
+                 <div class="item">
+                     <div class="img">
+                         <img src="images/mission.png" alt="체스">
+                     </div>
+                     <div class="txt">
+                         <p class="tit">Mission</p>
+                         <p class="desc">변화와 성장을 추구하는 개인 및 조직에게 차별화된 전문성과
+노하우를 기반으로 최적화된 HR Total 서비스를 제공하여
+고객의 가치를 창출한다</p>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="img"><img src="images/vision.png" alt="사무실"></div>
+                     <div class="txt">
+                         <p class="tit">Vision</p>
+                         <p class="desc">멋과 품격을 지향하는 Top Class HRD Company</p>
+                     </div>
+                 </div>
+             </div>
+             
+             <h3 class="mt70 kv_tit">핵심가치</h3>
+             <div class="kv_wrap">
+                 <div class="item">
+                     <p class="tit">진정성</p>
+                     <p class="desc">진심은 통한다.<br>
+뼈 속부터 진실한 믿음의 후원자</p>
+                     <ul class="hide">
+                         <li>눈앞의 이익보다 장기적인 안목으로
+   객을 대한다.</li>
+                         <li>동료의 성공을 진심으로 응원한다.</li>
+                         <li>맡겨진 업무에 의미를 부여하여,
+   나의 일 같이 처리한다.</li>
+                     </ul>
+                 </div>
+                 <div class="item">
+                     <p class="tit">고객지향</p>
+                     <p class="desc">무엇을 남길것인가? 무엇을 줄것인가.<br>
+고객의 희망 전도사 !</p>
+                     <ul class="hide">
+                         <li>고객사의 상황을 사전에 분석하여
+   先 제안한다.</li>
+                         <li>사업과 관련된 일 외에도 주기적으로
+   고객과 접촉하여 감성적인 유대감을
+   형성한다.</li>
+                         <li>객사와 약속된 납기일은
+   무슨 일이 있어도 지킨다.</li>
+                     </ul>
+                 </div>
+                 <div class="item">
+                     <p class="tit">소통</p>
+                     <p class="desc">눈빛만으로 고객의 소리와<br>
+마음의 조화를 꾀하는 조율사!</p>
+                     <ul class="hide">
+                         <li>고객의 소리에 신속하게 반응하고
+   시기적절하게 해결한다.</li>
+                         <li>동료의 의견을 존중하고,
+   적극 경청한다.</li>
+                         <li>수평적 관계를 창출하고 자신의 의견을
+   자유롭고 진지하게 표현한다.</li>
+                         <li>자신만의 업무 노하우 및 자료를
+   개인간/부서간 아낌없이 공유하고,
+   타 부서 업무 지원에 적극 협조한다.</li>
+                     </ul>
+                 </div>
+                 <div class="item">
+                     <p class="tit">전문성</p>
+                     <p class="desc">전문지식을 기반으로 고객의 가치를<br>
+디자인하는 전략적 파트너!</p>
+                     <ul class="hide">
+                         <li>고객에게 전문성을 바탕으로 설계된
+   최고 품질의 HR솔루션을 제공한다.</li>
+                         <li>학습조직 문화 분위기를 조성하고,
+   다양한 방법론, 콘텐츠, 솔루션 개발에
+   몰입한다.
+</li>
+                         <li>업무 수행을 위한 전문역량 개발에
+   힘쓰고, 부족한 부분을 보완하기 위해
+   학습에 매진한다.</li>
+                     </ul>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/foot_logo.png" alt="러닝허브">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">환불규정</a></li>
+                </ul>
+                <div class="family_site">
+                    <select class="select_style01">
+                        <option>관련사이트</option>
+                    </select>
+                    <a href="#">이동</a>
+                </div>
+            </div>
+            <div class="bt">
+                <div class="txt">
+                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
+                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
+                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
+                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
+                </div>
+                <img src="images/foot_mark.png" alt="우수훈련기관">
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
+</body>
+
+</html>

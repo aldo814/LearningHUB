@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header id="header">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="러닝허브"></a>
+                </h1>
+                <div class="seach_area">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="교육과정을 검색하세요.">
+                        <button type="submit">검색</button>
+                    </div>
+                    <div class="search_history">
+                        <ul>
+                            <li>
+                                <a href="#" class="txt">최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어2</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어3</a><a href="#" class="del">삭제</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="all_del">전체 삭제</a>
+                    </div>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+            <div class="gnb_wrap">
+                <a href="#" class="all_menu">전체메뉴
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">마이크로러닝</a></li>
+                        <li><a href="#">역량진단</a></li>
+                        <li><a href="#">경력개발계획</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습지원센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- 모바일 메뉴 -->
+            <div class="m_menu">
+                <div class="m_search">
+                    <a href="#" class="search_btn">검색</a>
+                    <div>
+                        <div>
+                            <input type="text" placeholder="교육과정을 검색하세요.">
+                            <button type="submit">검색</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="m_menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="m_all_menu">
+                <div class="top">
+                    <h1 class="logo">
+                        <img src="images/logo.png" alt="러닝허브">
+                    </h1>
+                    <a href="#" class="close_btn">닫기</a>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+                <ul class="m_gnb">
+                    <li><a href="#">수강신청</a></li>
+                    <li><a href="#">마이크로러닝</a>
+                        <ul>
+                            <li><a href="#">인기 상승 콘텐츠</a></li>
+                            <li><a href="#">분류 별 콘텐츠</a></li>
+                            <li><a href="#">필수 콘텐츠</a></li>
+                            <li><a href="#">수강중인 콘텐츠</a></li>
+                            <li><a href="#">지식캐스트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">역량진단</a></li>
+                    <li><a href="#">경력개발계획</a></li>
+                    <li><a href="#">나의 강의실</a>
+                        <ul>
+                            <li><a href="#">수강신청현황</a></li>
+                            <li><a href="#">나의강의실</a>
+                                <ul>
+                                    <li><a href="#">수강 중인 과정</a></li>
+                                    <li><a href="#">학습후기</a></li>
+                                    <li><a href="#">설문함</a></li>
+                                    <li><a href="#">쪽지함</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">학습이력현황</a></li>
+                            <li><a href="#">나의 경력활동</a>
+                                <ul>
+                                    <li><a href="#">교육계획현황</a></li>
+                                    <li><a href="#">자격취득현황</a></li>
+                                    <li><a href="#">어학취득현황</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">사외교육</a></li>
+                            <li><a href="#">학습레벨</a></li>
+                            <li><a href="#">마일리지 이용/적립</a></li>
+                            <li><a href="#">개인정보 수정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">학습지원센터</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">학습공동체</a></li>
+                            <li><a href="#">자주하는질문</a></li>
+                            <li><a href="#">묻고답하기</a></li>
+                            <li><a href="#">원격지원</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">학습방법안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- //모바일 메뉴 -->
+        </div>
+    </header>
+
+    <!--전체메뉴-->
+    <div class="mega_menu">
+        <div class="top">
+            <h3>전체메뉴</h3>
+            <a href="#" class="close_btn">닫기</a>
+        </div>
+        <div class="cont">
+            <ul>
+                <li><a href="#">수강신청</a></li>
+                <li><a href="#">마이크로러닝</a>
+                    <ul>
+                        <li><a href="#">인기 상승 콘텐츠</a></li>
+                        <li><a href="#">분류 별 콘텐츠</a></li>
+                        <li><a href="#">필수 콘텐츠</a></li>
+                        <li><a href="#">수강중인 콘텐츠</a></li>
+                        <li><a href="#">지식캐스트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">역량진단</a></li>
+                <li><a href="#">경력개발계획</a></li>
+                <li><a href="#">나의 강의실</a>
+                    <ul>
+                        <li><a href="#">수강신청현황</a></li>
+                        <li><a href="#">나의강의실</a>
+                            <ul>
+                                <li><a href="#">수강 중인 과정</a></li>
+                                <li><a href="#">학습후기</a></li>
+                                <li><a href="#">설문함</a></li>
+                                <li><a href="#">쪽지함</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">학습이력현황</a></li>
+                        <li><a href="#">나의 경력활동</a>
+                            <ul>
+                                <li><a href="#">교육계획현황</a></li>
+                                <li><a href="#">자격취득현황</a></li>
+                                <li><a href="#">어학취득현황</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">사외교육</a></li>
+                        <li><a href="#">학습레벨</a></li>
+                        <li><a href="#">마일리지 이용/적립</a></li>
+                        <li><a href="#">개인정보 수정</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">학습지원센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">학습공동체</a></li>
+                        <li><a href="#">자주하는질문</a></li>
+                        <li><a href="#">묻고답하기</a></li>
+                        <li><a href="#">원격지원</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">학습방법안내</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="sitemapbg"></div>
+    <!--//전체메뉴-->
+    <!--//header-->
+
+
+    <div class="sub_top">
+        <div class="inner">
+            <h3>개인정보취급방침</h3>
+        </div>
+    </div>
+
+    <div class="sub_cont">
+        <div class="inner">
+           <div class="pri_tit">
+              <h3>개인정보취급방침</h3>
+              <p>개인정보취급방침을 확인하실 수 있습니다.</p>
+           </div>
+           
+            <a href="javascipt:void()" class="top_btn">Top</a>
+            <div class="con_privatebox_c">
+								<p class="mb20">
+									㈜인키움(이하 ‘회사’)은 개인정보보호법 제30조에 따라 정보주체의 개인 정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인 정보 처리 방침을 수립·공개합니다. 
+								</p>
+		
+								<!-- p class="mb20">
+									- 사이트명 : 러닝허브(이러닝, 독서통신, 전화어학)<br />
+									- 사이트 URL : http://www.learning-hub.co.kr
+								</p> -->
+		
+								<div class="privacy_list">
+									<ul class="titlebox wp55">
+										<li><a href="#privacy_con01">01. 개인 정보의 처리 목적</a></li>
+										<li><a href="#privacy_con02">02. 개인 정보의 처리 및 보유기간</a></li>
+										<li><a href="#privacy_con03">03. 개인 정보의 제3자 제공에 관한 사항</a></li>
+										<li><a href="#privacy_con04">04. 개인 정보처리의 위탁에 관한 사항</a></li>
+										<li><a href="#privacy_con05">05. 정보주체와 법정대리인의 권리·의무 및 그 행사방법에 관한 사항</a></li>
+										<li><a href="#privacy_con06">06. 처리하는 개인 정보의 항목</a></li>
+										<li><a href="#privacy_con07">07. 개인 정보의 파기에 관한 사항</a></li>
+									</ul>
+									<ul class="titlebox">
+										<li><a href="#privacy_con08">08. 개인 정보의 안전성 확보 조치에 관한 사항</a></li>
+										<li><a href="#privacy_con09">09. 개인 정보 자동 수집 장치의 설치·운영 및 그 거부에 관한 사항</a></li>
+										<li><a href="#privacy_con10">10. 개인 정보보호 책임자에 관한 사항</a></li>
+										<li><a href="#privacy_con11">11. 개인 정보의 열람 청구를 접수·처리하는 부서</a></li>
+										<li><a href="#privacy_con12">12. 정보주체의 권익 침해에 대한 구제 방법</a></li>
+										<li><a href="#privacy_con13">13. 개인 정보 처리 방침의 변경에 관한 사항</a></li>
+									</ul>
+								</div>
+		
+								<p class="mb30">본 방침은 2018년 11월 1일부터 시행됩니다. 본 개인정보 취급방침 상의 내용은 회사가 운영하는 웹 사이트인 아래에 기재된 사이트에 적용됨을 알려드립니다.</p>
+		
+		
+								<h3 id="privacy_con01">
+									01. 개인 정보의 처리 목적
+								</h3>
+								<p class="pl20">
+									회사는 다음의 목적을 위하여 개인 정보를 처리합니다. 처리하고 있는 개인 정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다. 
+								</p>
+								<ul class="dotlist">
+									<li class="bg_none pl40">1. 회원가입 및 관리</li>
+									<li class="bg_none pl40">회원 가입 의사 확인, 회원제 서비스 제공에 따른 본인 식별·인증, 회원자격 유지·관리, 제한적 본인확인제 시행에 따른 본인확인, 서비스 부정이용 방지, 각종 고지·통지, 고충처리 등을 목적으로 개인 정보를 처리합니다.</li>
+									<li class="bg_none pl40">2. 학습 서비스 또는 교재, 교보재 등 재화 제공</li>
+									<li class="bg_none pl40">직업 능력 개발 및 자기개발 목적의 학습 콘텐츠 제공, 맞춤형 학습 서비스 제공, 교재 및 교보재 등 물품 배송, 위탁훈련 계약서·청구서 발송, 본인인증, 교육비 결제·정산, 고용보험 환급 지원금 신청 등의 목적으로 개인 정보를 처리합니다.</li>
+									<li class="bg_none pl40">3. 고충처리</li>
+									<li class="bg_none pl40">회원의 신원 확인, 고충사항 확인, 사실조사를 위한 연락·통지, 처리결과 통보 등의 목적으로 개인 정보를 처리합니다.</li>
+									<li class="bg_none pl40">4. 내부 연구 및 서비스 개선</li>
+									<li class="bg_none pl40">회원 대상 데이터 분석, 통계를 이용한 내부 연구, 이를 통한 서비스 품질 개선을 목적으로 개인 정보를 처리합니다. </li>
+									<li class="bg_none pl40">5. 마케팅 및 광고에 활용</li>
+									<li class="bg_none pl40">회사에서 회원에게 제공하는 뉴스레터, 신규 서비스 및 학습 콘텐츠 정보 제공, 서비스 활성화를 위한 이벤트 등 마케팅 및 광고성 정보 전달을 목적으로 개인 정보를 처리합니다.</li>
+								</ul>
+								
+		
+								<h3 id="privacy_con02">
+									02. 개인 정보의 처리 및 보유 기간
+								</h3>
+								<ul class="dotlist">
+									<li class="bg_none">① 회사는 법령에 따른 개인 정보 보유·이용기간 또는 정보주체로부터 개인 정보를 수집 시에 동의 받은 개인 정보 보유·이용기간 내에서 개인 정보를 처리·보유합니다.</li>
+									<li class="bg_none">② 각각의 개인 정보 처리 및 보유 기간은 다음과 같습니다.</li>
+									<li class="bg_none pl20">1. 회원가입 및 관리 : 회사가 운영하는 온라인 연수원의 회원 탈퇴 시까지 다만, 다음의 사유에 해당하는 경우에는 해당 사유 종료 시까지</li>
+									<li class="bg_none pl30">1) 관계 법령 위반에 따른 수사·조사 등이 진행 중인 경우에는 해당 수사·조사 종료 시까지</li>
+									<li class="bg_none pl30">2) 온라인 연수원 이용에 따른 채권·채무관계 잔존 시에는 해당 채권·채무관계 정산 시까지</li>
+									<li class="bg_none pl30">3) 회사와 일정 기간 위탁교육 계약을 진행 중인 경우에는 해당 계약 종료 시까지</li>
+									<li class="bg_none pl30">4)「직업능력개발법」 제23조의 2 비용 지원·융자 관련 서류의 보존</li>
+									<li class="bg_none pl40">- 직업 능력 개발 훈련을 실시하려는 자는 고용노동부령으로 정하는 관련 서류를 3년간 보존</li>
+									<li class="bg_none pl20">2. 학습 서비스 또는 교재, 교보재 등 재화 제공, 고충처리, 내부 연구 및 서비스 개선, 마케팅 및 광고 활용 :     서비스·재화 공급 완료 및 요금 결제·정산 완료, 고충처리 완료, 내부 연구 및 서비스 개선 완료, 마케팅 및   광고 활용 완료 시까지 다만, 다음의 사유에 해당하는 경우에는 해당 기간 종료 시까지</li>
+									<li class="bg_none pl30">1) 「전자상거래 등에서의 소비자 보호에 관한 법률」에 따른 표시·광고, 계약 내용 및 이행 등 거래에 관한 기록</li>
+									<li class="bg_none pl40">- 표시·광고에 관한 기록 : 6개월</li>
+									<li class="bg_none pl40">- 계약 또는 청약철회, 대금 결제, 재화 등의 공급 기록 : 5년</li>
+									<li class="bg_none pl40">- 소비자 불만 또는 분쟁처리에 관한 기록 : 3년</li>
+									<li class="bg_none pl30">2) 「통신비밀보호법」시행령 제41조에 따른 통신 사실 확인자료 보관</li>
+									<li class="bg_none pl40">- 가입자 전기통신 일시, 개시·종료시간, 상대방 가입자 번호, 사용 도수, 발신 기지국 위치 추적 자료 : 1년</li>
+									<li class="bg_none pl40">- 컴퓨터 통신, 인터넷 로그기록 자료, 접속자 추적 자료 : 3개월</li>
+									<li class="bg_none pl30">3) 「직업능력개발법」제23조의 2 비용 지원·융자 관련 서류의 보존</li>
+									<li class="bg_none pl40">- 직업 능력 개발 훈련을 실시하려는 자는 고용노동부령으로 정하는 관련 서류를 3년간 보존</li>
+								</ul>
+								
+		
+								<h3 id="privacy_con03">
+									03. 개인 정보의 제3자 제공에 관한 사항
+								</h3>
+								<ul class="dotlist">
+									<li class="bg_none">① 회사는 정보주체의 개인 정보를 제1조(개인 정보의 처리 목적)에서 명시한 범위 내에서만 처리하며, 정보 주체의 동의, 법률의 특별한 규정 등 개인정보보호법 제17조 및 제18조에 해당하는 경우에만 개인 정보를 제3자에게 제공합니다.</li>
+									<li class="bg_none">② 회사는 다음과 같이 개인 정보를 제3자에게 제공하고 있습니다.</li>
+								</ul>	
+								<div class="con_list5 mt10">
+									<table>
+									<colgroup>
+										<col width="22%">
+										<col width="22%">
+										<col width="*">
+										<col width="22%">
+									</colgroup>
+									  <tbody><tr>
+										<th>개인 정보를 제공받는 자</th>
+										<th>제공받는 자의 개인 정보 이용목적</th>
+										<th>제공하는 개인 정보 항목</th>
+										<th>제공받는 자의 보유·이용기간</th>
+									  </tr>
+									  <tr>
+										<td>고용노동부</td><td>직업 능력 개발 훈련 실시, 비용 지원 신고</td><td>회사명, 성명, 주민등록번호, 핸드폰 번호, 이메일, 훈련과정명</td><td>직업능력개발법 제23조의 2에 따라 3년</td>
+									  </tr>
+									  <tr>
+										<td>한국산업인력공단</td><td>직업능력개발 훈련 실시, 비용 지원 신고, 원격훈련 모니터링, ACS(훈련생 수강확인 문자발송 서비스)</td><td>회사명, 성명, 주민등록번호, 핸드폰 번호, 이메일, 훈련과정명, 수강 기록, 수강 접속 로그, 접속 IP 정보</td><td>직업능력개발법 제23조의 2에 따라 3년</td>
+									  </tr>
+									</tbody></table>
+								</div>
+								
+		
+								<h3 id="privacy_con04">
+									04. 개인 정보처리의 위탁에 관한 사항
+								</h3>
+								<ul class="dotlist">
+									<li class="bg_none">① 회사는 원활한 개인 정보 업무 처리를 위하여 다음과 같이 개인 정보 처리업무를 위탁하고 있습니다.</li>
+									<li class="bg_none pl20">1. 본인인증</li>
+									<li class="bg_none pl30">- 위탁받는 자(수탁자) : NICE평가정보(주)</li>
+									<li class="bg_none pl30">- 위탁하는 업무내용 : 회원가입, 직업 능력 개발 훈련 실시 시 본인확인</li>
+									<li class="bg_none pl30">- 제공하는 개인 정보 항목 : 성명, 핸드폰 번호, 아이핀 번호</li>
+									<li class="bg_none pl30">- 개인 정보 보유·이용기간 : 서비스 제공기간</li>
+									<li class="bg_none pl20">2. SMS, LMS, MMS 발송</li>
+									<li class="bg_none pl30">- 위탁받는 자(수탁자) : ㈜슈어엠</li>
+									<li class="bg_none pl30">- 위탁하는 업무내용 : 회원가입, 훈련과정 신청, 취소, 학습 중 진도 확인, 학습 종료, 수료 안내, 설문, 마케팅 및 광고성 정보 발송</li>
+									<li class="bg_none pl30">- 제공하는 개인 정보 항목 : 성명, 핸드폰 번호</li>
+									<li class="bg_none pl30">- 개인 정보 보유·이용기간 : 서비스 제공기간</li>
+									<li class="bg_none pl20">3. e-mail 발송</li>
+									<li class="bg_none pl30">- 위탁받는 자(수탁자) : ㈜처음소프트</li>
+									<li class="bg_none pl30">- 위탁하는 업무내용 : 회원가입, 훈련과정 신청, 취소, 학습 중 진도 확인, 학습 종료, 수료 안내, 설문, 마케팅 및 광고성 정보 발송</li>
+									<li class="bg_none pl30">- 제공하는 개인 정보 항목 : 성명, 핸드폰 번호</li>
+									<li class="bg_none pl30">- 개인 정보 보유·이용기간 : 서비스 제공기간</li>
+								    <li class="bg_none pl20">4. CTI 솔루션 운영</li>
+									<li class="bg_none pl30">- 위탁받는 자(수탁자) : ㈜엘지유플러스</li>
+									<li class="bg_none pl30">- 위탁하는 업무내용 : 고객 고충처리 관리 솔루션, 인터넷 전화를 통한 학습상담 응대 </li>
+									<li class="bg_none pl30">- 제공하는 개인 정보 항목 : 회사명, 성명, 유선전화번호, 핸드폰 번호</li>
+									<li class="bg_none pl30">- 개인 정보 보유·이용기간 : 서비스 제공기간</li>
+									<li class="bg_none pl20">5. 시스템 유지보수</li>
+									<li class="bg_none pl30">- 위탁받는 자(수탁자) : ㈜포도소프트웨어</li>
+									<li class="bg_none pl30">- 위탁하는 업무내용 : 온라인 연수원 장애처리, 기능개선 등 유지보수 업무 수행</li>
+									<li class="bg_none pl30">- 제공하는 개인 정보 항목 : 회사가 보유한 개인 정보 일체</li>
+									<li class="bg_none pl30">- 개인 정보 보유·이용기간 : 위탁계약기간</li>
+									<li class="bg_none pl20">6. 훈련과정 위탁운영, 교재 및 교보재 등 재화 배송</li>
+									<li class="bg_none pl30">- 회원이 신청하는 훈련과정(환급 및 비환급, 교재 및 교보재 유무), 이용하는 온라인 연수원 플랫폼 유형에 따라 개인 정보를 위탁하는 기관과 제공하는 개인 정보 항목이 달라집니다.</li>
+									<li class="bg_none pl30">- 해당 훈련 과정 서비스 제공을 위하여 업무 위탁이 반드시 필요한 경우에 한해 최소한의 정보를 제공하고있습니다.</li>
+								</ul>
+								<div class="con_list5 mt10">
+									<table>
+									<colgroup>
+										<col width="22%">
+										<col width="22%">
+										<col width="*">
+										<col width="22%">
+									</colgroup>
+									  <tbody><tr>
+										<th>위탁받는 자(수탁자)</th>
+										<th>위탁하는 업무내용</th>
+										<th>제공하는 개인 정보 항목</th>
+										<th>제공받는 자의 보유·이용기간</th>
+									  </tr>
+									  <tr>
+								        <td>㈜멀티캠퍼스</td><td>고용보험 환급 훈련과정 및 비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 주민등록번호(환급 훈련과정에 한함), 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>(환급 훈련과정) 직업능력개발법 제23조의 2에 따라 3년(비환급 훈련과정) 학습 종료 후 재학습 1년</td>
+									  </tr>
+									 <tr>
+										<td>㈜휴넷</td><td>고용보험 환급 훈련과정 및 비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 주민등록번호(환급 훈련과정에 한함), 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>(환급 훈련과정) 직업능력개발법 제23조의 2에 따라 3년 (비환급 훈련과정) 학습 종료 후 재학습 1년</td>
+									</tr>
+									<tr>
+										<td>메가넥스트 주식회사</td><td>고용보험 환급 훈련과정 및 비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 주민등록번호(환급 훈련과정에 한함), 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>(환급 훈련과정) 직업능력개발법 제23조의 2에 따라 3년 (비환급 훈련과정) 학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>㈜고려아카데미컨설팅</td><td>고용보험 환급 훈련과정 및 비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 주민등록번호(환급 훈련과정에 한함), 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>(환급 훈련과정) 직업능력개발법 제23조의 2에 따라 3년 (비환급 훈련과정) 학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>주식회사 유비온</td><td>고용보험 환급 훈련과정 및 비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 주민등록번호(환급 훈련과정에 한함), 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>(환급 훈련과정) 직업능력개발법 제23조의 2에 따라 3년 (비환급 훈련과정) 학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>㈜알파코</td><td>고용보험 환급 훈련과정 및 비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 주민등록번호(환급 훈련과정에 한함), 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>(환급 훈련과정) 직업능력개발법 제23조의 2에 따라 3년 (비환급 훈련과정) 학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>주식회사 프리엠</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>㈜엔이능률</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>㈜폰이씨엠</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>주식회사 와이이엠넷</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>㈜글로벌콘텐츠리퍼블릭</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>㈜이씨케이교육</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>㈜다락원</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>주식회사 미래교육</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>㈜파고다에스씨에스</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>㈜민병철교육그룹</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>인터치주식회사</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>㈜캐럿코리아</td><td>비환급 훈련과정 위탁운영, 교재 및 교보재 배송</td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지</td><td>학습 종료 후 재학습 1년 </td>
+									</tr>
+									<tr>
+										<td>㈜뉴인</td><td>스마트 훈련 목적의 시스템 연계</td><td>회사명, 성명, ID, 이메일, 훈련과정명</td><td>서비스 제공 기간 </td>
+									</tr>
+									<tr>
+										<td>㈜포도소프트웨어</td><td>역량진단, 경력개발계획 수립, 학습관리 목적의 e-HRD ASP 시스템 연계 </td><td>회사명, 성명, 관리번호, ID, 핸드폰 번호, 이메일, 훈련과정명, 주소지 </td><td>서비스 제공 기간</td>
+									</tr>
+									<tr>
+										<td>㈜알엠피</td><td>교재 및 교보재 배송</td><td>회사명, 성명, 핸드폰 번호, 주소지</td><td>3개월 </td>
+									</tr>
+									<tr>
+										<td>㈜인텔릭</td><td>교재 및 교보재 배송</td><td>회사명, 성명, 핸드폰 번호, 주소지</td><td>3개월</td>
+									</tr>
+									<tr>
+										<td>비즈콘</td><td>기프티콘 발송</td><td>성명, 핸드폰 번호</td><td>3개월</td>
+									</tr>
+									<tr>
+										<td>컬쳐랜드법인몰</td><td>기프티콘 발송</td><td>성명, 핸드폰 번호</td><td>3개월</td>
+									</tr>
+									</tbody></table>
+								</div>
+								<ul class="dotlist">
+									<li class="bg_none">② 회사는 위탁계약 체결 시 개인정보보호법 제25조에 따라 위탁업무 수행 목적 외 개인 정보 처리 금지, 기술적·관리적 보호 조치, 재위탁 제한, 수탁자에 대한 관리·감독, 손해배상 등 책임에 관한 사항을 계약서 등 문서에 명시하고, 수탁자가 개인 정보를 안전하게 처리하는지를 감독하고 있습니다.</li>
+									<li class="bg_none">③ 위탁업무의 내용이나 수탁자가 변경될 경우에는 지체 없이 본 개인 정보처리 방침을 통하여 공개하도록 하겠습니다.</li>
+								</ul>																
+								
+		
+								<h3 id="privacy_con05">
+									05. 정보주체와 법정대리인의 권리·의무 및 행사방법
+								</h3>						
+								<ul class="dotlist">
+									<li class="bg_none">① 정보주체는 회사에 대해 언제든지 개인 정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있습니다.</li>
+									<li class="bg_none">② 제1항에 따른 권리 행사는 회사에 대해 개인정보보호법 시행령 제42조 제1항에 따라 서면, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며, 회사는 이에 대해 지체 없이 조치하겠습니다.</li>
+									<li class="bg_none">③ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하여야 합니다.</li>
+									<li class="bg_none">④ 개인 정보 열람 및 처리정지 요구는 개인정보보호법 제35조 제5항, 제37조 제2항에 의하여 정보주체의 권리가 제한될 수 있습니다.</li>
+									<li class="bg_none">⑤ 개인 정보의 정정 및 삭제 요구는 다른 법령에서 그 개인 정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.</li>
+									<li class="bg_none">⑥ 회사는 정보주체 권리에 따른 열람의 요구, 정정·삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다. </li>
+								</ul>	
+								
+		
+								<h3 id="privacy_con06">
+									06. 처리하는 개인 정보 항목
+								</h3>
+								<p>
+									회사는 다음의 개인 정보 항목을 처리하고 있습니다. 
+								</p>
+                                <div class="con_list5 mt10">
+									<table>
+									<colgroup>
+										<col width="22%">
+										<col width="22%">
+										<col width="*">
+										<col width="22%">
+									</colgroup>
+									  <tbody><tr>
+										<th>업무분야</th>
+										<th>필수 항목</th>
+										<th>선택항목</th>
+										<th>수집 근거</th>
+									  </tr>
+									 <tr>
+										<td>회원가입 및 관리</td><td>소속기관, 성명, ID, 비밀번호, 주소, 핸드폰 번호, 이메일, 주소, 생년월일, 성별, 소속 부서, 직급, 아이핀 번호</td><td>직책, 전화번호</td><td>개인 정보처리 방침,개인 정보 수집 및 이용에 대한 동의</td>
+									</tr>
+									<tr>
+										<td>고용보험 환급 훈련과정 운영</td><td>회사명, 성명, 주민등록번호, 핸드폰 번호, 이메일, 훈련과정명</td><td></td><td>개인 정보처리 방침,개인 정보 수집 및 이용에 대한 동의,개인 정보 제3자 제공 동의,근로자직업능력개발법 시행령 제52조의 2</td>
+									</tr>
+									<tr> 
+										<td>비고용 보험 환급 훈련과정 운영</td><td>회사명, 성명, 핸드폰 번호, 이메일, 훈련과정명</td><td></td><td>개인 정보처리방침,개인 정보 수집 및 이용에 대한 동의,
+									</td></tr>
+									<tr> 
+										<td>훈련과정 교재 및 교보재 등 재화 배송</td><td>회사명, 성명, 핸드폰 번호, 주소지</td><td></td><td>개인 정보처리방침,개인 정보 수집 및 이용에 대한 동의</td>
+									</tr>
+									<tr> 
+										<td>고충처리</td><td>회사명, 성명, ID, 핸드폰 번호, 이메일 </td><td></td><td>개인 정보처리방침,개인 정보 수집 및 이용에 대한 동의</td>
+									</tr>
+									<tr> 
+										<td>내부 연구 및 서비스 개선</td><td>회사명, 성명, 핸드폰 번호, 이메일</td><td></td><td>개인 정보처리방침,개인 정보 수집 및 이용에 대한 동의</td>
+									</tr>
+									<tr> 
+										<td>마케팅 및 홍보</td><td>회사명, 성명, 핸드폰 번호, 이메일</td><td></td><td>개인 정보처리방침,개인 정보 수집 및 이용에 대한 동의</td>
+									</tr>
+
+									 </tbody></table>
+								</div>
+								
+		
+								<h3 id="privacy_con07">
+									07. 개인 정보의 파기
+								</h3>
+								<ul class="dotlist">
+									<li class="bg_none">① 회사는 개인 정보 보유기간의 경과, 처리 목적 달성 등 개인 정보가 불필요하게 되었을 때에는 지체 없이 해당 개인 정보를 파기합니다.</li>
+									<li class="bg_none">② 정보주체로부터 동의 받은 개인 정보 보유기간이 경과하거나 처리 목적이 달성되었음에도 불구하고 다른 법령에 따라 개인 정보를 계속 보존하여야 하는 경우에는, 해당 개인 정보를 별도의 데이터베이스(DB)로 옮기거나 보관 장소를 달리하여 보존합니다.</li>
+									<li class="bg_none">③ 개인 정보 파기의 절차 및 방법은 다음과 같습니다.</li>
+									<li class="bg_none pl20">1. 파기절차</li>
+									<li class="bg_none pl30">회사는 파기 사유가 발생한 개인 정보를 선정하고, 회사의 개인 정보보호 책임자의 승인을 받아 개인 정보를 파기합니다. </li>
+									<li class="bg_none pl20">2. 파기방법</li>
+									<li class="bg_none pl30">회사는 전자적 파일 형태로 기록·저장된 개인 정보는 기록을 재생할 수 없도록 파기하며, 종이 문서에 기록·저장된 개인 정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.</li>
+								</ul>
+								
+				
+								<h3 id="privacy_con08">
+									08. 개인 정보의 안전성 확보 조치
+								</h3>
+								<p>
+									회사는 개인 정보의 안정성 확보를 위해 다음과 같은 조치를 취하고 있습니다.
+								</p>
+								<ul class="dotlist">
+									<li class="bg_none">1. 관리적 조치 : 내부관리 계획 수립·시행, 정기적 직원 교육 등</li>
+									<li class="bg_none">2. 기술적 조치 : 개인 정보처리시스템 등의 접근 권한 관리, 접근통제시스템 설치, 고유식별 정보 등의 암호화, 보안 프로그램 설치</li>
+									<li class="bg_none">3. 물리적 조치 : 전산실, 자료 보관실 등의 접근통제, 보안 문서는 별도 장소에 잠금장치 부착</li>
+								</ul>
+								
+		
+								<h3 id="privacy_con09">
+									09. 개인 정보 자동 수집 장치의 설치·운영 및 거부에 관한 사항
+								</h3>
+								<ul class="dotlist">
+									<li class="bg_none">① 회사는 회원에게 개별적인 맞춤 서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를 사용합니다.</li>
+									<li class="bg_none">② 쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터 브라우저에게 보내는 소량의 정보이며, 이용자들의 PC 컴퓨터 내의 하드디스크에 저장되기도 합니다.</li>
+									<li class="bg_none pl20">1. 쿠키의 사용목적 : 이용자가 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용 형태, 인기 검색어, 보안접속 여부 등을 파악하여 이용자에게 최적화된 정보 제공을 위해 사용됩니다.</li>
+									<li class="bg_none pl20">2. 쿠키의 설치·운영 및 거부 : 웹브라우저 상단의 도구 &gt; 인터넷 옵션 &gt; 개인 정보 메뉴의 옵션 설정을 통해 쿠키 저장을 거부할 수 있습니다.</li>
+									<li class="bg_none pl20">3. 쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.</li>
+								</ul>
+								
+
+								<h3 id="privacy_con10">
+									10. 개인 정보보호 책임자
+								</h3>
+								<ul class="dotlist">
+									<li>① 회사는 개인 정보 처리에 관한 업무를 총괄해서 책임지고, 개인 정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인 정보보호책임자를 지정하고 있습니다.</li>
+								</ul>
+                                <div class="con_list5 mt10">
+									<table>
+									<colgroup>
+										<col width="22%">
+										<col width="22%">
+										<col width="*">
+										<col width="22%">
+									</colgroup>
+									  <tbody><tr>
+										<th>구분</th>
+										<th>성명</th>
+										<th>직책</th>
+										<th>연락처</th>
+									  </tr>
+									<tr>
+										<td>개인 정보보호 책임자</td><td>박지현</td><td>상무</td><td>02-2081-1020/edu@inkium.com</td>
+									</tr>
+									<tr>
+										<td>개인 정보보호 담당자</td><td>장상현</td><td>팀장</td><td>02-2081-1026/dean77@inkium.com</td>
+									</tr>									  
+									 </tbody></table>
+								</div>
+								<ul class="dotlist mt10">
+									<li>② 정보주체께서는 회사의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인 정보보호 관련 문의, 불만 처리, 피해 구제 등에 관한 사항을 개인 정보보호책임자 및 담당자에게 문의하실 수 있습니다. 회사는 정보주체의 문의에 대해 지체 없이 답변 및 처리해 드릴 것입니다.</li>
+								</ul>								
+								
+		
+								<h3 id="privacy_con11">
+									11. 개인 정보 열람 청구
+								</h3>
+								<p>
+									정보주체는 개인정보보호법 제35조에 따른 개인 정보의 열람 청구를 아래의 부서에 할 수 있습니다. 회사는 정보주체의 개인 정보 열람 청구가 신속하게 처리되도록 노력하겠습니다. 
+								</p>
+                                <div class="con_list5 mt10">
+									<table>
+									<colgroup>
+										<col width="22%">
+										<col width="22%">
+										<col width="*">
+										<col width="22%">
+									</colgroup>
+									  <tbody><tr>
+										<th>담당부서</th>
+										<th>전화번호</th>
+										<th>이메일</th>
+										<th>FAX</th>
+									  </tr>
+									<tr>
+										<td>스마트운영팀</td><td>070-5109-4497</td><td>monitor@inkium.com</td><td>02-2081-1090</td>
+									</tr>
+								   </tbody></table>
+								</div>								
+								
+				
+								<h3 id="privacy_con12">
+									12. 권익 침해 구제방법
+								</h3>
+								<p>
+									정보주체는 아래의 기관에 대해 개인 정보 침해에 대한 피해 구제, 상담 등을 문의하실 수 있습니다.<br> 
+									&lt;아래의 기관은 회사와는 별개의 기관으로서, 회사의 자체적인 개인 정보 불만 처리, 피해 구제 결과에 만족하지 못하시거나 보다 자세한 도움이 필요하시면 문의하여 주시기 바랍니다.&gt; 
+								</p>
+								<ul class="dotlist">
+									<li class="bg_none">1. 개인 정보 침해신고센터(한국인터넷진흥원 운영)</li>
+									<li class="bg_none pl20">- 소관 업무 : 개인 정보 침해 사실 신고, 상담 신청</li>
+									<li class="bg_none pl20">- 홈페이지 : privacy.kisa.or.kr</li>
+									<li class="bg_none pl20">- 전화 : (국번 없이) 118</li>
+									<li class="bg_none pl20">- 주소 : (58324) 전남 나주시 진흥길 9(빛가람동 301-2) 3층 개인 정보침해신고센터</li>
+									<li class="bg_none">2. 개인 정보 분쟁 조정위원회</li>
+									<li class="bg_none pl20">- 소관업무 : 개인 정보 분쟁 조정 신청, 집단분쟁 조정(민사적 해결)</li>
+									<li class="bg_none pl20">- 홈페이지 : www.kopico.go.kr</li>
+									<li class="bg_none pl20">- 전화 : (국번 없이) 1833-6972</li>
+									<li class="bg_none pl20">- 주소 : (03171) 서울특별시 종로구 세종대로 209 정부서울청사 4층</li>
+									<li class="bg_none">3. 대검찰청 사이버범죄수사단 : 02-3480-3573 (www.spo.go.kr)</li>
+									<li class="bg_none">4. 경찰청 사이버안전국 : 182 (http://cyberbureau.police.go.kr)</li>
+								</ul>
+								
+
+								<h3 id="privacy_con13">
+									13. 개인 정보 처리 방침 변경
+								</h3>
+								<ul class="dotlist">
+									<li class="bg_none">① 이 개인 정보 처리 방침은 2018.11.1.부터 적용됩니다.</li>
+									<li class="bg_none">② 이전의 개인 정보 처리 방침은 아래에서 확인하실 수 있습니다.</li>
+								</ul>
+								<p>- 2012.8.17.~2018.10.31. 적용</p> 
+								
+		
+							</div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/foot_logo.png" alt="러닝허브">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">환불규정</a></li>
+                </ul>
+                <div class="family_site">
+                    <select class="select_style01">
+                        <option>관련사이트</option>
+                    </select>
+                    <a href="#">이동</a>
+                </div>
+            </div>
+            <div class="bt">
+                <div class="txt">
+                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
+                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
+                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
+                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
+                </div>
+                <img src="images/foot_mark.png" alt="우수훈련기관">
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
+</body>
+
+</html>

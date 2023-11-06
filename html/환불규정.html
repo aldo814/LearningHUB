@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header id="header">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="러닝허브"></a>
+                </h1>
+                <div class="seach_area">
+                    <div class="input_wrap">
+                        <input type="text" placeholder="교육과정을 검색하세요.">
+                        <button type="submit">검색</button>
+                    </div>
+                    <div class="search_history">
+                        <ul>
+                            <li>
+                                <a href="#" class="txt">최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1최근검색어1</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어2</a><a href="#" class="del">삭제</a>
+                            </li>
+                            <li>
+                                <a href="#" class="txt">최근검색어3</a><a href="#" class="del">삭제</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="all_del">전체 삭제</a>
+                    </div>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+
+            </div>
+            <div class="gnb_wrap">
+                <a href="#" class="all_menu">전체메뉴
+                </a>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="#">수강신청</a></li>
+                        <li><a href="#">마이크로러닝</a></li>
+                        <li><a href="#">역량진단</a></li>
+                        <li><a href="#">경력개발계획</a></li>
+                        <li><a href="#">나의 강의실</a></li>
+                        <li><a href="#">학습지원센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- 모바일 메뉴 -->
+            <div class="m_menu">
+                <div class="m_search">
+                    <a href="#" class="search_btn">검색</a>
+                    <div>
+                        <div>
+                            <input type="text" placeholder="교육과정을 검색하세요.">
+                            <button type="submit">검색</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="m_menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="m_all_menu">
+                <div class="top">
+                    <h1 class="logo">
+                        <img src="images/logo.png" alt="러닝허브">
+                    </h1>
+                    <a href="#" class="close_btn">닫기</a>
+                </div>
+                <ul class="memberbx">
+                    <li class="login"><a href="#">로그인</a></li>
+                    <li class="join"><a href="#">회원가입</a></li>
+                </ul>
+                <ul class="m_gnb">
+                    <li><a href="#">수강신청</a></li>
+                    <li><a href="#">마이크로러닝</a>
+                        <ul>
+                            <li><a href="#">인기 상승 콘텐츠</a></li>
+                            <li><a href="#">분류 별 콘텐츠</a></li>
+                            <li><a href="#">필수 콘텐츠</a></li>
+                            <li><a href="#">수강중인 콘텐츠</a></li>
+                            <li><a href="#">지식캐스트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">역량진단</a></li>
+                    <li><a href="#">경력개발계획</a></li>
+                    <li><a href="#">나의 강의실</a>
+                        <ul>
+                            <li><a href="#">수강신청현황</a></li>
+                            <li><a href="#">나의강의실</a>
+                                <ul>
+                                    <li><a href="#">수강 중인 과정</a></li>
+                                    <li><a href="#">학습후기</a></li>
+                                    <li><a href="#">설문함</a></li>
+                                    <li><a href="#">쪽지함</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">학습이력현황</a></li>
+                            <li><a href="#">나의 경력활동</a>
+                                <ul>
+                                    <li><a href="#">교육계획현황</a></li>
+                                    <li><a href="#">자격취득현황</a></li>
+                                    <li><a href="#">어학취득현황</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">사외교육</a></li>
+                            <li><a href="#">학습레벨</a></li>
+                            <li><a href="#">마일리지 이용/적립</a></li>
+                            <li><a href="#">개인정보 수정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">학습지원센터</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">학습공동체</a></li>
+                            <li><a href="#">자주하는질문</a></li>
+                            <li><a href="#">묻고답하기</a></li>
+                            <li><a href="#">원격지원</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">학습방법안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- //모바일 메뉴 -->
+        </div>
+    </header>
+
+    <!--전체메뉴-->
+    <div class="mega_menu">
+        <div class="top">
+            <h3>전체메뉴</h3>
+            <a href="#" class="close_btn">닫기</a>
+        </div>
+        <div class="cont">
+            <ul>
+                <li><a href="#">수강신청</a></li>
+                <li><a href="#">마이크로러닝</a>
+                    <ul>
+                        <li><a href="#">인기 상승 콘텐츠</a></li>
+                        <li><a href="#">분류 별 콘텐츠</a></li>
+                        <li><a href="#">필수 콘텐츠</a></li>
+                        <li><a href="#">수강중인 콘텐츠</a></li>
+                        <li><a href="#">지식캐스트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">역량진단</a></li>
+                <li><a href="#">경력개발계획</a></li>
+                <li><a href="#">나의 강의실</a>
+                    <ul>
+                        <li><a href="#">수강신청현황</a></li>
+                        <li><a href="#">나의강의실</a>
+                            <ul>
+                                <li><a href="#">수강 중인 과정</a></li>
+                                <li><a href="#">학습후기</a></li>
+                                <li><a href="#">설문함</a></li>
+                                <li><a href="#">쪽지함</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">학습이력현황</a></li>
+                        <li><a href="#">나의 경력활동</a>
+                            <ul>
+                                <li><a href="#">교육계획현황</a></li>
+                                <li><a href="#">자격취득현황</a></li>
+                                <li><a href="#">어학취득현황</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">사외교육</a></li>
+                        <li><a href="#">학습레벨</a></li>
+                        <li><a href="#">마일리지 이용/적립</a></li>
+                        <li><a href="#">개인정보 수정</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">학습지원센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">학습공동체</a></li>
+                        <li><a href="#">자주하는질문</a></li>
+                        <li><a href="#">묻고답하기</a></li>
+                        <li><a href="#">원격지원</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">학습방법안내</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="sitemapbg"></div>
+    <!--//전체메뉴-->
+    <!--//header-->
+
+
+    <div class="sub_top">
+        <div class="inner">
+            <h3>환불규정</h3>
+        </div>
+    </div>
+
+    <div class="sub_cont">
+        <div class="inner">
+           <div class="pri_tit">
+              <h3>환불규정</h3>
+              <p>환불규정을 확인하실 수 있습니다.</p>
+           </div>
+           <div class="con_list5">
+							
+        								<table>
+            								<caption>환불규정</caption>
+            								<colgroup>
+                								<col width="25%">
+                								<col width="25%">
+                								<col width="25%">
+                								<col width="25%">
+            								</colgroup>
+            								<thead>
+            									<tr>
+	            									<th colspan="2">구분</th>
+	            									<th>반환사유 발생일</th>
+	            									<th>반환금액</th>
+            									</tr>
+            								</thead>
+            								<tbody>
+            									<tr>
+            										<td colspan="2">
+            											1. 제23조제1항
+														제1호 및 제2호에
+														따른 반환사유의 경우<br>
+														(러닝허브사유) 
+													</td>
+													<td style="text-align:center;">
+														수업을 할 수 없거나,<br> 
+														수업 장소를 제공할 수 <br>
+														없게 된 날
+													</td>
+													<td style="text-align:center;">
+														이미 낸 교육비를<br> 
+														일할 계산한 금액
+													</td>
+            									</tr>
+            									<tr>
+            										<td rowspan="6" style="text-align:center;">
+														2. 제23조
+														  제1항 제3호<br>
+														  반환사유에   따른 경우<br>
+														 (학습자사유)
+													</td>
+													<td rowspan="4" style="text-align:left;">
+														가. 교육비 
+														   징수기간이<br>
+														   1개월
+														   이내인경우
+													</td>
+													<td style="text-align:center;">
+														수업시작 전
+													</td>
+													<td style="text-align:center;">
+														이미 낸 교육비 전액
+													</td>
+            									</tr>
+            									<tr>
+            										<td style="text-align:center;">총 수업시간의 1/3이 지나기 전</td>
+            										<td style="text-align:center;">이미 낸 교육비의 2/3 해당액</td>
+            									</tr>
+            									<tr>
+            										<td style="text-align:center;">총 수업시간의 1/2이 지나기 전</td>
+            										<td style="text-align:center;">이미 낸 교육비의 1/2 해당액</td>
+            									</tr>
+            									<tr>
+            										<td style="text-align:center;">총 수업시간의 1/2이 지난 후</td>
+            										<td style="text-align:center;">반환하지 아니함</td>
+            									</tr>
+            									<tr>
+            										<td rowspan="2" style="text-align:left;">
+            											나. 교육비 
+														   징수기간이   1개월을<br> 
+														   초과하는
+														   경우
+            										</td>
+            										<td style="text-align:center;">
+														수업시작 전
+													</td>
+													<td style="text-align:center;">
+														이미 낸 교육비 전액
+													</td>
+            									</tr>
+            									<tr>
+            										<td style="text-align:center;">
+														수업시작 후
+													</td>
+													<td style="text-align:center;">
+														반환사유가 발생한 그 달의 반환 대상 교육비(교육비 징수기간이 1개월 이내인 경우에 준하여<br>산출된 교육비를 말한다)와 나머지 달의 교육비 전액을 합산한 금액
+													</td>
+            									</tr>
+            									<tr>
+            										<td colspan="2" style="text-align:center;">
+            											비고
+													</td>
+													<td colspan="2" style="text-align:center;">
+            											총 수업시간은 교육비 징수기간 중의 총 수업시간을 말하며, 반환금액의 산정은 반환사유가 발생한 날까지 경과된 수업시간을 기준으로 한다. 
+													</td>
+            									</tr>
+            
+            								</tbody>
+        								</table>
+        								
+        							</div>
+           
+            <a href="javascipt:void()" class="top_btn">Top</a>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="inner">
+            <div class="top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/foot_logo.png" alt="러닝허브">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li class="bold"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">환불규정</a></li>
+                </ul>
+                <div class="family_site">
+                    <select class="select_style01">
+                        <option>관련사이트</option>
+                    </select>
+                    <a href="#">이동</a>
+                </div>
+            </div>
+            <div class="bt">
+                <div class="txt">
+                    <p>(08390)서울특별시 구로구 디지털로 30길 31, 코오롱빌란트2차 703호</p>
+                    <p><span>㈜인키움 대표이사 : 박지현</span><span>TEL : 02-555-1945 </span><span>FAX : 02-2081-1090</span><span>사업자등록번호 : 220-81-71637</span></p>
+                    <p><span class="bold">학습지원센터 : 02-2081-1000</span><span>이용시간 : 평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span></p>
+                    <p class="f14">Copyright ⓒ 2020. (주) 인키움. All rights reserved.</p>
+                </div>
+                <img src="images/foot_mark.png" alt="우수훈련기관">
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
+</body>
+
+</html>
