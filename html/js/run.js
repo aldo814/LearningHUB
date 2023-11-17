@@ -414,13 +414,15 @@ $(document).ready(function () {
         $(this).children(".tab_content").first().show();
     });
 
-    $('.player_wrap .side_wrap').hide()
-    $('.player_wrap').each(function () {
-        $('.player_wrap .side_wrap').first().show();
+    $('.rightPl  .side_wrap').hide()
+    $('.rightPl ').each(function () {
+        $('.rightPl .side_wrap').first().show();
     });
 
-    $('.side_wrap .side_close,.sh').click(function () {
-        $('.player_wrap').addClass('full')
+    $('.rightPl .side_close').click(function () {
+        $('.player_wrap').addClass('full');
+        $('.side_wrap').hide();
+        $('frameset.f2').attr('cols', "100%,100%");
     });
 
     //탭메뉴 클릭 이벤트

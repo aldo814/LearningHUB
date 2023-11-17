@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>러닝허브</title>
     <link rel="stylesheet" href="css/reset.css">
@@ -20,8 +19,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="js/run.js"></script>
 </head>
-
-<body>
+<body>   
+   
     <!--header-->
     <header id="header">
         <div class="inner">
@@ -181,7 +180,7 @@
                         <div class="btn_area three_btn">
                             <a href="javascript:openModal('modal1')" class="btn_style08 btn_gray02">과정소개</a>
                             <a href="javascript:openModal('modal2')" class="btn_style08 btn_gray02">학습가이드</a>
-                            <a href="javascript:openModal('modal3')" class="btn_style08 btn_black02">학습하기</a>
+                            <a href="#"  onclick="popOpen01()" class="btn_style08 btn_black02">학습하기</a>
                         </div>
                     </div>
                     <div class="term_list">
@@ -1748,6 +1747,25 @@
         </div>
     </footer>
     <!--//footer-->
+    
+    <script>
+         //팝업
+                        function popOpen01()
+
+                        {
+                             var nWidth = "1024";
+
+                            var nHeight = "720";
+                            var xPos = (document.body.clientWidth / 2) - (nWidth / 2);
+
+                            xPos += window.screenLeft; //듀얼 모니터
+
+                            var yPos = (screen.availHeight / 2) - (nHeight / 2);
+
+                            window.open("b2c_나의강의실_학습홈_플레이어.html", "popOpen", "width=" + nWidth + ",height=" + nHeight + ", left=" + xPos + ", top=" + yPos + ", toolbars=no, resizable=no, scrollbars=no");
+                        }
+
+    </script>
 </body>
 
 </html>
