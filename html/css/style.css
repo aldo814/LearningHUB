@@ -1264,7 +1264,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 .rightPl .top{display: flex;justify-content: space-between;align-items: center;margin-bottom: 3rem}
 .rightPl .tit01{margin-bottom: 0}
 .rightPl .side_close{background: url(../images/close_btn03.png) no-repeat;text-indent: -9999px;width: 14px;height: 14px;display: block}
-.rightPl .side_wrap{width: calc(100% - 60px);padding: 2rem;box-sizing: border-box}
+.rightPl .side_wrap{width: calc(100% - 60px);padding: 2rem;box-sizing: border-box;max-height: 100vh;overflow-y: auto;}
 .rightPl .side_tab{background: #f7f8f9;width: 60px;margin-left: auto}
 .rightPl  .side_tab li.active a{background: #c9cdd2}
 .rightPl  .side_tab li a{display: flex;align-items: center;justify-content: center;height: 70px;border-bottom: 1px solid #e8ebed}
