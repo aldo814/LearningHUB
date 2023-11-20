@@ -19,9 +19,26 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="js/run.js"></script>
     <script>
+        
+        
+        $(document).ready(function() {
+            var windowWidth = parent.getParentWindowWidth();
+            if (windowWidth > 768) {
+                $('.side_tab.pc').show();
+                $('.side_tab.m').hide();
+
+
+            } else {
+                var elements = $('.side_tab li a');
+                elements.attr('onClick', 'changeFrameSetCols02()');
+                $('.side_tab.m').show();
+                $('.side_tab.pc').hide();
+
+            }
+        });
+
+        
         function closeSidePopup() {
-
-
             var sideWrap = document.querySelector('.side_wrap');
             $('.side_wrap').hide();
             $('.side_wrap').removeClass('active');
@@ -33,7 +50,7 @@
 
         }
 
-        function closeSidePopup02 () {
+        function closeSidePopup02() {
 
 
             var sideWrap = document.querySelector('.side_wrap');
@@ -41,23 +58,17 @@
             $('.side_wrap').removeClass('active');
 
             var frameset = parent.document.querySelector('frameset[name="f2"]');
-            var windowWidth = window.innerWidth;
+            var windowWidth = document.documentElement.clientWidth;
             frameset.setAttribute('rows', '45%,45%');
             frameset.removeAttribute('cols');
 
         }
 
         var frameset = parent.document.querySelector('frameset[name="f2"]');
-        var windowWidth = window.innerWidth;
 
-        if (windowWidth > 768) {
-            changeFrameSetCols();
-            closeSidePopup();
-        } else {
-            var elements = $('.side_tab li a');
-                elements.attr('onClick', 'changeFrameSetCols02()');
 
-        }
+
+
         function changeFrameSetCols() {
             var frameset = parent.document.querySelector('frameset[name="f2"]');
             if (frameset) {
@@ -275,8 +286,8 @@
                 받기</a>
         </li>
     </ul>
-    
-     <ul class="side_tab m">
+
+    <ul class="side_tab m">
         <li class="active">
             <a href="#" rel="p1" onClick="changeFrameSetCols02()">목차</a>
         </li>

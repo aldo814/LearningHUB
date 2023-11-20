@@ -1782,6 +1782,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 .map_info .item dl + dl{margin-top: 2rem}
 .map_info .item dl dt{font-size: 1.8rem;margin-bottom: .5rem;font-weight: bold;}
 
+.pc{display: block}
 .m{display: none}
 
 @media all and (max-width:1270px){

@@ -29,19 +29,24 @@
                 } else {
                     framesetF2.setAttribute('rows', '42%,55%');
                     framesetF2.removeAttribute('cols');
-                    
+
                 }
             }
 
         }
         
-     
+        function getParentWindowWidth() {
+    return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+}
+
+
 
         $(window).on('resize', function() {
             checkFrameSetCols();
         });
         // 페이지 로드 시에도 한 번 호출하여 초기 설정
         window.addEventListener('load', checkFrameSetCols);
+
 
     </script>
 </head>
