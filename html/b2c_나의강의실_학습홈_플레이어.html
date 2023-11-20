@@ -2,7 +2,7 @@
 <html>
 
 <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
@@ -29,15 +29,17 @@
                 } else {
                     framesetF2.setAttribute('rows', '42%,55%');
                     framesetF2.removeAttribute('cols');
+                    
                 }
             }
 
-            
         }
+        
+     
 
-       $(window).on('resize', function() {
-    checkFrameSetCols();
-});
+        $(window).on('resize', function() {
+            checkFrameSetCols();
+        });
         // 페이지 로드 시에도 한 번 호출하여 초기 설정
         window.addEventListener('load', checkFrameSetCols);
 

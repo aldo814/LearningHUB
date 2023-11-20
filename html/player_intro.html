@@ -28,33 +28,49 @@
 
             var frameset = parent.document.querySelector('frameset[name="f2"]');
             var windowWidth = window.innerWidth;
+            frameset.setAttribute('cols', '80%,60px');
+            frameset.removeAttribute('rows');
+
+        }
+
+        function closeSidePopup02 () {
 
 
-            if (windowWidth > 768) {
-                if (frameset) {
-                    frameset.setAttribute('cols', '80%,60px');
-                    frameset.removeAttribute('rows');
-                } else {}
-            } else {
-                if (frameset) {}
+            var sideWrap = document.querySelector('.side_wrap');
+            $('.side_wrap').hide();
+            $('.side_wrap').removeClass('active');
+
+            var frameset = parent.document.querySelector('frameset[name="f2"]');
+            var windowWidth = window.innerWidth;
+            frameset.setAttribute('rows', '45%,45%');
+            frameset.removeAttribute('cols');
+
+        }
+
+        var frameset = parent.document.querySelector('frameset[name="f2"]');
+        var windowWidth = window.innerWidth;
+
+        if (windowWidth > 768) {
+            changeFrameSetCols();
+            closeSidePopup();
+        } else {
+            var elements = $('.side_tab li a');
+                elements.attr('onClick', 'changeFrameSetCols02()');
+
+        }
+        function changeFrameSetCols() {
+            var frameset = parent.document.querySelector('frameset[name="f2"]');
+            if (frameset) {
+                frameset.setAttribute('cols', '52%,42%');
+                frameset.removeAttribute('rows');
             }
         }
 
-
-
-        function changeFrameSetCols() {
+        function changeFrameSetCols02() {
             var frameset = parent.document.querySelector('frameset[name="f2"]');
-            var windowWidth = window.innerWidth;
-
-            if (windowWidth < 768) {
-                frameset.setAttribute('rows', '41%,55%');
+            if (frameset) {
+                frameset.setAttribute('rows', '52%,42%');
                 frameset.removeAttribute('cols');
-            } else {
-                if (frameset) {
-                    var currentCols = frameset.getAttribute('cols');
-                    frameset.setAttribute('cols', '59%,40%');
-                    frameset.removeAttribute('rows');
-                }
             }
         }
 
@@ -246,7 +262,7 @@
     </div>
 
 
-    <ul class="side_tab">
+    <ul class="side_tab pc">
         <li class="active">
             <a href="#" rel="p1" onClick="changeFrameSetCols()">목차</a>
         </li>
@@ -256,6 +272,20 @@
         </li>
         <li>
             <a href="#" rel="p3" onClick="changeFrameSetCols()">교안<br>
+                받기</a>
+        </li>
+    </ul>
+    
+     <ul class="side_tab m">
+        <li class="active">
+            <a href="#" rel="p1" onClick="changeFrameSetCols02()">목차</a>
+        </li>
+        <li>
+            <a href="#" rel="p2" onClick="changeFrameSetCols02()">과정<br>
+                질문</a>
+        </li>
+        <li>
+            <a href="#" rel="p3" onClick="changeFrameSetCols02()">교안<br>
                 받기</a>
         </li>
     </ul>

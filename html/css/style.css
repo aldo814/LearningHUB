@@ -1782,6 +1782,8 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 .map_info .item dl + dl{margin-top: 2rem}
 .map_info .item dl dt{font-size: 1.8rem;margin-bottom: .5rem;font-weight: bold;}
 
+.m{display: none}
+
 @media all and (max-width:1270px){
     
     .w_over{width: 100%;overflow-y: auto}   
@@ -1955,6 +1957,9 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 
 
 @media all and (max-width:768px){
+    .pc{display: none}
+    .m{display: block}
+
     /* 메인 */
     .field_cont .tabs{overflow-x: auto;white-space: nowrap;justify-content: flex-start}
     .field_cont .tabs li{padding: 0.5rem 2rem}
