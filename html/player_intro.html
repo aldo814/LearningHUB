@@ -44,9 +44,14 @@
             $('.side_wrap').removeClass('active');
 
             var frameset = parent.document.querySelector('frameset[name="f2"]');
-            var windowWidth = window.innerWidth;
+             var windowWidth = parent.getParentWindowWidth();
+            if (windowWidth > 768) {
             frameset.setAttribute('cols', '80%,60px');
             frameset.removeAttribute('rows');
+            } else{
+                frameset.setAttribute('rows', '60%,40%');
+            frameset.removeAttribute('cols');
+            }
 
         }
 
@@ -59,7 +64,7 @@
 
             var frameset = parent.document.querySelector('frameset[name="f2"]');
             var windowWidth = document.documentElement.clientWidth;
-            frameset.setAttribute('rows', '45%,45%');
+            frameset.setAttribute('rows', '60%,40%');
             frameset.removeAttribute('cols');
 
         }
@@ -72,7 +77,7 @@
         function changeFrameSetCols() {
             var frameset = parent.document.querySelector('frameset[name="f2"]');
             if (frameset) {
-                frameset.setAttribute('cols', '52%,42%');
+                frameset.setAttribute('cols', '60%,40%');
                 frameset.removeAttribute('rows');
             }
         }
@@ -80,7 +85,7 @@
         function changeFrameSetCols02() {
             var frameset = parent.document.querySelector('frameset[name="f2"]');
             if (frameset) {
-                frameset.setAttribute('rows', '52%,42%');
+                frameset.setAttribute('rows', '60%,40%');
                 frameset.removeAttribute('cols');
             }
         }
