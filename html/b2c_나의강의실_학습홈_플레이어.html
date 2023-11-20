@@ -17,19 +17,40 @@
     <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="js/run.js"></script>
-    <title>Insert title here</title>
+    <title>학습홈 플레이어</title>
+    <script>
+        function checkFrameSetCols() {
+            var framesetF2 = document.querySelector('frameset[name="f2"]');
+            if (framesetF2) {
+                var windowWidth = window.innerWidth;
+                if (windowWidth <= 768) {
+                    framesetF2.setAttribute('rows', '60%,40%');
+                    framesetF2.removeAttribute('cols');
+                } else {
+                    // 원래 cols 값으로 변경하거나, 다른 크기로 설정할 수 있습니다.
+                    framesetF2.setAttribute('cols', '60%,40%');
+                    framesetF2.removeAttribute('rows');
+                }
+            }
 
+            
+        }
+
+        // 윈도우 리사이즈 이벤트 리스너 추가
+        window.addEventListener('resize', checkFrameSetCols);
+
+        // 페이지 로드 시에도 한 번 호출하여 초기 설정
+        window.addEventListener('load', checkFrameSetCols);
+
+    </script>
 </head>
-<script type="text/javascript">
-    function closeWPopup() {
-        window.close();
-    }
-</script>
-<frameset rows="100,*">
+
+
+<frameset rows="100,*" onClick="check()">
     <frame src="player_top.html" frameborder="0">
-        <frameset cols="60%,40%" name="f2">
-            <frame src="player_video.html" frameborder="0">
-                <frame src="player_intro.html" frameborder="0">
+        <frameset name="f2">
+            <frame src="player_video.html" frameborder="0" name="video">
+                <frame src="player_intro.html" frameborder="0" name="intro">
         </frameset>
 </frameset>
 

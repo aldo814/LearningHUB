@@ -419,22 +419,23 @@ $(document).ready(function () {
         $('.rightPl .side_wrap').first().show();
     });
 
-    $('.rightPl .side_close').click(function () {
-        $('.player_wrap').addClass('full');
-        $('.side_wrap').hide();
-        $('frameset.f2').attr('cols', "100%,100%");
-    });
+//    $('.rightPl .side_close').click(function () {
+//        $('.side_wrap').hide();
+//        $('frameset').attr('cols', "100%","100%");
+//    });
 
     //탭메뉴 클릭 이벤트
     $(".side_tab li a").click(function () {
 
         $(this).parent().siblings("li").removeClass("active");
         $(this).parent().addClass("active");
-        $(this).parent().parent().parent().children(".side_wrap").hide();
         var activeTab = $(this).attr("rel");
-        $('.player_wrap').removeClass('full')
-        $("#" + activeTab).fadeIn();
-        $("#" + activeTab).addClass('active')
+        $('.player_wrap').removeClass('full');
+        
+            $('.side_wrap').hide();
+
+            $("#" + activeTab).fadeIn();
+            $("#" + activeTab).addClass('active')
     });
 
     //탭메뉴 클릭 이벤트
