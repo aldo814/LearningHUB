@@ -20,37 +20,42 @@
     <script src="js/run.js"></script>
     <script>
         function closeSidePopup() {
+
+
             var sideWrap = document.querySelector('.side_wrap');
             $('.side_wrap').hide();
             $('.side_wrap').removeClass('active');
 
-            var frameset = parent.document.querySelector('frameset[name="f2"]'); // frameset 요소 선택
-            if (windowWidth >= 768) {
-            if (frameset) {
-                frameset.setAttribute('cols', '80%,60px');
-                frameset02.removeAttribute('rows');
-            }
-            } else{
-                frameset02.setAttribute('rows', '45%,55%');
-                frameset02.removeAttribute('cols');
+            var frameset = parent.document.querySelector('frameset[name="f2"]');
+            var windowWidth = window.innerWidth;
+
+
+            if (windowWidth > 768) {
+                if (frameset) {
+                    frameset.setAttribute('cols', '80%,60px');
+                    frameset.removeAttribute('rows');
+                } else {}
+            } else {
+                if (frameset) {}
             }
         }
 
-        function changeFrameSetCols() {
-            var frameset02 = parent.document.querySelector('frameset[name="f2"]');
-            var windowWidth = window.innerWidth;
-            if (windowWidth <= 768) {
-                frameset02.setAttribute('rows', '45%,55%');
-                frameset02.removeAttribute('cols');
 
+
+        function changeFrameSetCols() {
+            var frameset = parent.document.querySelector('frameset[name="f2"]');
+            var windowWidth = window.innerWidth;
+
+            if (windowWidth < 768) {
+                frameset.setAttribute('rows', '41%,55%');
+                frameset.removeAttribute('cols');
             } else {
-                if (frameset02) {
-                    var currentCols = frameset02.getAttribute('cols');
-                    frameset02.setAttribute('cols', '80%,60px');
-                    frameset02.removeAttribute('rows');
+                if (frameset) {
+                    var currentCols = frameset.getAttribute('cols');
+                    frameset.setAttribute('cols', '59%,40%');
+                    frameset.removeAttribute('rows');
                 }
             }
-
         }
 
     </script>

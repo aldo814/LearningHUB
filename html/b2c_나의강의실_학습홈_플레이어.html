@@ -23,13 +23,12 @@
             var framesetF2 = document.querySelector('frameset[name="f2"]');
             if (framesetF2) {
                 var windowWidth = window.innerWidth;
-                if (windowWidth <= 768) {
-                    framesetF2.setAttribute('rows', '45%,55%');
-                    framesetF2.removeAttribute('cols');
-                } else {
-                    // 원래 cols 값으로 변경하거나, 다른 크기로 설정할 수 있습니다.
-                    framesetF2.setAttribute('cols', '60%,40%');
+                if (windowWidth > 768) {
+                    framesetF2.setAttribute('cols', '55%,40%');
                     framesetF2.removeAttribute('rows');
+                } else {
+                    framesetF2.setAttribute('rows', '42%,55%');
+                    framesetF2.removeAttribute('cols');
                 }
             }
 
@@ -46,7 +45,7 @@
 </head>
 
 
-<frameset rows="100,*" onClick="check()">
+<frameset rows="100,*">
     <frame src="player_top.html" frameborder="0">
         <frameset name="f2">
             <frame src="player_video.html" frameborder="0">
