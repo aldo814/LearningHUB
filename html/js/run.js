@@ -413,6 +413,12 @@ $(document).ready(function () {
     $(".tab_container02").each(function () {
         $(this).children(".tab_content").first().show();
     });
+    
+    
+     $(".guide_container > .guide_content").hide();
+    $(".guide_container").each(function () {
+        $(this).children(".guide_content").first().show();
+    });
 
     $('.rightPl  .side_wrap').hide()
     $('.rightPl ').each(function () {
@@ -444,6 +450,16 @@ $(document).ready(function () {
         $(this).parent().siblings("li").removeClass("active");
         $(this).parent().addClass("active");
         $(this).closest('.tab_container').find(".tab_content").hide();
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn();
+    });
+    
+    //탭메뉴 클릭 이벤트
+    $(".guide_tabs li a").click(function () {
+
+        $(this).parent().siblings("li").removeClass("active");
+        $(this).parent().addClass("active");
+        $(this).closest('.guide_container').find(".guide_content").hide();
         var activeTab = $(this).attr("rel");
         $("#" + activeTab).fadeIn();
     });
@@ -885,6 +901,7 @@ function twoModal(modalname) {
 function close_pop(flag) {
     // 현재 클릭된 "닫기" 링크의 부모 요소인 "popUp" 요소를 찾아 숨깁니다.
     var $popup = $('.popUp:visible');
+    
     $popup.hide();
 
 

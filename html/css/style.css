@@ -80,6 +80,7 @@
 .btn_gray06{background: #e8ebed;color: #454c53}
 .btn_gray07{background: #c9cdd2;color: #454c53}
 .btn_gray08{border: 1px solid #c9cdd2;color: #9ea4aa;background: #fff}
+.btn_white{border: 1px solid #ddd;color: #333;background: #fff}
 .btn_blue{color: #36ace3;border: 1px solid #36ace3}
 .btn_blue02{background: #3a86cd;color: #fff}
 .btn_blue.hover:hover,
@@ -234,13 +235,15 @@
 .list_style03 li{position: relative;padding-left: 15px;margin-bottom: 2rem;word-break: keep-all}
 .list_style03 li:before{content: '-';display: block;position: absolute;left: 0;top: 0}
 .list_style03 li:last-child{margin-bottom: 0}
-.num_list li{position: relative;margin-bottom: 0.5rem;padding-left: 15px}
-.num_list li:nth-child(1):before{content: '1.';display: block;position: absolute;left: 0;top: 0;}
-.num_list li:nth-child(2):before{content: '2.';display: block;position: absolute;left: 0;top: 0;}
-.num_list li:nth-child(3):before{content: '3.';display: block;position: absolute;left: 0;top: 0;}
-.num_list li:nth-child(4):before{content: '4.';display: block;position: absolute;left: 0;top: 0;}
-.num_list li:nth-child(5):before{content: '5.';display: block;position: absolute;left: 0;top: 0;}
-.num_list li:nth-child(6):before{content: '6.';display: block;position: absolute;left: 0;top: 0;}
+.num_list > li{position: relative;margin-bottom: 0.5rem;padding-left: 15px}
+.num_list > li:nth-child(1):before{content: '1.';display: block;position: absolute;left: 0;top: 0;}
+.num_list > li:nth-child(2):before{content: '2.';display: block;position: absolute;left: 0;top: 0;}
+.num_list > li:nth-child(3):before{content: '3.';display: block;position: absolute;left: 0;top: 0;}
+.num_list > li:nth-child(4):before{content: '4.';display: block;position: absolute;left: 0;top: 0;}
+.num_list > li:nth-child(5):before{content: '5.';display: block;position: absolute;left: 0;top: 0;}
+.num_list > li:nth-child(6):before{content: '6.';display: block;position: absolute;left: 0;top: 0;}
+
+.normal{font-weight: normal}
 
 /* input */
 .check label{font-size: 1.6rem}
@@ -1231,6 +1234,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 .simple_login{display: flex;align-items: center;}
 .simple_login .txt{width: 80px}
 .simple_login .gray{color: #9ea4aa;margin-left: 1rem}
+.jcenter{justify-content: center}
 
 /* 수강중인 과정 > 학습홈 */
 .home_top{display: flex;align-items: center;justify-content: space-between}
@@ -1834,7 +1838,14 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 .pin_btn02 input[type="radio"]:checked + label{font-weight: bold;}
 .refunds_pop{max-height:calc(100vh - 220px) !important}
 
-
+.guide_tabs {display: flex;}
+.guide_tabs li.active a{color: #000;border-bottom: 0;background: #f4f4f4;font-weight: 500;border-bottom: 1px solid #f4f4f4;}
+.guide_tabs li a{border: 1px solid #dddddd;display: block;width: 140px;text-align: center;padding: 1rem;box-sizing: border-box;color: #888888;border-bottom: 0;position: relative}
+.guide_tabs li + li a{border-left: 0}
+.guide_content .bgGray{background: #f4f4f4;border: 1px solid #ddd;margin-top: -1px;padding: 2rem;}
+.guide_pop{padding: 2rem}
+.guide_pop{box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);z-index: 555555}
+.gp_inner .cont{background: #f7f7f7;padding: 2rem;border: 1px solid #dddddd}
 @media all and (max-width:1270px){
     
     .w_over{width: 100%;overflow-y: auto}   
