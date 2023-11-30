@@ -2507,7 +2507,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
     .btn_in p{max-width: 100%;margin-bottom: 10px;}
     .refunds_pop *{font-size: 13px !important}
     
-    .refunds_pop{max-height: calc(100vh - 160px) !important}
+    .refunds_pop{max-height: calc(100vh - 180px) !important}
 }
     
  
