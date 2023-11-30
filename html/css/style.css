@@ -1845,7 +1845,8 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 .guide_content .bgGray{background: #f4f4f4;border: 1px solid #ddd;margin-top: -1px;padding: 2rem;}
 .guide_pop{padding: 2rem}
 .guide_pop{box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);z-index: 555555}
-.gp_inner .cont{background: #f7f7f7;padding: 2rem;border: 1px solid #dddddd}
+.gp_inner .cont{padding: 2rem;border: 1px solid #dddddd}
+.gp_inner .cont img{max-width: 100%}
 @media all and (max-width:1270px){
     
     .w_over{width: 100%;overflow-y: auto}   
@@ -2521,6 +2522,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
     
     .refunds_pop{max-height: calc(100vh - 180px) !important}
     
+    .guide_pop{width: 90%;height: auto;}
     .guide_pop .gp_inner{margin: 20px}
     .guide_pop .btn_area {margin: 20px}
 }
