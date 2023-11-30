@@ -2520,6 +2520,9 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
     .refunds_pop *{font-size: 13px !important}
     
     .refunds_pop{max-height: calc(100vh - 180px) !important}
+    
+    .guide_pop .gp_inner{margin: 20px}
+    .guide_pop .btn_area {margin: 20px 0}
 }
     
  
