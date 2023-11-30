@@ -2010,9 +2010,10 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
     .refunds_pop .table_style06 tr,
     .refunds_pop .table_style06 th,
     .refunds_pop .table_style06 td{display: block;}
-    .refunds_pop .table_style06 th{border-bottom:1px solid  #c9cdd2}
-    .refunds_pop .table_style06 td{border-bottom: 1px solid #c9cdd2;}
+    .refunds_pop .table_style06 th{border-bottom:1px solid  #c9cdd2;text-align: center}
+    .refunds_pop .table_style06 td{border-bottom: 1px solid #c9cdd2;text-align: center}
     .refunds_pop .table_style06 tr{border: 0}
+    .pin_btn02 ul{justify-content: center}
 }
 
 
