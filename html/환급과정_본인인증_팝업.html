@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>러닝허브</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/excel-bootstrap-table-filter-bundle.js"></script>
+    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="js/run.js"></script>
+</head>
+
+<body>
+   <div class="popUp popUp02 winPop" style="display: block;max-width: 100%">
+        <div class="popTop">
+            <h3>환급과정 본인인증</h3>
+        </div>
+        <div class="popCont">
+           <div class="pc_pd">     
+            <ul class="list_style01">
+                <li>아래 3가지 방법 중에 선택하여 본인인증을 하실 수 있습니다.</li>
+                <li>휴대폰 인증 시 본인 명의가 아닌 경우 정상적으로 본인인증 되지 않을 수 있습니다.</li>
+                <li>명의 문제로 인한 휴대폰 인증 실패 시 아이핀(i-PIN) 인증을 이용하시기 바랍니다.</li>
+            </ul>
+            <div class="opt_wrap gray_bg02 mt20">
+                <ul>
+                    <li class="radio03">
+                        <input type="radio" id="mOtp" name="cert">
+                        <label for="mOtp">mOTP 인증</label>
+                        <input type="text" class="input_style02" placeholder="mOTP 번호입력">
+                    </li>
+                    <li class="radio03">
+                        <input type="radio" id="tel" name="cert">
+                        <label for="tel">휴대폰 인증</label>
+                    </li>
+                    <li class="radio03">
+                        <input type="radio" id="ipin" name="cert">
+                        <label for="ipin">I-PIN 인증</label>
+                    </li>
+                </ul>
+                <a href="#" class="btn_style04 btn_blue02">인증하기</a>
+            </div>
+            
+            <div class="gray_bg02 mt30">
+                <p class="f16 bold">
+                    ※mOTP 이용안내
+                </p>
+                <ul class="num_list mt10">
+                    <li class="f14 gray">스마트폰의 앱스토어 및 구글 play스토어에서 <strong class="bold">“원격훈련 MOPT”(산업인력공단)</strong>을 검색하여, 설치 후
+실행합니다.</li>
+                    <li class="f14 gray">mOTP앱에 등록된 개인정보는 아래의 개인정보와 일치해야 합니다.</li>
+                    <li class="f14 gray">mOTP앱 화면에 나오는 ‘6자리’ 번호를 하단의 ‘mOTP 번호입력’란 에 입력합니다.
+                    <div class="mt10 reo">
+                        <input type="text" class="input_style02" value="조상현" readonly>
+                        <input type="text" class="input_style02" value="01041334829" readonly>
+                    </div>
+                    </li>
+                    <li class="f14 gray">해외근로자는 스마트폰의 시간을 한국시간으로 변경 후 진행합니다.</li>
+                    <li class="f14 gray">mOTP 비밀번호(6자리) 5회 실패 시 휴대폰 본인인증 으로 초기화 합니다.</li>
+                    <li class="f14 red">mOTP장애발생 시 휴대폰 또는 아이핀인증을 이용하시기 바랍니다.</li>
+                </ul>
+                <p class="f14 gray">※ 도움이 필요하시면 학습지원센터(02-2081-1000)으로 연락주십시오.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

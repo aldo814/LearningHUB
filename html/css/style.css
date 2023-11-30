@@ -26,6 +26,12 @@
 .radio02 input[type="radio"] + label:before {content: '';position: absolute;left: 0;top:3px;width: 20px;height: 20px;text-align: center;background: #fff;border: 1px solid #1b1d1f;border-radius: 100%;}
 .radio02 input[type="radio"]:checked + label:after {content: '';position: absolute;top:3px;left: 0; width: 20px;height: 20px;background: #1b1d1f;border-radius: 100%;border: 1px solid #1b1d1f}
 
+.radio03 {position: relative;}
+.radio03 input[type="radio"] {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip:rect(0,0,0,0);border: 0;}
+.radio03 input[type="radio"] + label {display: inline-block;position: relative;padding-left: 25px;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;font-size: 1.4rem}
+.radio03 input[type="radio"] + label:before {content: '';position: absolute;left: 0;top:3px;width: 14px;height: 14px;text-align: center;background: #fff;border: 1px solid #c9cdd2;border-radius: 100%;}
+.radio03 input[type="radio"]:checked + label:after {content: '';position: absolute;top:7px;left: 4px; width: 8px;height: 8px;background: #3a86cd;border-radius: 100%;}
+
 /* input_Style */
 .input_style01{font-family: inherit;padding: 0.7rem 1rem;border-radius: 0;border: 1px solid #9ea4aa;box-sizing: border-box;font-size: 1.4rem}
 .input_style01::placeholder{color: #9ea4aa;}
@@ -47,6 +53,7 @@
 .textarea04{background: #f7f8fa;width: 100%;resize: none;border: 0;height: 170px;padding: 1rem;;box-sizing: border-box;font-size: 1.4rem}
 .textarea04::placeholder{color: #9ea4aa}
 .gray_bg{background: #f7f8fa;padding: 3rem}
+.gray_bg02{background: #f4f4f4;padding: 1.5rem}
 .img_wrap{text-align: center;}
 .img_wrap img{max-width: 100%}
 
@@ -74,6 +81,7 @@
 .btn_gray07{background: #c9cdd2;color: #454c53}
 .btn_gray08{border: 1px solid #c9cdd2;color: #9ea4aa;background: #fff}
 .btn_blue{color: #36ace3;border: 1px solid #36ace3}
+.btn_blue02{background: #3a86cd;color: #fff}
 .btn_blue.hover:hover,
 .btn_blue.hover:active,
 .btn_blue.hover:focus{background: #36ace3;color: #fff}
@@ -232,6 +240,7 @@
 .num_list li:nth-child(3):before{content: '3.';display: block;position: absolute;left: 0;top: 0;}
 .num_list li:nth-child(4):before{content: '4.';display: block;position: absolute;left: 0;top: 0;}
 .num_list li:nth-child(5):before{content: '5.';display: block;position: absolute;left: 0;top: 0;}
+.num_list li:nth-child(6):before{content: '6.';display: block;position: absolute;left: 0;top: 0;}
 
 /* input */
 .check label{font-size: 1.6rem}
@@ -614,6 +623,15 @@
 .table_style05 th{border-bottom: 0;background: #f7f8fa;font-weight: 500}
 .q_th{position: relative;padding-left: 4rem !important;}
 .q_th:before{content: 'Q.';display: block;position: absolute;left: 2rem;top: 0.5rem;}
+.table_style06 th,
+.table_style06 td{padding: 1rem 2rem;vertical-align: middle;}
+.table_style06 tr{border-bottom: 1px solid #9ea4aa;}
+.table_style06 th{background: #c9cdd2;font-weight: 500}
+.table_style06 th{background: #f1f3f4;padding: 0.5rem 1rem}
+.table_style06 th,
+.table_style06 td{font-size: 16px;}
+.table_style06 td{padding: 0.5rem 1rem}
+.table_style06 tr{border-top: 1px solid #c9cdd2;border-bottom: 1px solid #c9cdd2}
 
 .comment_list{margin-top: 6rem;border-top: 1px solid #1b1d1f;}
 .comment_list .comment_top{padding: 2rem 6rem;}
@@ -1785,6 +1803,38 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 .pc{display: block}
 .m{display: none}
 
+
+/* 팝업 추가 */
+.popUp02 .popTop{background: #545454;color: #fff;}
+.popUp02 .popTop h3{font-size: 20px}
+
+.opt_wrap{display: flex;justify-content: space-between;}
+.opt_wrap ul{display: flex;align-items: center;}
+.opt_wrap ul li + li{margin-left: 3rem}
+.opt_wrap ul li label{font-size: 14px;}
+.opt_wrap ul .input_style02{width: 120px;margin-left: 5px}
+.opt_wrap ul .input_style02::placeholder{color: #bbbbbb}
+.reo input{width: 120px}
+.f10{font-size: 10px;}
+.pin_btn{display: flex;align-items: center;}
+.pin_btn p{margin-right: 10px}
+
+.inCircle{display: flex;align-items: center;}
+.inCircle span{margin-right: 5px}
+
+.border{border: 1px solid #ddd}
+.info_tit{border-top: 2px solid #333333;padding: 1rem;font-weight: 500}
+
+.btn_in{display: flex;align-items: center;justify-content: space-between}
+.btn_in p{max-width: calc(100% - 120px)}
+.pin_btn02 input[type="radio"]{position: absolute;left: -9999px;}
+.pin_btn02 {display: flex;align-items: center;}
+.pin_btn02 ul{display: flex;align-items: center;}
+.pin_btn02 ul li{margin-right: 15px}
+.pin_btn02 input[type="radio"]:checked + label{font-weight: bold;}
+.refunds_pop{max-height:calc(100vh - 220px) !important}
+
+
 @media all and (max-width:1270px){
     
     .w_over{width: 100%;overflow-y: auto}   
@@ -1954,6 +2004,15 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
     .busi_wrap .item:nth-child(5) .tit{color: #ef7032}
     .busi_wrap .item:nth-child(4) .tit:after,
     .busi_wrap .item:nth-child(5) .tit:after{background: #ef7032}
+    
+    .refunds_pop .table_style06 table,
+    .refunds_pop .table_style06 tbody,
+    .refunds_pop .table_style06 tr,
+    .refunds_pop .table_style06 th,
+    .refunds_pop .table_style06 td{display: block;}
+    .refunds_pop .table_style06 th{border-bottom:1px solid  #c9cdd2}
+    .refunds_pop .table_style06 td{border-bottom: 1px solid #c9cdd2;}
+    .refunds_pop .table_style06 tr{border: 0}
 }
 
 
@@ -2439,6 +2498,16 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
     .map_info{display: block;}
     .map_info .item{width: 100%}
     .map_info .item + .item{margin-top: 2rem}
+    
+    .pin_btn02,
+    .pin_btn{display: block;}
+    .pin_btn a{margin:5px 0}
+    .pin_btn02 ul{margin-bottom: 10px}
+    .btn_in{display: block;text-align: center;}
+    .btn_in p{max-width: 100%;margin-bottom: 10px;}
+    .refunds_pop *{font-size: 13px !important}
+    
+    .refunds_pop{max-height: calc(100vh - 160px) !important}
 }
     
  
@@ -2595,6 +2664,13 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
     .map_info .ico span{width: 50px;height: 50px}
     .map_info .item .txt{width: calc(100% - 70px);margin-left: 20px}
     .map_info .ico span{background-size: 20px !important}
+    
+    /* 팝업추가 */
+    .opt_wrap{display: block;}
+    .opt_wrap ul{display: block;}
+    .opt_wrap ul li + li{margin-left: 0;margin-top: 10px;}
+    .opt_wrap .btn_blue02{margin-top: 20px}
+    .reo input{width: 100px}
 }
 
 @media all and (max-width:480px){
