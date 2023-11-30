@@ -1845,7 +1845,7 @@ input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none;appearan
 .guide_content .bgGray{background: #f4f4f4;border: 1px solid #ddd;margin-top: -1px;padding: 2rem;}
 .guide_pop{padding: 2rem}
 .guide_pop{box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);z-index: 555555}
-.gp_inner .cont{padding: 2rem;border: 1px solid #dddddd}
+.gp_inner .cont{padding: 2rem;border: 1px solid #dddddd;text-align: center}
 .gp_inner .cont img{max-width: 100%}
 @media all and (max-width:1270px){
     
